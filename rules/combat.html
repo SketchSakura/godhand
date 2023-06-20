@@ -1,0 +1,907 @@
+<html>
+  <head><title>Godhand - Combat Rules</title>
+    <link href="../css-sheets/topnav.css" rel="stylesheet">
+    <link href="../css-sheets/layout.css" rel="stylesheet">
+    <style>
+      h1{font-size:25px; padding:5px;}
+      h2{font-size:23px; padding:3px; background-color:rgb(207,171,121);}
+      h3{font-size:20px;padding:3px; background-color:rgb(207,171,121);}
+      .ruleslink{font-family:papyrus, fantasy;}
+    </style>
+  </head>
+<body>
+  <div id="sidebar" class="sidebar"><!--Full Link Sidebar-->
+      <a href="../index.html" class="main-link">&#9864 &nbsp;About</a><br>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Rules</summary>
+        &nbsp;&nbsp;<a href="rules/basics.html">&#9864 &nbsp;Basics</a>
+        <br>&nbsp;&nbsp;<a href="rules/combat.html">&#9864 &nbsp;Combat</a>
+        <br>&nbsp;&nbsp;<a href="rules/magic.html">&#9864 &nbsp;Magic</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../classes.html" class="main-link">&hairsp;Classes</a></summary>
+        <!--Class Dropdown-->
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#barbarian">Barbarian</a></summary><!--Barbarian-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#bard">Bard</a></summary><!--Bard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#druid">Druid</a></summary><!--Druid-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#fighter">Fighter</a></summary><!--Fighter-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-champion.html" class="sublink">Champion</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-momentum.html" class="sublink">Momentum</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-strategist.html" class="sublink">Strategist</a>
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#hierophant">Hierophant</a></summary><!--Hierophant-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/hiero-truth.html" class="sublink">Truth</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/hiero-violence.html" class="sublink">Violence</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#monk">Monk</a></summary><!--Monk-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#paladin">Paladin</a></summary><!--Paladin-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#rogue">Rogue</a></summary><!--Rogue-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/rogue-fatale.html" class="sublink">Fatale</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/rogue-lowlife.html" class="sublink">Lowlife</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#salaryman">Salaryman</a></summary><!--Salaryman-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#scholar">Scholar</a></summary><!--Scholar-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#sorcerer">Sorcerer</a></summary><!--Sorcerer-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#warlock">Warlock</a></summary><!--Warlock-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#warlord">Warlord</a></summary><!--Warlord-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#wizard">Wizard</a></summary><!--Wizard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-anatomist.html"  class="sublink">Anatomist</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-profane.html" class="sublink">Profane</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-enlightened.html" class="sublink">Enlightened</a>
+        </details>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../folk.html" class="main-link">&hairsp;Folk</a></summary>
+        <!--Folk Dropdown-->
+        &nbsp;&nbsp;<a href="../folk.html#catfolk">&#9864 Catfolk</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#changeling">&#9864 Changeling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#colun">&#9864 Colún</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#dwarf">&#9864 Dwarf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#elf">&#9864 Elf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#halfling">&#9864 Halfling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#human">&#9864 Human</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#orc">&#9864 Orc</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#raska">&#9864 Raska</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#half-folk">&#9864 Half-Folk Rules</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#bloodlines">&#9864 Bloodlines</a>
+      </details>
+      <a href="../feats.html" class="main-link">&#9864 &nbsp;Feats</a><br>
+      <details class="main-dropdown"><summary>&#9862<a href="../spells/guide.html" class="main-link">&hairsp;Spells</a></li></summary>
+        <!--Spell Dropdown-->
+        &nbsp;&nbsp;<a href="../spells/guide.html">&#9864 Spell Guide</a>
+        <br>&nbsp;&nbsp;<a href="../spells/bard.html">&#9864 Bard</a>
+        <br>&nbsp;&nbsp;<a href="../spells/druid.html">&#9864 Druid</a>
+        <br>&nbsp;&nbsp;<a href="../spells/hierophant.html">&#9864 Hierophant</a>
+        <br>&nbsp;&nbsp;<a href="../spells/warlock.html">&#9864 Warlock</a>
+        <br>&nbsp;&nbsp;<a href="../spells/wizard.html">&#9864 Wizard</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Items</a></summary>
+        <!--Item Dropdown-->
+        &nbsp;&nbsp;<a href="../items/armorweapons.html">&#9864 Armor & Weapons</a>
+        <br>&nbsp;&nbsp;<a href="../items/equips.html">&#9864 Equipment</a>
+        <br>&nbsp;&nbsp;<a href="../items/magicitems.html">&#9864 Magic Items</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Bestiary</a></summary>
+        &nbsp;&nbsp;<a href="../bestiary/page-1.html">&#9864 &nbsp;CR 0 - 5</a>
+      </details>
+  </div>
+<div id="main"><!--Encapsulated header nav and body-->
+  <div id="logo"> <!--Godhand Logo-->
+    <a href="../index.html"><img src="../images/Godhand logo.png" class="logo"></a> <!--Godhand logo-->
+  </div>
+  <div class="topnav" id="myTopnav"> <!--Topnavbar-->
+    <a href="../index.html">About</a>
+    <div class="nav-dropdown active"><!--Rules Dropdown-->
+      <button class="dropbtn">Rules &#9662</button>
+      <div class="dropdown-content">
+        <a href="basics.html">Basics</a>
+        <a href="combat.html">Basics</a>
+        <a href="magic.html">Magic</a>
+      </div>
+    </div>
+    <a href="../folk.html">Folk</a>  
+    <div class="nav-dropdown"><!--Classes Dropdown-->
+      <button class="dropbtn"><a href="../classes.html" style="padding:0px;">Classes</a> &#9662</button>
+      <div class="dropdown-content"> <!--Classes variety-->
+        <a href="../classes.html#barbarian">Barbarian</a>
+        <a href="../classes.html#bard">Bard</a>
+        <a href="../classes.html#druid">Druid</a>
+        <a href="../classes.html#fighter">Fighter</a>
+        <a href="../classes.html#hierophant">Hierophant</a>
+        <a href="../classes.html#monk">Monk</a>
+        <a href="../classes.html#paladin">Paladin</a>
+        <a href="../classes.html#rogue">Rogue</a>
+        <a href="../classes.html#salaryman">Salaryman</a>
+        <a href="../classes.html#scholar">Scholar</a>
+        <a href="../classes.html#sorcerer">Sorcerer</a>
+        <a href="../classes.html#warlock">Warlock</a>
+        <a href="../classes.html#warlord">Warlord</a>
+        <a href="../classes.html#wizard">Wizard</a>
+      </div>
+    </div>
+    <a href="../feats.html">Feats</a>
+    <div class="nav-dropdown"><!--Spells Dropdown-->
+      <button class="dropbtn"><a href="../spells/guide.html" style="padding:0px;">Spells</a> &#9662</button>
+      <div class="dropdown-content">
+        <a href="../spells/guide.html">Spell Guide</a>
+        <a href="../spells/bard.html">Bard</a>
+        <a href="../spells/druid.html">Druid</a>
+        <a href="../spells/hierophant.html">Hierophant</a>
+        <a href="../spells/warlock.html">Warlock</a>
+        <a href="../spells/wizard.html">Wizard</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Items Dropdown-->
+      <button class="dropbtn">Items &#9662
+      </button>
+      <div class="dropdown-content">
+        <a href="../items/armorweapons.html">Armor & Weapons</a>
+        <a href="../items/equips.html">Equipment</a>
+        <a href="../items/magicitems.html">Magic Items</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Bestiary Dropdown-->
+      <button class="dropbtn">Bestiary &#9662 </button>
+      <div class="dropdown-content">
+        <a href="../bestiary/page-1.html">CR 0 - 5</a>
+      </div>
+    </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!--Javascript button for smaller screens-->
+  </div>
+<br>
+  <div id="mainbody"> <!--Main Content-->
+    <h1 style="font-size:40px">
+      Combat Rules
+    </h1>
+    <a id="top"></a>
+    <table> <!--table of contents and info blurb-->
+      <tr>  
+      <td style="border:0;">
+        <table class="toc" style="background-color: rgb(232, 193, 139);">
+        <tr>
+          <th class="toc" style="color:rgb(79, 10, 10)">Table of Contents</th>
+        </tr>
+        <tr>  
+          <td class="toc" style="color:rgb(57, 7, 7); text-align:left" cellpadding="10" width="350px">
+            <details class="rulestoc"><!--Table of Contents-->
+              <summary><b><u>Combat</u></b></summary> 
+              &nbsp;&nbsp;&nbsp;<a href="#surprise">Surprise</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#initiative">Initiative</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#your-turn">Your Turn</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#bonus-action">Bonus Actions</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#comm-and-interact">Communication & Object Interactions</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#reaction">Reactions</a>
+            </details>
+            <details class="rulestoc">
+              <summary><b><u>Movement and Position</u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#speed">Speed</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#diff-terrain">Difficult Terrain</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#prone">Being Prone</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#move-around">Moving Around Other Creatures</a>  
+            </details>
+            <details class="rulestoc">
+              <summary><b><u>Creature Size</u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#space">Space</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#squeeze-small">Squeezing into a Smaller Space</a> 
+            </details>
+            <details class="rulestoc">
+              <summary><b><u>Universal Actions in Combat</u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#attack">Attack</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#cast-spell">Cast a Spell</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#dash">Dash</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#drink-potion">Drink or Administer a Potion</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#sprint">Sprint</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#disengage">Disengage</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#dodge">Dodge</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#help">Help</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#hide">Hide</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#interpose">Interpose</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#ready">Ready</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#search">Search</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#use-object">Use an Object</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#skill-in-combat">Using a Skill in Combat</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#maneuvers">Maneuvers in Combat</a>
+            </details>
+            <b>&nbsp;&nbsp;&nbsp;<a href="#act-boldly" style="font-family:Verdana, Geneva, Tahoma, sans-serif"><u>Acting Boldly/Bold Move</a></u></b>
+            <details class="rulestoc">
+              <summary><b><u>Making an Attack</u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#attack-rolls">Attack Rolls</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#attack-mod">Attack Modifiers</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#crit-hit-miss">Critical Hits & Misses</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#not-all">Not all 20s are Sacred, Not all 1s are Cursed</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#sight">Sight in Combat</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#range">Range</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#reach">Reach</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#unarmed-strikes">Unarmed Strikes</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#attack-opportunity">Attack of Opportunity</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#twf">Two-Weapon Fighting</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#grappling">Grappling</a>              
+              <br>&nbsp;&nbsp;&nbsp;<a href="#other-contests">Other Contests in Combat</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#cover">Cover</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#reach">Reach</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#unarmed-strikes">Unarmed Strikes</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#attack-opportunity">Attack of Opportunity</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#twf">Two-Weapon Fighting</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#grappling">Grappling</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#other-contests">Other Contests in Combat</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#cover">Cover</a> 
+            </details>
+            <details class="rulestoc"><summary><b><u>Health and Damage</u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#hp">Hit Points</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#damage-rolls">Damage Rolls</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#crit-hits">Critical Hits</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#damage-types">Damage Types</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#damage-resist">Damage Resistance & Vulnerability</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#healing">Healing</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#linger">Lingering Injuries</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#morale">Morale</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#dismemebr">Variant Rule: Dismemberment</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#drop-zero">Dropping to 0 Hit Points</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#insta-death">Instant Death</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#unconscious">Falling Unconscious</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#death-saves">Death Saving Throws</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#stabilize">Stabilizing a Creature</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#npc-zero">NPCs & dropping to 0</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#ko-creature">Knocking a Creature Out</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#temp-hp">Temporary Hit Points</a> 
+            </details>
+            <details class="rulestoc"><summary><b><u>Conditions</u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#blinded">Blinded</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#charmed">Charmed</a>  
+              <br>&nbsp;&nbsp;&nbsp;<a href="#concussed">Concussed</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#dazed">Dazed</a>  
+              <br>&nbsp;&nbsp;&nbsp;<a href="#deafened">Deafened</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#frightened">Frightened</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#grappled">Grappled</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#incapacitated">Incapacitated</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#invisible">invisible</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#paralyzed">Paralyzed</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#petrified">Petrified</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#poisoned">Poisoned</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#prone-con">Prone</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#stunned">Stunned</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#unconscious-con">Unconscious</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#vulnerable">Vulnerable</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#exhaustion">Exhaustion</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#bleeding">Bleeding</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#hemorrhage">Hemorrhage</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#burning">Burning</a> 
+            </details>
+          </td>
+        </tr>
+        </table>
+      </td>
+      <td style="vertical-align:top; text-align:left; border:0">
+        <p>
+          Flavor text here
+        </p>
+      </td>
+      </tr>
+    </table>
+<hr>
+<details class="combat"><summary><h1><div class="tooltip">Combat<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+  <p class="flavor">
+    Combat, for all its rules and systems, is fairly simple when you get down to it. The general gist for beginning a combat in a game of Godhand goes something like this:
+        <br><br>
+        <b>Determine Surprise:</b> If a character (or group of characters!) catches an enemy unaware, they surprise them. This almost always requires a stealth check from the party attempting the surprise.
+        <br><br>
+        <b>Establish positions:</b> The players determine where they are relative to one another, and the GM determines the location of their enemies, and any other hazards that might be in the general vicinity of this battle.
+        <br><br>
+        <b>Roll Initiative:</b> Everyone involved in the combat encounter rolls Initiative, determining the order of combatants’ turns.
+        <br><br>
+        <b>Take turns:</b> Each participant in the battle takes a turn in Initiative order.
+        <br><br>
+        <b>Begin the next round:</b> When everyone involved in the combat has had a turn, the round ends. Repeat step 4 until the Fighting stops.
+  </p>
+  <h2><a class="ruleslink" id="surprise">Surprise</a></h2>
+    <p class="info">
+      A cunning rogue sits in the trees above a narrow road, dropping down onto the night he’s marked as a target for months now. A long haired orc kicks down the door of a room one of her friends is staying in at the place their merry band has set up for the night, catching him sleeping she wraps him in a headlock. In these situations, one side of the battle gains Surprise over the other.<br><br>
+      Surprise is generally determined by a Dexterity (Stealth) checks of anyone Hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn’t notice a threat is surprised at the start of the encounter. However, a good general rule is to assume that if a player is attacking from the <b>hidden condition</b>, their opponent will be surprised.<br><br>
+      If you’re surprised, you can’t move or take an Action on your first turn of the combat, and you can’t take a Reaction until that turn ends. A member of a group can be surprised even if the other Members aren’t.
+    </p>
+  <h2><a class="ruleslink" id="initiative">Initiative</a></h2>
+    <p class="info">
+      Initiative determines the order of turns during combat. When combat starts, every participant makes a Dexterity check to determine their place in the Initiative order. The GM makes one roll for an entire group of identical Creatures, so each member of the group acts at the same time.<br><br>
+      The GM ranks the combatants in order from the one with the highest Dexterity check total to the one with the lowest. This is the order (called the Initiative order) in which they act during each round. The Initiative order remains the same from round to round.<br><br>
+      If a tie occurs the GM can have the tied Characters and Monsters each roll a d20 to determine the order, highest roll going first.
+    </p>
+  <h2><a class="ruleslink" id="your-turn">Your Turn</a></h2>
+    <p class="info">
+      On Your Turn, you can move a distance equal to your speed, and a single action. If you choose to act boldly, you can potentially take a second action (as detailed later).<br><br>
+      You decide whether to move first or take your Action first. Your speed— sometimes called your walking speed—is noted on your character sheet. The sort of folk you are initially determines this speed, but things like feats, spells, and class features can potentially raise or lower it.<br><br>
+      The most Common ACTIONS you can take are described in the “Universal Actions” section. Many class Features and other Abilities provide additional options for your Action.<br><br>
+      You can choose not to take an Action, or do anything at all on your turn.
+    </p>
+  <h2><a class="ruleslink" id="bonus-action">Bonus Actions</a></h2>
+    <p class="info">
+      Certain actions you can take, class features, feats, and other options provided to a character give you a special action called a Bonus Action. The Cunning Action feature, for example, allows a rogue to take a bonus Action. You can take a bonus Action only when a Special ability, spell, or other feature of the game states that you can do something as a bonus Action. You otherwise don’t have a bonus Action to take.<br><br>
+      You can take only one bonus Action on Your Turn. Anything that deprives you of your ability to take ACTIONS also prevents you from taking a bonus Action.
+    </p>
+  <h2><a class="ruleslink" id="comm-and-interact">Communication & Object Interactions</a></h2>
+    <p class="info">
+      You can communicate however you are able, through brief utterances and gestures, as you take Your Turn, without requiring an action to do so. You may also communicate when it is not your turn. This is mostly for practical purposes, and because it’s a little lame to tell someone “shut up, it isn’t your turn.”<br><br>
+      You may occasionally try to use this communication to talk your opponents down in the midst of violent combat. This is more thoroughly explained in the section on <a href="#morale"><u>morale</u></a>, but attempting to do so is an action, and not a free action like most communication in combat. <br<br>
+      You can also interact with one object or feature of the Environment for free, during either your move or your Action. For example, you could open a door during your move as you stride toward a foe, or you could draw your weapon as part of the same Action you use to Attack.<br><br>
+      If you want to interact with a second object, you need to use your Action. Some magic items and other Special Objects always require an Action to use, as stated in their descriptions.<br><br>
+      The GM might require you to use an Action for any of these activities when it needs Special care or when it presents an unusual obstacle. For instance, the GM could reasonably expect you to use an Action to open a stuck door or turn a crank to lower a drawbridge.
+    </p>
+  <h2><a class="ruleslink" id="reaction">Reaction</a></h2>
+    <p class="info">
+      Certain Special Abilities, Spells, Universal Actions and situations allow you to take a Special Action called a Reaction. A Reaction happens instantly, usually triggered by something else in combat (but not always!) You can use your reaction on Your Turn or on someone else’s. When you take a Reaction, you can’t take another one until the start of your next turn. If the Reaction interrupts another creature’s turn, that creature can continue its turn right after the Reaction.
+    </p>
+  <hr>
+  <p><a href="#top">Back to Top</a></p>
+</details>
+<hr>
+<details class="combat"><summary><h1><div class="tooltip">Movement & Position<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+  <p class="flavor">
+    When you move, you move a number of feet equal to, or less than your character’s walking speed, but no more. Should you need to move further, you can move up to your speed a second time by taking the dash action. You can break up your movement however you like. If you move ten feet, then take an action, then move ten more feet, you can. You can also move between attacks, if you have a class feature or bonus action granting you more than one. There is no limit to how you can break up your movement, unless a specific feature states otherwise.
+  </p>
+  <h2><a class="ruleslink" id="speed">Using Different Speeds</a></h2>
+  <p class="info">
+    If you have multiple speeds (such as a fly speed and a swim speed) you can switch between them at will while moving. Whenever you switch, subtract the total you’ve already moved from the speed you’re switching over to. The result is the number of feet you can move with the new speed.
+  </p>
+  <h2><a class="ruleslink" id="diff-terrain">Difficult Terrain</a></h2>
+  <p class="info">
+    There are going to be places in combat that are difficult to navigate. Thick undergrowth, rubble covered streets, and rivers of blood are all examples of this difficult terrain. The cost of movement in difficult terrain is doubled.
+  </p>
+  <h2><a class="ruleslink" id="prone">Being Prone</a></h2>
+  <p class="info">
+    Either as the result of being knocked down, or dropping to their belly to avoid gunfire, at some point, in some fight, a character will fall onto the ground. When this happens, they’re considered prone, as the <a href="prone-con"><u>condition</u></a>.<br><br>
+    A character can fall prone without using any of their speed, but must expend a number of feet equal to half their speed (whatever that number might be) to stand up.<br><br>
+    To move while prone, a character needs to crawl. While crawling, all movement costs double what it would normally, like difficult terrain. Crawling in difficult terrain therefore, costs 4 times what normal movement would cost.
+  </p>
+  <h2><a class="ruleslink" id="move-around">Moving Around Other Creatures</a></h2>
+  <p class="info">
+    You can move freely through a friendly creature’s space. To move through an enemy creature’s space, you must make an athletics or acrobatics check contested by an athletics or acrobatics from the enemy. If the enemy is over two sizes larger than you, an acrobatics check is made with advantage.<br><br>
+    Friend or foe, you can’t end your turn in another creature’s space.<br><br>
+    You provoke an attack of opportunity by leaving an enemy creature’s space.
+  </p>
+  <h2><a class="ruleslink" id="fly-move-prone">Flying Movement & the Prone condition</a></h2>
+  <p class="info">
+    If you knock a flying creature <a href="#prone"><u>prone</u></a>, they fall all the way to the ground, taking whatever fall damage that results in.<br><br>It’s really, really funny.
+  </p>
+  <hr>
+  <p><a href="#top">Back to Top</a></p>
+</details>
+<hr>
+<details class="combat"><summary><h1><div class="tooltip">Creature Size<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+  <p class="flavor">
+    This is WIP
+  </p>
+  <h2><a class="ruleslink" id="space">Space</a></h2>
+    <p class="info">
+      A creature’s space is the area in feet that it effectively controls in combat, not an expression of its physical dimensions. A typical Medium creature isn’t 5 feet wide, for example, but it does control a space that wide. If a Medium Hobgoblin stands in a 5-- foot--wide doorway, other Creatures can’t get through unless the Hobgoblin lets them.<br><br>
+      A creature’s space also reflects the area it needs to fight effectively. For that reason, there’s a limit to the number of Creatures that can surround another creature in combat. Assuming Medium combatants, eight Creatures can fit in a 5-foot radius around another one.<br><br>
+      Because larger Creatures take up more space, fewer of them can surround a creature. If five Large Creatures crowd around a Medium or smaller one, there’s little room for anyone else. In contrast, as many as twenty Medium Creatures can surround a Gargantuan one.
+    </p>
+  <h2><a class="ruleslink" id="squeeze-small">Squeezing into a Smaller Space</a></h2>
+    <p class="info">
+      A creature can squeeze through a space that is large enough for a creature one size smaller than it. A Large creature can squeeze through a Passage that’s only 5 feet wide, A medium creature can move through a space about 2.5 feet wide, and so on. While squeezing through a space, a creature treats all movement as difficult terrain, and it has disadvantage on Attack rolls and Dexterity Saving Throws. Attack rolls against the creature have advantage while it’s in the smaller space.
+    </p>
+  <hr>
+  <p><a href="#top">Back to Top</a></p>
+</details>
+<hr>
+<details class="combat"><summary><h1><div class="tooltip">Universal Actions in Combat<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+  <p class="flavor">
+    Below is a list of universal acts any character can take in combat, most of them ACTIONS, but some REACTIONS as well. When you take your Action on Your Turn, you can take an action listed here, but you will also have plenty of more specific actions from your class and subclass, and potentially a few Special features. Many Monsters have Action options of their own in their Stat Blocks.<br><br>
+    You aren’t limited to only the actions on this list. Improvisation is often a big part of combat, and specific scenarios call for specific things that a class or universal list can’t address. When you improvise an Action, you are describing an act to your GM not present anywhere in the written rules. It falls to the GM to tell you if that Action is possible and what kind of roll you need to make, if any, to determine success or failure.
+  </p>
+  <h2><a class="ruleslink" id="attack">Attack</a></h2>
+    <p class="info">
+      The most common act taken in combat, attacking covers swinging a sword, firing an arrow, throwing a punch, and just about any other type of harm one might try to inflict. See the “Making an Attack” section for the rules that govern Attacks.<br><br>
+      Certain Features, such as the Extra Attack feature of the Fighter, allow you to make more than one Attack with this Action.
+    </p>
+  <h2><a class="ruleslink" id="cast-spell">Cast a Spell</a></h2>
+    <p class="info">
+      Spellcasters (wizards, clerics, druids, etc), as well as many Monster statblocks, have access to Spells. Each spell has a Casting Time, which specifies whether the caster must use an Action, Bonus Action, Reaction, minutes, or even hours to cast the spell. Casting a Spell is, therefore, not necessarily an Action. Most Spells do have a Casting Time of 1 Action, so a Spellcaster often uses his or her Action in combat to cast such a spell.
+    </p>
+  <h2><a class="ruleslink" id="dash">Dash</a></h2>
+    <p class="info">
+      When you take the Dash Action, you gain extra Movement for the current turn. The increase equals your speed, after applying any Modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on Your Turn if you dash.<br><br>
+      Any increase or decrease to your speed changes this additional Movement by the same amount. If your speed of 30 feet is reduced to 15 feet, for instance, you can move up to 30 feet this turn if you dash.
+    </p>
+  <h2><a class="ruleslink" id="drink-potion">Drink or Administer a Potion</a></h2>
+    <p class="info">
+      When you drink a potion, you can choose to use an action or a bonus action to do so, if you choose to use an action, you heal as if you had rolled the max number on each die assigned to the potion. When you use a bonus action, you roll as normal. If you choose to administer a potion (ie, give it to another character) you use an action to do so, and that character rolls the die for healing as opposed to taking the max.
+    </p>
+  <h2><a class="ruleslink" id="sprint">Sprint</a></h2>
+    <p class="info">
+      Pushing yourself to go slightly faster, you overexert yourself while moving into or out of danger. When you use your action or bonus action to Dash, you can expend a hit die to move farther, gaining an amount of speed equal to 5 x your proficiency bonus until the end of your turn. You cannot use this ability if your speed or movement has been reduced by an effect or condition.
+    </p>
+  <h2><a class="ruleslink" id="disengage">Disengage</a></h2>
+    <p class="info">
+      If you take the Disengage Action you move five feet in any direction of your choice (this movement is free, it does not use any of your character’s movement for the turn), your Movement then doesn’t provoke opportunity Attacks for the rest of the turn.
+    </p>
+  <h2><a class="ruleslink" id="dodge">Dodge</a></h2>
+    <p class="info">
+      When you take the Dodge Action, you are doing everything you can to avoid getting hit, at the cost of doing anything else in combat. Until the start of your next turn, all Attack rolls made against you are made with disadvantage so long as you can see the attack coming your way, and you make Strength and Dexterity Saving Throws with advantage. You lose this benefit, and cannot take this action if you are <a href="#incapacitated"><u>Incapacitated</u></a> (as explained in Conditions) or if your speed drops to 0.
+    </p>
+  <h2><a class="ruleslink" id="help">Help</a></h2>
+    <p class="info">
+      You can lend your aid to another creature in the completion of a task. When you take the Help Action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn. If the creature is attempting a check with a skill, tool or instrument, you must satisfy at least one of two prerequisites before helping them:
+    </p>
+      <ol>
+        <li>You must have proficiency in the skill (or with the tool/instrument) being used.</li>
+        <li>Your bonus to the check must be higher than that of the creature you’re helping.</li>
+      </ol>
+    <p class="info">
+      You only need to satisfy one of these two prerequisites to help with a skill/tool/instrument check. Helping with a straight ability check has no requirements.<br><br>
+      Alternatively, you can aid a friendly creature in Attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally’s Attack more effective. If your ally Attacks the target before your next turn, the first Attack roll is made with advantage.
+    </p>
+  <h2><a class="ruleslink" id="hide">Hide</a></h2>
+    <p class="info">
+      When you take the Hide Action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for Hiding. If you succeed, you gain certain benefits, as described in the “Unseen Attackers and Targets” section.
+    </p>
+  <h2><a class="ruleslink" id="interpose">Interpose</a></h2>
+    <p class="info">
+      As a reaction, when an ally within 5 feet of you is targeted by an attack or spell meant to deal them damage, you may place yourself between them and the harmful effect (taking this reaction does not change your position in combat), taking the damage in their place.
+    </p>
+  <h2><a class="ruleslink" id="ready">Ready</a></h2>
+    <p class="info">
+      Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready Action on Your Turn, which lets you act using your Reaction after your turn has ended.<br><br>
+      First, you decide what perceivable circumstance will trigger your Reaction. Then, you choose the Action you will take in response to that trigger, or you choose to move up to your speed in response to it. Examples include “If the monster tries to escape its bindings, I’ll shoot it,” “If the Orc steps next to me, I move away,” and “If anything emerges from the darkness, I’m casting Burning Hands.” You may hold a readied action until it is triggered, or until you otherwise choose to expend it.<br><br>
+      When the trigger occurs, you can either take your Reaction after the trigger finishes or ignore the trigger entirely. Your GM cannot force your hand and claim you act on the trigger, only you, the player, decide when you use this prepared reaction.<br><br>
+      When you ready a spell, you cast it as normal but you must hold its energy, which you release with your Reaction at the triggering event. To be readied, a spell must have a Casting Time of 1 Action,or 1 Bonus Action, and holding the spell requires Concentration, in the same way specific spells do after being cast. If your Concentration is broken, the spell dissipates without ever taking Effect, and you lose the spell slot you’d used to ready it. For example, if you are concentrating on the web spell and ready Magic Missile, your web spell ends, and if you take damage before you release Magic Missile with your Reaction, your Concentration might be broken.
+    </p>
+  <h2><a class="ruleslink" id="search">Search</a></h2>
+    <p class="info">
+      When you take the Search Action, you devote your attention to finding something. Depending on the Nature of your Search, the GM might have you make a Wisdom (Perception) check or an Intelligence (Investigation) check. After taking the search action, you may immediately call out the location of anything you find to your teammates, and they become aware of its placement. If the thing you’d been searching for isn’t stationary (like an invisible monster, or another character), you and your allies are aware of its location until the start of its next turn.
+    </p>
+  <h2><a class="ruleslink" id="use-object">Use an Object</a></h2>
+    <p class="info">
+      You normally interact with an object while doing something else, such as when you draw a sword as part of an Attack. When an object requires your Action for its use, you take the Use an Object Action. This Action is also useful when you want to interact with more than one object on Your Turn.
+    </p>
+  <h2><a class="ruleslink" id="skill-in-combat">Using a Skill in Combat</a></h2>
+    <p class="info">
+      As a general rule:<br><br>
+      Knowing something (Arcana, History, Nature, etc) is a free action.<br><br>
+      Noticing something (Perception, Insight, Investigation, etc) is a bonus action.<br><br>
+      Doing something (Persuasion, Sleight of Hand, Stealth, etc) is an action.
+    </p>
+  <h2><a class="ruleslink" id="maneuvers">Maneuvers in Combat</a></h2>
+    <p class="info">
+      Not every move in combat can be accomplished with just an attack or an ability check. There are times when you might want to act with a little more flair, finesse, or brutality. The following actions are called Maneuvers. Each of them may be attempted in combat as an action.<br><br>
+      (fill in later)
+    </p>
+  <hr>
+  <p><a href="#top">Back to Top</a></p>
+</details>
+<hr>
+<details class="combat"><summary><h1><a class="ruleslink" id="act-boldly"><div class="tooltip">Acting Boldly/Bold Move<span class="tooltiptext">Click to Expand/Collapse</span></div></a></h1></summary>
+  <p class="flavor"><i>“In times, the boys of the street will be angry. They will come out with blades and they will cut each other until they have lost so much blood they forget that they are angry. A sight! More though- more a sight, a boy will make a play, you know? He will act with his heart, you understand? No thought, no nothing. He will fight ten at once, all much bigger than him, and most of times? He will die. I see this happen many times. Each time will say this was a… ‘bold move.’“<br>
+    - Babao The Cat, Merchant in The Old City</i>
+  </p>
+  <hr>
+  <p class="info">
+    You will find there are times in combat where your action, your bonus action, and your movement all are spent, but things are desperate, and you need one final push. It is in times like these that your character might act boldly.<br><br>
+    A character acting boldly effectively gains an extra (albeit more limited) action to use in combat, in return for becoming vulnerable (as the <a href=#vulnerable><u>condition</u></a>) at the end of their turn. They overextend themselves to pull off more difficult or desperate plays, at the risk of getting much more seriously injured. The limitations for acting boldly are as follows:
+  </p>
+    <ul>
+      <li>A character may not cast a leveled spell when acting boldly. They may cast a cantrip, if they did not use their action to cast a spell or cantrip.</li><br>
+      <li>A player may attack while acting boldly, but does not benefit from any extra attacks they may have as a result of class features, feats, spells, or any other source.</li><br>
+      <li>A character may not use the second action they gain when acting boldly to dodge. </li>
+    </ul>
+  <p class="info">
+    Aside from these limitations, the rules for the second action a character gains when acting boldly are the same as the rules for taking an action normally.
+  </p>
+  <hr>
+  <p><a href="#top">Back to Top</a></p>
+</details>
+<hr>
+<details class="combat"><summary><h1><div class="tooltip">Making an Attack<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+    <p class="flavor">
+      Regardless of how you choose to attack, up close with your hands, at range with a crossbow, or with the power of magic, the structure for making an attack is pretty much universal.<br><br>
+      Pick your target. This can be anything present on the field of battle, creature, object, god, anything, as long as it’s present within range of the attack you’re planning to use.<br><br>
+      Determine the conditions of your attack. Add your ability bonus to the roll, your proficiency bonus if you’re proficient with the weapon, and determine advantage or disadvantage to the roll.<br><br>
+      Make the roll. Hit or miss normally depends on the target’s armor class vs the total of your roll plus your modifiers. When resolving the attack, roll for damage based on your weapon, adding your strength modifier (or dexterity modifier, depending on the type of weapon used) to the damage. Remember that some attacks have riders, like rogue’s sneak attack.
+    </p>
+  <h2><a class="ruleslink" id="attack-rolls">Attack Rolls</a></h2>
+    <p class="info">
+      When you make an attack you’re rolling a d20, and adding any relevant modifiers or bonuses (usually just your ability modifier, and your proficiency bonus) to the total of the roll. When rolling an attack the goal is for the total of the roll to beat an opposing armor class (AC). For monsters, AC is listed on their stat block. For characters, it’s determined during character creation, but changes at times over the course of play as it is dependent on things like strength or dexterity, armor, and spells one might cast. When a monster makes an attack roll, the bonus it uses will be listed in its stat block.
+    </p>
+  <h2><a class="ruleslink" id="attack-mod">Attack Modifiers</a></h2>
+    <p class="info">
+      The ability modifier for melee attacks is strength, and the ability modifier for ranged attacks is dexterity. These are added to both attack, and damage rolls of their respective attacks.<br><br>
+      A melee weapon with the finesse trait allows a character to make melee attacks with strength or dexterity. A ranged weapon with the mighty trait allows a character to make ranged attacks with dexterity or strength. If a spell ever requires an attack roll, it will use your spellcasting modifier (intelligence, wisdom, or charisma) as the relevant ability modifier.<br><br>
+      If you are proficient with the weapon with which you are attacking, you add your proficiency bonus to the attack roll. If you are attacking with a spell, you add your proficiency bonus to the attack roll.
+    </p>
+  <h2><a class="ruleslink" id="crit-hit-miss">Critical Hits & Misses</a></h2>
+    <p class="info">
+      Rolling a <b>20</b> on the d20 when making an attack means the attack is a critical hit. Regardless of a target’s AC, a rolled 20 is always a hit.<br><br>
+      Rolling a <b>1</b> on a d20 is always a miss, regardless of how big the bonus to the roll is. This is a critical miss.
+    </p>
+  <h2><a class="ruleslink" id="not-all">Not all 20s are Sacred, Not all 1s are Cursed</a></h2>
+    <p class="info">
+      Rolling a 20 or a 1 is only relevant in combat. If you roll a 20 for an athletics check, your athletics bonus is a -1, and the DC of the check is a 20, you still fail the check.<br><br>
+      If you roll a 1 on a wisdom saving throw, but the DC of the saving throw is 12, and you’re a level 20 character with +11 to your wisdom saves, you succeed on the save despite rolling a 1.
+    </p>
+  <h2><a class="ruleslink" id="sight">Sight in Combat</a></h2>
+    <p class="info">
+      You have advantage on attacks against targets that can’t see you, and disadvantage on attacks against targets you can’t see. If you are hidden from a target, when you make an attack against them, you give away your location regardless of if you hit or miss.
+    </p>
+  <h2><a class="ruleslink" id="range">Range</a></h2>
+    <p class="info">
+      Each ranged attack you can make has a specific range, beyond that range any attack made misses automatically. For a spell, the range is specified in the spell’s description. For a weapon, the range is somewhere in the weapon’s descriptions.<br><br>
+      Most ranged weapons will have two ranges. An effective range, and a long range. Any attacks made against creatures at long range has disadvantage.
+    </p>
+  <h2><a class="ruleslink" id="reach">Reach</a></h2>
+    <p class="info">
+      When making a melee attack, almost all attacks you make will have a reach of 5 feet. If you’re wielding a weapon with the reach property, that range extends to 10 feet. Certain abilities might extend that reach further, but if reach on a melee attack isn’t specified, then it has a reach of 5 feet.
+    </p>
+  <h2><a class="ruleslink" id="unarmed-strikes">Unarmed Strikes</a></h2>
+    <p class="info">
+      There might be times when you don’t want a sword or spear, you just want to punch something. In those cases you’d make an unarmed strike. The damage of an unarmed strike is uniform, always 1 + your strength modifier. All characters are considered proficient with unarmed strikes.
+    </p>
+  <h2><a class="ruleslink" id="attack-opportunity">Attack of Opportunity</a></h2>
+    <p class="info">
+      When a creature moves out of your reach, you can use your reaction to make a melee attack against them. This attack is called an attack of opportunity.<br><br>
+      You can avoid provoking an attack of opportunity on yourself if you take the disengage action before leaving an enemy’s space. You also don’t provoke an attack of opportunity if you leave an enemy’s space by some other means than walking or running, such as teleporting, or being forced away by a spell or ability (like being dragged off, or knocked away by an explosion).
+    </p>
+  <h2><a class="ruleslink" id="twf">Two-Weapon Fighting</a></h2>
+    <p class="info">
+      When you’re holding two melee weapons with the light property in your hands, when you make an attack with one, you may use your bonus action to make a second attack with the other. You do not add your ability modifier to the damage of the second attack.<br><br>
+      If the weapon in your off hand has the thrown property (like a dagger, or a handaxe) you can also use your bonus action to throw that weapon.
+    </p>
+  <h2><a class="ruleslink" id="grappling">Grappling</a></h2>
+    <p class="info">
+      Sometimes you just gotta grab a guy. When you take the attack action, you can replace an attack with a grapple attempt. To attempt a grapple, make an athletics check. The target of the grapple contests this with an athletics check of their own, or an acrobatics check.<br><br>
+      You cannot grapple a creature any more than one size larger than you, and you need to have at least one hand free to attempt a grapple. The <a href="#grappled"><u>grappled condition</u></a> is applied to any creature successfully grappled, and when grappled they can attempt an athletics check (contested by one from the grappler) to end the grapple. Attempting to escape a grapple takes an action.<br><br>
+      If you attempt to move while holding a creature you have grappled, your movement is halved, and you drag the creature with you.
+    </p>
+  <h2><a class="ruleslink" id="other-contests">Other Contests in Combat</a></h2>
+    <p class="info">
+      There are times in combat where an action may have to be improvised. Grappling serves as an example of how such instances might work, where one character makes a skill check against another in order to accomplish some end. Many potential contests are ideally accounted for in the “Universal Maneuvers in Combat” section, but if a player attempts something that truly falls under nothing in this document, the above passage on grappling may serve as a template for how to improvise such a maneuver.<br><br>
+      <b>For the purposes of this playtest however, this is not ideal. A goal of Godhand as a system is to lessen the amount DMs need to improvise on the fly. Should you encounter a common action in combat not covered by anything here, one that would need to be improvised consistently, please let us know!</b>
+    </p>
+  <h2><a class="ruleslink" id="cover">Cover</a></h2>
+    <p class="info">
+      Cover is an integral part of some combats, trees, buildings, the bones of god, anything large enough to get behind to block an attack. There are three types of cover.<br><br>
+      <b>Half Cover: </b>Can be anything that covers half of a target’s body, roughly speaking. A creature standing behind another creature the same size as it has half cover. Half cover grants a +2 to AC and dexterity saving throws.<br><br>
+      <b>3/4ths Cover: </b>Just like half cover, but grants a +5 to AC and dexterity saving throws. 3/4ths of a character’s body must be covered for it to have 3/4ths cover. A character can potentially crouch or position themselves so they gain 3/4ths cover from a source that might only provide them with half cover.<br><br>
+      <b>Full Cover: </b>A character in full cover cannot be targeted by an attack, a spell, or any similar harmful effect. It can however still take damage from things that do damage in an area of effect, if it is unfortunate enough to be in the area.
+    </p>
+    <hr>
+    <p><a href="#top">Back to Top</a></p>
+</details>
+<hr>
+<details class="combat"><summary><h1><div class="tooltip">Health and Damage<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+  <h2><a class="ruleslink" id="hp">Hit Points</a></h2>
+    <p class="info">
+      Hit Points are, to use a really fancy word, an “abstraction.” They aren’t necessarily a character’s physical toughness alone (though physical toughness does play a part in their calculation, for sure). They’re really just a rough metric of how long a character can stay in a fight.<br><br>
+      Whenever a creature takes damage in combat, the damage taken is subtracted from the number of hit points the creature has currently.
+    </p>
+  <h2><a class="ruleslink" id="damage-rolls">Damage Rolls</a></h2>
+    <p class="info">
+      Almost every effect that deals damage will list a dice. When dealing damage with that effect, roll the dice listed and add the relevant ability modifier to calculate the damage you do. Spells do not include an ability modifier in damage, unless a spell or feature states otherwise.
+    </p>
+  <h2><a class="ruleslink" id="crit-hits">Critical Hits</a></h2>
+    <p class="info">
+      When you land a critical hit, roll the damage dice for your weapon twice and add the results together when calculating the damage you deal. If the Attack involves other damage dice, such as from the rogue’s Sneak Attack feature, you roll those dice twice as well and add them together.
+    </p>
+  <h2><a class="ruleslink" id="damage-types">Damage Types</a></h2>
+    <p class="info">
+      Different things deal different types of damage, the various damage types are as follows:
+    </p>
+      <details class="sub-list"><summary><b>List of Damage Types</b></summary>
+        <ul>
+          <li><b>Acid:</b> Being digested by a creature would deal acid damage.</li><br>
+          <li><b>Bludgeoning:</b> Blunt force. Falling or getting punched deals bludgeoning damage.</li><br>
+          <li><b>Cold:</b> Being naked in freezing weather deals cold damage.</li><br>
+          <li><b>Fire:</b> Anything that generates heat can deal fire damage, it doesn’t need to be literal fire.</li><br>
+          <li><b>Lightning:</b> Being electrocuted would be a good example of lightning damage.</li><br>
+          <li><b>Necrotic:</b> Necrotic damage is closely associated with dark magic. It symbolizes rot, decay, and a near pure manifestation of death.</li><br>
+          <li><b>Piercing:</b> Puncture wounds, like being stabbed or bitten.</li><br>
+          <li><b>Poison:</b> Another fairly obvious one, if something is poisonous, it’ll deal poison damage. Chlorine gas would be a very extreme example of poison damage.</li><br>
+          <li><b>Psychic:</b> Psychic damage is damage that doesn’t directly harm a person’s body, but breaks their mind. It represents things like forced insanity and mental invasion, powers that kill from within.</li><br>
+          <li><b>Radiant:</b> Radiant damage stands in opposition to necrotic damage, and is often a representation of divine power. To be immolated in pure divine light would be radiant damage.</li><br>
+          <li><b>Slashing:</b> The sanctioned act, cutting. Blades of all shapes and sizes deal slashing damage, and so do things like claws.</li><br>
+          <li><b>Thunder:</b> Shockwaves, like the ones that liquify a person after a powerful explosion.</li><br>
+          <li><b>Viral:</b> Diseases, and effects that involve the immune system. Spells that invoke plagues, and drinking sewer water deal viral damage.</li>
+        </ul>
+      </details>
+  <h2><a class="ruleslink" id="damage-resist">Damage Resistance & Vulnerability</a></h2>
+    <p class="info">
+      The nature of some things makes them incredibly difficult, or incredibly easy to harm with a specific damage type.<br><br>
+      If a creature or an object has Resistance to a damage type, damage of that type is halved against it. If a creature or an object has vulnerability to a damage type, damage of that type is doubled against it.<br><br>
+      Resistance and <i>then</i> vulnerability are applied after all other Modifiers to damage. For example, a creature has Resistance to bludgeoning damage and is hit by an Attack that deals 25 bludgeoning damage. The creature is also within a Magical aura that reduces all damage by 5. The 25 damage is first reduced by 5 and then halved, so the creature takes 10 damage.<br><br>
+      Multiple instances of Resistance or vulnerability that affect the same damage type count as only one instance. For example, if a creature has Resistance to fire damage as well as Resistance to all nonmagical damage, the damage of a nonmagical fire is reduced by half against the creature, not reduced by three-quarters.
+    </p>
+  <h2><a class="ruleslink" id="healing">Healing</a></h2>
+    <p class="info">
+      When a creature receives Healing of any kind, Hit Points regained are added to its current Hit Points. A creature’s Hit Points can’t exceed its hit point maximum, so any Hit Points regained in excess of this number are lost. For example, a druid grants a Ranger 8 Hit Points of Healing. If the Ranger has 14 current Hit Points and has a hit point maximum of 20, the Ranger regains 6 Hit Points from the druid, not 8.<br><br>
+      A creature that has died can’t regain Hit Points until magic such as the Revivify spell has restored it to life.
+    </p>
+  <h2><a class="ruleslink" id="linger">Lingering Injuries</a></h2>
+    <p class="info">
+      Just because a character comes away from a fight cognizant, does not mean they come away from a fight unscathed. Violence is brutal by its very nature, and if a creature is significantly beaten in combat, they will accrue an injury. Injuries have little bearing or relevance in the moment, and characters do not gain them in the thick of fighting, as their mind is on much more pressing things, and the adrenaline of a life or death scenario is enough to keep them from recognizing any pain they might be in.<br><br>
+      Just because a character comes away from a fight cognizant, does not mean they come away from a fight unscathed. Violence is brutal by its very nature, and if a creature is significantly beaten in combat, they will accrue an injury. Injuries have little bearing or relevance in the moment, and characters do not gain them in the thick of fighting, as their mind is on much more pressing things, and the adrenaline of a life or death scenario is enough to keep them from recognizing any pain they might be in.<br><br>
+      If an effect that deals multiple types of damage reduced a character past one of these thresholds (such as an explosion spell dealing both fire and thunder damage) a player can choose which table they’d like to roll on for their injury.
+    </p>
+    <details class="sub-list"><summary><b>Lingering Injuries Tables</b></summary>
+      <p class="info">(Fill in later)</p>
+    </details>
+  <h2><a class="ruleslink" id="morale">Morale</a></h2>
+    <p class="info">
+      Most enemies will not fight to the brutal end. If players are fighting particularly hard, or particularly tactfully, they might force a morale roll from the enemies they’ve put themselves up against. To calculate a group’s bonus to this roll, add each bonus every individual enemy has to their wisdom saving throws, and find the average. This average is the group’s “morale bonus,” and is added to their rolls for morale.<br><br>
+      Players force a morale roll from their enemies if they:
+    </p>
+      <ol>
+        <li>Reduce the leader of a group of enemy creatures to 0 HP</li><br>
+        <li>Reduce half of a group of enemies to 0 HP</li><br>
+        <li>Bring a lone enemy down to 1/3rd of its total hit points.</li>
+      </ol>
+    <p class="info">
+      The suggested DC for each condition forcing a morale roll is:
+    </p>
+      <ol>
+        <li>DC 12</li><br>
+        <li>DC 15</li><br>
+        <li>DC 12</li>
+      </ol>
+    <p class="info">
+      Should an enemy or a group fail their morale roll, they will begin fleeing (as the maneuver). It then becomes up to the players if they want to allow this retreat or commit what is generally considered a war crime. There are some people so evil that they’d justify such an action, of course.<br><br>
+      Not every group of enemies needs to make saves for morale. The DC for morale saves does not always need to be one of those listed here. Those listed are more guidelines than hard numbers. Still, it’s suggested that most groups of enemies the players come across make morale rolls, as most random groups of monsters, mercenaries, or villains have some sense of self preservation, and would not allow themselves to die for the sake of maybe winning some fight. If there is a logical reason to abstain from rolling for morale, a DM may do so (mindless undead, for example, have little sense of self preservation).
+    </p>
+  <h2><a class="ruleslink" id="dismember">Variant Rule: Dismemberment</a></h2>
+    <p class="info">
+      Violence, for better or worse, is something Godhand is designed around. How characters act in the thick of a violent situation is accounted for by many, many abilities and rules in the game. Because of this, we've gone to some lengths to make that violence feel more visceral, and have created a set of rules for dismemberment (chopping off arms, legs, what have you).<br><br>
+      <b>This is a variant rule</b>, because we recognize that dismemberment is, conceptually, a pretty grisly occurrence, and just might not fit the mood of certain games. We also recognize that certain players might be uncomfortable stepping into a game only to have their character's leg cut off. At the beginning of the book (and in a few places throughout) it was stated that the most important rule of this game is to remember that it is, after all, a game. It is a game, and the most important rule of any game is to have fun. <br><br>
+      That being said, Godhand was in itself created with this harsher experience in mind, as being a part of the game's identity, to some degree. There are feats, class options, and even subclasses that interact heavily with these rules (which are marked, in some way or another, as being so). If you intend to run a game with this rule, it is highly encouraged you let your players know beforehand so that if they're uncomfortable with the prospect of it being in a game, they can opt out before they find themselves in too deep. If you aren't sure you'd like to run with these rules or not, it is even more highly encouraged that you ask around your table if your players would like to use these rules, as they provide a much greater depth of character options for players who might be interested in using them.<br><br>
+      Ultimately, this all comes down to knowing your players, and understanding the type of game you intend to run.<br><br>
+      All this being said, the rules for dismemberment are as follows:<br>
+      (Fill in later)
+    </p>
+  <h2><a class="ruleslink" id="drop-zero">Droping to 0 Hit Points</a></h2>
+    <p class="info">
+      When your hit points drop 0, you either die outright or fall unconscious, depending on the damage dealt.
+    </p>
+  <h2><a class="ruleslink" id="insta-death">Instant Death</a></h2>
+    <p class="info">
+      If a character is dealt damage that exceeds their current hit point count, plus their hit point maximum, they are killed outright, without falling unconscious or making death saving throws.<br><br>
+      For example, a character with a maximum of 12 Hit Points currently has 6 Hit Points. If she takes 19 damage from an Attack, she is reduced to 0 Hit Points, but 13 damage remains. Because the remaining damage equals her hit point maximum, the character dies.
+    </p>
+  <h2><a class="ruleslink" id="unconscious">Falling Unconscious</a></h2>
+    <p class="info">
+      If you’re reduced to 0hp but not killed outright you fall unconscious (as the condition) and unless specified otherwise by the DM or an ability, begin making death saving throws. You regain consciousness if you gain any healing while making death saving throws. If you are unconscious and stable however, healing will not wake you up.
+    </p>
+  <h2><a class="ruleslink" id="death-saves">Death Saving Throws</a></h2>
+    <p class="info">
+      Whenever you start Your Turn with 0 Hit Points, you must make a Special saving throw, called a death saving throw, to determine whether you creep closer to death or hang onto life. Unlike other Saving Throws, this one isn’t tied to any ability score. You are in the hands of fate now, aided only by Spells and Features that improve your chances of succeeding on a saving throw.<br><br>
+      <b>Roll a d20: </b>If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no Effect by itself. On your third success, you become stable (see below). On your third failure, you die. The successes and failures don’t need to be consecutive; keep track of both until you collect three of a kind. The number of both is reset to zero when you regain any Hit Points or become stable.<br><br>
+      <b>Rolling 1 or 20: </b>When you make a death saving throw and roll a 1 on The D20, it counts as two failures. If you roll a 20 on The D20, you regain 1 hit point.<br><br>
+      <b>Damage at 0 Hit Points: </b>If you take any damage while you have 0 Hit Points, you suffer a death saving throw failure. If the damage is from a critical hit, you suffer two failures instead. If the damage equals or exceeds your hit point maximum, you suffer Instant Death.
+    </p>
+  <h2><a class="ruleslink" id="stabilize">Stabilizing a Creature</a></h2>
+    <p class="info">
+      The best way to save a creature with 0 Hit Points is to heal it. If Healing is unavailable, the creature can at least be stabilized so that it isn’t killed by a failed death saving throw.<br><br>
+      You can use your Action to administer first aid to an Unconscious creature and attempt to stabilize it, which requires a successful DC 10 Wisdom (Medicine) check.<br><br>
+      A stable creature doesn’t make death Saving Throws, even though it has 0 Hit Points, but it does remain Unconscious. The creature stops being stable, and must start making death Saving Throws again, if it takes any damage. A stable creature that isn’t healed regains 1 hit point after 1d4 hours.
+    </p>
+  <h2><a class="ruleslink" id="npc-zero">NPCs & dropping to 0</a></h2>
+    <p class="info">
+      Most of the time, when an NPC (non-player character) is reduced to 0 hit points, they’re out of the fight entirely. These creatures die, unless a player specifies they intend to knock the creature out, at some point in time.
+    </p>
+  <h2><a class="ruleslink" id="ko-creature">Knocking a Creature Out</a></h2>
+    <p class="info">
+      As opposed to killing an enemy, a player can declare that they are knocking a creature out, when they reduce a creature to 0 hit points. A player makes this decision when the creature is reduced to 0 hit points.
+    </p>
+  <h2><a class="ruleslink" id="temp-hp">Temporary Hit Points</a></h2>
+    <p class="info">
+      Various spells and abilities might grant temporary hit points. These temporary hit points are applied atop a character’s current hit point count, and when the character takes damage, the damage is subtracted from the temporary hit points before subtracting from the character’s hit point count. These hit points don’t stack with themselves, so when you have temporary hit points from one source, and could potentially gain it from another, these temporary hit points aren’t added. You choose which source to keep, and which to discard.<br><br>
+      Temporary hit points are not healing, which means that you can be at max hp and gain temporary hit points (putting your hp over your maximum), but gaining temporary hit points while at 0hp will not bring you back up, or save you from death.<br><br>
+      Unless stated otherwise, temporary hit points remain until depleted, or until you finish a long rest.
+    </p>
+  <hr>
+  <p><a href="#top">Back to Top</a></p>
+</details>
+<details class="combat"><summary><h1><div class="tooltip">Conditions<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+  <p class="flavor">
+    Conditions are effects that represent changes in a creature’s situation, condition, or nature. They can be applied through spells, maneuvers, or choices in character. While most are negative in some way, others can be advantageous, by the nature of their existence, or by clever use in the right situation.<br><br>
+    Conditions end either when the effect that caused them specifies, or when a character does something to counter them (such as standing up from prone, or being hit while vulnerable).
+  </p>
+  <h2><a class="ruleslink" id="blinded">Blinded</a></h2>
+    <p class="info">
+      A blinded creature can’t see! Any ability check that requires sight, or spell that requires the caster to see their target fails if the creature is blinded. Attack rolls against the creature have advantage, and the creature’s Attack rolls have disadvantage.<br><br>
+      A blinded character must attempt a DC 20 perception check using their hearing before making ranged attacks on their turn. On a success, they may make their attacks at disadvantage. If the check fails, or the creature is unable to hear for whatever reason, the attack (or attacks) fail. A creature only needs to make this check once, regardless of how many attacks they’re making.<br><br>      
+      A blinded creature is immune to harmful effects that require sight (such as a medusa’s gaze).       
+    </p>
+  <h2><a class="ruleslink" id="charmed">Charmed</a></h2>
+    <p class="info">
+      A charmed creature can’t target the entity that charmed it with any attacks or otherwise harmful effects.<br><br>
+      A creature that charms another creature has advantage on charisma checks with the target of the charm.
+    </p>
+  <h2><a class="ruleslink" id="concussed">Concussed</a></h2>
+    <p class="info">
+      A oncussed creature may only choose between moving, taking an action, or taking a bonus action on their turn, and cannot take reactions.
+    </p>
+  <h2><a class="ruleslink" id="dazed">Dazed</a></h2>
+    <p class="info">
+      A dazed creature cannot take reactions.
+    </p>
+  <h2><a class="ruleslink" id="deafened">Deafened</a></h2>
+    <p class="info">
+      A deafened creature can’t hear! Any ability the creature has that utilizes their hearing does not work, any ability checks they make using hearing fail. This also makes the creature immune to harmful effects that require them to hear (such as a suggestion, or geas spell).
+    </p>
+  <h2><a class="ruleslink" id="frightened">Frightened</a></h2>
+    <p class="info">
+      A frightened creature has disadvantage on Ability Checks and Attack rolls while whatever has frightened it is visible to the creature.<br><br>
+      The creature can’t willingly move closer to the source of its fear, and must move at least five feet away from it at some point during its turn, if it is capable of moving at all.
+    </p>
+  <h2><a class="ruleslink" id="grappled">Grappled</a></h2>
+    <p class="info">
+      A grappled creature cannot move of its own volition (it can still be moved by a strong enough creature, or subject to forced movement effects).<br><br>
+      The condition also if an effect forces the grappled creature, or the grappler out of the reach of one another by any sort of forced movement. The condition also ends if the grappler is incapacitated (as the condition).
+    </p>
+  <h2><a class="ruleslink" id="incapacitated">Incapacitated</a></h2>
+    <p class="info">
+      An incapacitated creature cannot take actions, bonus actions, reactions. Incapacitation does not affect movement.
+    </p>
+  <h2><a class="ruleslink" id="invisible">Invisible</a></h2>
+    <p class="info">
+      An invisible creature is impossible to perceive with sight alone. For the Purpose of Hiding, the creature is heavily obscured. The creature’s Location can be detected by any noise it makes or anything it leaves behind to track it with.<br><br>
+      Attack rolls against the creature have disadvantage, and the creature’s Attack rolls have advantage.
+    </p>
+  <h2><a class="ruleslink" id="paralyzed">Paralyzed</a></h2>
+    <p class="info">
+      A paralyzed creature is incapacitated (as the condition) and can’t move or speak (it can still be moved by a strong enough creature, or subject to forced movement effects).<br><br>
+      The creature automatically fails Strength and Dexterity Saving Throws.<br><br>
+      Attack rolls against the creature have advantage.<br><br>
+      Any melee attack that hits a paralyzed creature is considered a critical hit.
+    </p>
+  <h2><a class="ruleslink" id="petrified">Petrified</a></h2>
+    <p class="info">
+      A petrified creature is Transformed, along with any object it is wearing or carrying, into a solid inanimate substance. Its weight increases by a factor of ten, and it ceases aging. The creature is incapacitated (as the condition), can’t move or speak (it can still be moved by a strong enough creature, or subject to forced movement effects), and is unaware of its surroundings. Attack rolls against the creature have advantage. A petrified creature automatically fails Strength and Dexterity Saving Throws. The creature has Resistance to all damage. The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.<br><br>
+      Any damage a creature suffers while paralyzed carries over if the condition is ever removed (a character who loses an arm while paralyzed will not keep that arm if they are restored to life).
+    </p>
+  <h2><a class="ruleslink" id="poisoned">Poisoned</a></h2>
+    <p class="info">
+      A poisoned creature has disadvantage on Attack rolls and Ability Checks. Additionally, effects that apply the poisoned condition might cause a loss of max hp over time. This varies across abilities, but unless specified otherwise by the ability, these sources of max hp reduction stack with one another.
+    </p>
+  <h2><a class="ruleslink" id="prone-con">Prone</a></h2>
+    <p class="info">
+      A prone creature is a creature on the ground. Unless a creature spends half their movement to stand up, crawling is their only movement option. Melee attacks against prone creatures have advantage. Attacks made at range have disadvantage.
+    </p>
+  <h2><a class="ruleslink" id="restrained">Restrained</a></h2>
+    <p class="info">
+      A restrained creature cannot move of its own volition (it can still be moved by a strong enough creature, or subject to forced movement effects).<br><br>
+      Attack rolls against the creature have advantage, and the creature rolls attacks at disadvantage. A restrained creature has disadvantage on dexterity saving throws.
+    </p>
+  <h2><a class="ruleslink" id="stunned">Stunned</a></h2>
+    <p class="info">
+      A stunned creature is incapacitated (as the condition), cannot move of its own volition (it can still be moved by a strong enough creature, or subject to forced movement effects), and struggles to speak. The creature automatically fails Strength and Dexterity Saving Throws.<br><br>
+      Attack rolls against the creature have advantage.
+    </p>
+  <h2><a class="ruleslink" id="unconscious-con">Unconscious</a></h2>
+    <p class="info">
+      An unconscious creature is incapacitated (as the condition), can’t move or speak (it can still be moved by a strong enough creature, or subject to forced movement effects), and is unaware of its surroundings The creature drops whatever it’s holding and falls prone.<br><br>
+      The creature automatically fails Strength and Dexterity Saving Throws. Attack rolls against the creature have advantage. Any melee attack that lands against an unconscious creature is considered a critical hit.
+    </p>
+  <h2><a class="ruleslink" id="vulnerable">Vulnerable</a></h2>
+    <p class="info">
+      While a creature is vulnerable, the next attack that lands on it is considered a critical hit. Once a vulnerable creature is hit by an attack, it loses the vulnerable condition.
+    </p>
+  <h2><a class="ruleslink" id="exhaustion">Exhaustion</a></h2>
+    <table style="border:0;">
+      <tr>
+        <td style="border:0">
+          <p class="info">
+            Some Special Abilities and environmental Hazards, such as starvation and the long-­term Effects of freezing or scorching temperatures, can lead to a Special condition called exhaustion. Exhaustion is measured in six levels. An Effect can give a creature one or more levels of exhaustion, as specified in the effect’s description.<br><br>
+            If an already exhausted creature suffers another Effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect’s description.<br><br>
+            A creature suffers the Effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on Ability Checks.<br><br>
+            An Effect that removes exhaustion reduces its level as specified in the effect’s description, with all exhaustion Effects Ending if a creature’s exhaustion level is reduced below 1.
+          </p>
+        </td>
+      <td style="border:0">
+        <table class="exhaust toc">
+        <tr><th colspan="2"><a class="ruleslink" id="exhaust-table">Table: Exhaustion Effects</a></th></tr>
+        <tr>
+          <td>Level</td>
+          <td>Effect</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Disadvantage on Ability Checks</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Speed Halved</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Disadvantage on Attack rolls & Saving Throws</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Hit Points Maximum halved</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Speed Reduced to 0</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Death</td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+    </table>
+    <p class="info">
+      Finishing a Long Rest reduces a creature’s exhaustion level by 1, provided that the creature has also ingested some food and drink.
+    </p>
+  <h2><a class="ruleslink" id="bleeding">Bleeding</a></h2>
+    <p class="info">
+      A bleeding target loses enough blood in a short enough time to be notably harmful to their wellbeing. Effects that apply bleed will have a set damage that is dealt every round to the bleeding creature at the start of their turn. A bleed effect ends if a creature makes a successful DC 15 medicine check to staunch the flow of blood.
+    </p>
+  <h2><a class="ruleslink" id="hemorrhage">Hemorrhage</a></h2>
+    <p class="info">
+      A hemorrhaging creature is bleeding profusely, in a way that will likely kill them quickly. At the start of their turn, a hemorrhaging character loses hp equal to a roll of a dice equal to one of their hit die + 5. A dying character hemorrhaging blood does not make death saves, instead failing a death save at the start of their turn. If the hemorrhaging stops, they begin making saves as normal. Additionally, a hemorrhaging character must make a DC 15 constitution save at the start of each of their turns, or gain a level of exhaustion.<br><br>
+      A DC 25 medicine check stops a character from hemorrhaging. This DC is lowered by 5 if a character expends a use from a healer’s kit in making the check. The Cauterize spell can also potentially end this condition.
+    </p>
+  <h2><a class="ruleslink" id="burning">Burning</a></h2>
+    <p class="info">
+      At the end of each of their turns, a burning creature takes 1d6 fire damage, unless they or an ally use an action to put out the fire, or they enter a body of water. Spells or effects that apply the burning condition do not stack with themselves.
+    </p>
+  <hr>
+  <p><a href="#top">Back to Top</a></p>
+</details>
+<hr>
+<p><a href="#top">Back to Top</a></p> 
+  </div>
+
+
+</div>
+  <!--Javascript code for topnav-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+</html>

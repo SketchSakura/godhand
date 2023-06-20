@@ -1,0 +1,960 @@
+<html>
+  <head><title>Godhand the Roleplaying Game</title>
+    <link href="../css-sheets/topnav.css" rel="stylesheet">
+    <link href="../css-sheets/layout.css" rel="stylesheet">
+    <link href="../css-sheets/bestiary.css" rel="stylesheet">
+    <style>
+      h1{font-size:25px; padding:5px;}
+      h2{font-size:23px; padding:3px; background-color:rgb(207,171,121);}
+      h3{font-size:20px;padding:3px; background-color:rgb(207,171,121);}
+      span.right{float: right;font-weight:normal;}
+      tr:nth-child(even){background-color:transparent;}
+      td, th{border:0;}
+    </style>
+  </head>
+<body>
+  <div id="sidebar" class="sidebar"><!--Full Link Sidebar-->
+      <a href="../index.html" class="main-link">&#9864 &nbsp;About</a><br>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Rules</summary>
+        &nbsp;&nbsp;<a href="../rules/basics.html">&#9864 &nbsp;Basics</a>
+        <br>&nbsp;&nbsp;<a href="../rules/combat.html">&#9864 &nbsp;Combat</a>
+        <br>&nbsp;&nbsp;<a href="../rules/magic.html">&#9864 &nbsp;Magic</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../classes.html" class="main-link">&hairsp;Classes</a></summary>
+        <!--Class Dropdown-->
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#barbarian">Barbarian</a></summary><!--Barbarian-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#bard">Bard</a></summary><!--Bard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#druid">Druid</a></summary><!--Druid-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#fighter">Fighter</a></summary><!--Fighter-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/fight-champion.html" class="sublink">Champion</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/fight-momentum.html" class="sublink">Momentum</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/fight-strategist.html" class="sublink">Strategist</a>
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#hierophant">Hierophant</a></summary><!--Hierophant-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/hiero-truth.html" class="sublink">Truth</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/hiero-violence.html" class="sublink">Violence</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#monk">Monk</a></summary><!--Monk-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#paladin">Paladin</a></summary><!--Paladin-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#rogue">Rogue</a></summary><!--Rogue-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/rogue-fatale.html" class="sublink">Fatale</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/rogue-lowlife.html" class="sublink">Lowlife</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#salaryman">Salaryman</a></summary><!--Salaryman-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#scholar">Scholar</a></summary><!--Scholar-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#sorcerer">Sorcerer</a></summary><!--Sorcerer-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#warlock">Warlock</a></summary><!--Warlock-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#warlord">Warlord</a></summary><!--Warlord-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#wizard">Wizard</a></summary><!--Wizard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/wiz-anatomist.html"  class="sublink">Anatomist</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/wiz-profane.html" class="sublink">Profane</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/wiz-enlightened.html" class="sublink">Enlightened</a>
+        </details>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../folk.html" class="main-link">&hairsp;Folk</a></summary>
+        <!--Folk Dropdown-->
+        &nbsp;&nbsp;<a href="../folk.html#catfolk">&#9864 Catfolk</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#changeling">&#9864 Changeling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#colun">&#9864 Colún</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#dwarf">&#9864 Dwarf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#elf">&#9864 Elf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#halfling">&#9864 Halfling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#human">&#9864 Human</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#orc">&#9864 Orc</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#raska">&#9864 Raska</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#half-folk">&#9864 Half-Folk Rules</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#bloodlines">&#9864 Bloodlines</a>
+      </details>
+      <a href="../feats.html" class="main-link">&#9864 &nbsp;Feats</a><br>
+      <details class="main-dropdown"><summary>&#9862<a href="../spells/guide.html" class="main-link">&hairsp;Spells</a></li></summary>
+        <!--Spell Dropdown-->
+        &nbsp;&nbsp;<a href="../spells/guide.html">&#9864 Spell Guide</a>
+        <br>&nbsp;&nbsp;<a href="../spells/bard.html">&#9864 Bard</a>
+        <br>&nbsp;&nbsp;<a href="../spells/druid.html">&#9864 Druid</a>
+        <br>&nbsp;&nbsp;<a href="../spells/hierophant.html">&#9864 Hierophant</a>
+        <br>&nbsp;&nbsp;<a href="../spells/warlock.html">&#9864 Warlock</a>
+        <br>&nbsp;&nbsp;<a href="../spells/wizard.html">&#9864 Wizard</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Items</a></summary>
+        <!--Item Dropdown-->
+        &nbsp;&nbsp;<a href="../items/armorweapons.html">&#9864 Armor & Weapons</a>
+        <br>&nbsp;&nbsp;<a href="../items/equips.html">&#9864 Equipment</a>
+        <br>&nbsp;&nbsp;<a href="../items/magicitems.html">&#9864 Magic Items</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Bestiary</a></summary>
+        &nbsp;&nbsp;<a href="page-1.html">&#9864 &nbsp;CR 0 - 5</a>
+      </details>
+  </div>
+<div id="main"><!--Encapsulated header nav and body-->
+  <div id="logo"> <!--Godhand Logo-->
+    <a href="../index.html"><img src="../images/Godhand logo.png" class="logo"></a> <!--Godhand logo-->
+  </div>
+  <div class="topnav" id="myTopnav"> <!--Topnavbar-->
+    <a href="../index.html" >About</a>
+    <div class="nav-dropdown"><!--Rules Dropdown-->
+      <button class="dropbtn">Rules &#9662</button>
+      <div class="dropdown-content">
+        <a href="../rules/basics.html">Basics</a>
+        <a href="../rules/combat.html">Basics</a>
+        <a href="../rules/magic.html">Magic</a>
+      </div>
+    </div>
+    <a href="../folk.html">Folk</a>  
+    <div class="nav-dropdown"><!--Classes Dropdown-->
+      <button class="dropbtn"><a href="../classes.html" style="padding:0px;">Classes</a> &#9662</button>
+      <div class="dropdown-content"> <!--Classes variety-->
+        <a href="../classes.html#barbarian">Barbarian</a>
+        <a href="../classes.html#bard">Bard</a>
+        <a href="../classes.html#druid">Druid</a>
+        <a href="../classes.html#fighter">Fighter</a>
+        <a href="../classes.html#hierophant">Hierophant</a>
+        <a href="../classes.html#monk">Monk</a>
+        <a href="../classes.html#paladin">Paladin</a>
+        <a href="../classes.html#rogue">Rogue</a>
+        <a href="../classes.html#salaryman">Salaryman</a>
+        <a href="../classes.html#scholar">Scholar</a>
+        <a href="../classes.html#sorcerer">Sorcerer</a>
+        <a href="../classes.html#warlock">Warlock</a>
+        <a href="../classes.html#warlord">Warlord</a>
+        <a href="../classes.html#wizard">Wizard</a>
+      </div>
+    </div>
+    <a href="../feats.html">Feats</a>
+    <div class="nav-dropdown"><!--Spells Dropdown-->
+      <button class="dropbtn"><a href="../spells/guide.html" style="padding:0px;">Spells</a> &#9662</button>
+      <div class="dropdown-content">
+        <a href="../spells/guide.html">Spell Guide</a>
+        <a href="../spells/bard.html">Bard</a>
+        <a href="../spells/druid.html">Druid</a>
+        <a href="../spells/hierophant.html">Hierophant</a>
+        <a href="../spells/warlock.html">Warlock</a>
+        <a href="../spells/wizard.html">Wizard</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Items Dropdown-->
+      <button class="dropbtn">Items &#9662
+      </button>
+      <div class="dropdown-content">
+        <a href="../items/armorweapons.html">Armor & Weapons</a>
+        <a href="../items/equips.html">Equipment</a>
+        <a href="../items/magicitems.html">Magic Items</a>
+      </div>
+    </div>
+    <div class="nav-dropdown active"><!--Bestiary Dropdown-->
+      <button class="dropbtn">Bestiary &#9662 </button>
+      <div class="dropdown-content">
+        <a href="page-1.html">CR 0 - 5</a>
+      </div>
+    </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!--Javascript button for smaller screens-->
+  </div>
+<br>
+  <div id="mainbody"> <!--Main Content-->
+    <h1 style="font-size:40px">Bestiary</h1>
+<a id="top"></a>
+<p>
+  This page is under development
+</p>
+<details class="cr-level"><summary>CR 0</summary><!--CR 0-->
+  <!--Cat-->
+    <details class="monster-sum"><summary><span class="name"><b>Cat</b></span><span class="right">Tiny Beast, Unaligned, CR 0</span></summary>
+      <table class="monster-block">
+        <tr><!--Name and CR-->
+          <td colspan="100%" class="name">Cat <span class="right">CR 0</span></td>
+        </tr>
+        <tr><!--Species and Alignment-->
+          <td colspan="100%" class="type">Tiny Beast, Unaligned</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Armor Class</b> 10</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Hit Points</b> 2 (1d4 + 0)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Speed</b> 40 ft., Climb 30 ft.</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr class="stats"><b><!--Ability Scores-->
+          <td><b>STR</b></td>
+          <td><b>DEX</b></td>
+          <td><b>CON</b></td>
+          <td><b>INT</b></td>
+          <td><b>WIS</b></td>
+          <td><b>CHA</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-num">5 (-3)</td>
+          <td class="stat-num">16 (+3)</td>
+          <td class="stat-num">10 (+0)</td>
+          <td class="stat-num">4 (-3)</b></td>
+          <td class="stat-num">14 (+2)</b></td>
+          <td class="stat-num">7 (-2)</b></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Saving Throws</b> Dex (+3)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Skills</b> Perception (+2), Stealth (+3), Survival (+2)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Senses</b> Darkvision 60 ft., Passive Perception 12</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Challenge</b> 0 (0 XP)<span class="right"><b>Proficiency Bonus</b> +0</span></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Keen Hearing</b></i> The cat has advantage on Perception checks that rely on hearing.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Graceful Fall</b></i> The cat ignores fall damage from the first 20 feet of falling and has advantage on Acrobatics checks made against falling prone from a fall.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Actions</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Multiattack</b></i> The cat attacks once with its claws. If it succeeds, it may attack the same creature again with its bite.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Claws</b> Melee Weapon Attack:</i> +0 to hit, reach 5 ft, one target. <i>On Hit:</i> 1 Slashing damage</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Bite</b> Melee Weapon Attack:</i> +0 to hit, reach 5 ft, one target. <i>On Hit:</i> 1 Piercing damage</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Description</th>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details">A common household pet or barn animal, easy to keep due to their self-sufficiency. Useful for pest control, and very soft and comforting to keep in the house.</td>
+        </tr>
+      </table>
+    </details>
+  <!--Fish-->
+    <details class="monster-sum"><summary><span class="name"><b>Fish</b></span><span class="right">Diminutive Beast, Unaligned, CR 0</span></summary>
+      <table class="monster-block">
+        <tr><!--Name and CR-->
+          <td colspan="100%" class="name">Fish <span class="right">CR 0</span></td>
+        </tr>
+        <tr><!--Species and Alignment-->
+          <td colspan="100%" class="type">Diminutive Beast, Unaligned</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Armor Class</b> 10</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Hit Points</b> 1 (1d4 - 2)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Speed</b> Swim 30 ft.</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr class="stats"><b><!--Ability Scores-->
+          <td><b>STR</b></td>
+          <td><b>DEX</b></td>
+          <td><b>CON</b></td>
+          <td><b>INT</b></td>
+          <td><b>WIS</b></td>
+          <td><b>CHA</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-num">1 (-5)</td>
+          <td class="stat-num">13 (+1)</td>
+          <td class="stat-num">7 (-2)</td>
+          <td class="stat-num">1 (-5)</b></td>
+          <td class="stat-num">10 (+0)</b></td>
+          <td class="stat-num">5 (-3)</b></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Senses</b> Passive Perception 10</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Challenge</b> 0 (0 XP)<span class="right"><b>Proficiency Bonus</b> +0</span></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Gills</b></i> The fish can only breath water.</td>
+        </tr>
+      </table>
+    </details>
+</details>
+<br>
+<details class="cr-level"><summary>CR 1/8</summary><!--CR 1/8-->
+<!--Dog-->
+  <details class="monster-sum"><summary><span class="name"><b>Dog</b></span><span class="right">Small Beast, Unaligned, CR 1/8</span></summary>
+    <table class="monster-block">
+      <tr><!--Name and CR-->
+        <td colspan="100%" class="name">Dog <span class="right">CR 1/8</span></td>
+      </tr>
+      <tr><!--Species and Alignment-->
+        <td colspan="100%" class="type">Small Beast, Unaligned</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Armor Class</b> 10</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Hit Points</b> 3 (1d6 + 0)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Speed</b> 40 ft.</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr class="stats"><b><!--Ability Scores-->
+        <td><b>STR</b></td>
+        <td><b>DEX</b></td>
+        <td><b>CON</b></td>
+        <td><b>INT</b></td>
+        <td><b>WIS</b></td>
+        <td><b>CHA</b></td>
+      </tr>
+      <tr class="stats">
+        <td class="stat-num">7 (-2)</td>
+        <td class="stat-num">10 (+0)</td>
+        <td class="stat-num">11 (+0)</td>
+        <td class="stat-num">3 (-4)</b></td>
+        <td class="stat-num">12 (+1)</b></td>
+        <td class="stat-num">7 (-2)</b></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Skills</b> Insight (+1) Perception (+1)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Senses</b> Darkvision 30 ft., Passive Perception 11</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Challenge</b> 1/8 (25 XP)<span class="right"><b>Proficiency Bonus</b> +0</span></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Keen Smell</b></i> The dog has advantage on Perception checks that rely on smell.</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="detail-title">Actions</td>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Bite</b> Melee Weapon Attack:</i> +0 to hit, reach 5 ft, one target. <i>On Hit:</i> 1 Piercing damage<br><br>
+        If the dog successfully bites a creature of medium size or smaller, that creature must make a DC10 Strength saving throw or be grappled by the dog.</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="detail-title">Reactions</td>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Protect</b></i> If the dog's owner is attacked, the dog will spend its reaction and immediately move up to its speed towards the attacking creature and make a bite attack.</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="detail-title">Description</th>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details">Loyal and common household pets. easy to train and will faithfully serve any purpose from hunting partner to emotional support.</td>
+      </tr>
+    </table>
+  </details>
+</details>
+<br>
+<details class="cr-level"><summary>CR 1/4</summary><!--CR 1/4-->
+<!--GOBLIN-->
+  <details class="monster-sum"><summary><span class="name"><b>Goblin</b></span><span class="right">Small Humanoid, Unaligned, CR 1/4</span></summary>
+    <table class="monster-block">
+      <tr><!--Name and CR-->
+        <td colspan="100%" class="name">Goblin <span class="right">CR 1/4</span></td>
+      </tr>
+      <tr><!--Species and Alignment-->
+        <td colspan="100%" class="type">Small Humanoid, Unaligned</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Armor Class</b> 13 (leather)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Hit Points</b> 7 (2d6 + 0)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Speed</b> 30 ft.</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr class="stats"><b><!--Ability Scores-->
+        <td><b>STR</b></td>
+        <td><b>DEX</b></td>
+        <td><b>CON</b></td>
+        <td><b>INT</b></td>
+        <td><b>WIS</b></td>
+        <td><b>CHA</b></td>
+      </tr>
+      <tr class="stats">
+        <td class="stat-num">8 (-1)</td>
+        <td class="stat-num">14 (+2)</td>
+        <td class="stat-num">10 (+0)</td>
+        <td class="stat-num">10 (+0)</b></td>
+        <td class="stat-num">8 (-1)</b></td>
+        <td class="stat-num">8 (-1)</b></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Skills</b> Stealth (+4)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Senses</b> Darkvision 60 ft., Passive Perception 9</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Challenge</b> 1/4 (50 XP)<span class="right"><b>Proficiency Bonus</b> +2</span></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="detail-title">Actions</td>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Shank</b> Melee Weapon Attack:</i> +4 to hit, reach 5 ft, one target. <i>On Hit:</i> 4 (1d4 + 2) Piercing damage</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Javelin</b> Melee or Ranged Weapon Attack:</i> +1 to hit, reach 5 ft or range 30/120 ft, one target. <i>On Hit:</i> 2 (1d6 - 1) Piercing damage in melee; or 2 (1d6 - 1) Piercing damage at range</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Jump On</b></i> The Goblin leaps at a creature of Medium size or larger within 5 feet of it and makes a grapple attempt against that creature. If the Goblin succeeds, it climbs upon the target, occupying the same space as and moving with the target, as well as gaining a +2 on attack rolls when using its Shank. A successful attempt by the target to break a grapple leaves the goblin prone in the nearest unoccupied space of the the target's choosing.</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="detail-title">Description</th>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details">Goblins are a piece of work</td>
+      </tr>
+    </table>
+  </details>
+<!--Skeleton Grunt-->
+  <details class="monster-sum"><summary><span class="name"><b>Skeleton Grunt</b></span><span class="right">Medium Undead, Unaligned, CR 1/4</span></summary>
+    <table class="monster-block">
+      <tr><!--Name and CR-->
+        <td colspan="100%" class="name">Skeleton Grunt <span class="right">CR 1/4</span></td>
+      </tr>
+      <tr><!--Species and Alignment-->
+        <td colspan="100%" class="type">Medium Undead, Unaligned</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Armor Class</b> 12 (leather scraps)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Hit Points</b> 11 (2d8 + 2)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Speed</b> 30 ft.</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr class="stats"><b><!--Ability Scores-->
+        <td><b>STR</b></td>
+        <td><b>DEX</b></td>
+        <td><b>CON</b></td>
+        <td><b>INT</b></td>
+        <td><b>WIS</b></td>
+        <td><b>CHA</b></td>
+      </tr>
+      <tr class="stats">
+        <td class="stat-num">10 (+0)</td>
+        <td class="stat-num">12 (+1)</td>
+        <td class="stat-num">12 (+1)</td>
+        <td class="stat-num">6 (-2)</b></td>
+        <td class="stat-num">8 (-1)</b></td>
+        <td class="stat-num">10 (+0)</b></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Damage Vulnerabilities</b> bludgeoning</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Damage Immunities</b> poison</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Condition Vulnerabilities</b> bleed, hemorrage, exhaustion, poisoned</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Senses</b> Darkvision 60 ft., Passive Perception 9</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Languages</b> Understands any it spoke in life, but cannot speak</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Challenge</b> 1/4 (50 XP)<span class="right"><b>Proficiency Bonus</b> +2</span></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="detail-title">Actions</td>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Cutlass</b> Melee Weapon Attack:</i> +3 to hit, reach 5 ft, one target. <i>On Hit:</i> 3 (1d6 + 2) Slashing damage</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Unsettling Laughter</b></i> The skeleton grunt laughs, its etched smile and disregard for its own life unsettling those around it. Hostile creatures within 10 feet of the skeleton grunt must make a DC10 Wisdom saving throw. On a failure, they are Unsettled until the end of the skeleton grunt's next turn. Once a creature has passed this save or the effect ends, they are immune to this ability for 24 hours.</td>
+      </tr>
+      </tr>
+    </table>
+  </details>
+</details>
+<br>
+<details class="cr-level"><summary>CR 1/2</summary><!--CR 1/2-->
+<!--Skeleton Soldier (Crossbowman)-->
+  <details class="monster-sum"><summary><span class="name"><b>Skeleton Soldier (Crossbowman)</b></span><span class="right">Medium Undead, Unaligned, CR 1/2</span></summary>
+    <table class="monster-block">
+      <tr><!--Name and CR-->
+        <td colspan="100%" class="name">Skeleton Soldier (Crossbowman) <span class="right">CR 1/2</span></td>
+      </tr>
+      <tr><!--Species and Alignment-->
+        <td colspan="100%" class="type">Medium Undead, Unaligned</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Armor Class</b> 12 (tattered gambeson)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Hit Points</b> 22 (4d8 + 4)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Speed</b> 30 ft.</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr class="stats"><b><!--Ability Scores-->
+        <td><b>STR</b></td>
+        <td><b>DEX</b></td>
+        <td><b>CON</b></td>
+        <td><b>INT</b></td>
+        <td><b>WIS</b></td>
+        <td><b>CHA</b></td>
+      </tr>
+      <tr class="stats">
+        <td class="stat-num">10 (+0)</td>
+        <td class="stat-num">14 (+2)</td>
+        <td class="stat-num">12 (+2)</td>
+        <td class="stat-num">7 (-2)</b></td>
+        <td class="stat-num">8 (-1)</b></td>
+        <td class="stat-num">10 (+0)</b></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Damage Vulnerabilities</b> bludgeoning</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Damage Immunities</b> poison</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Condition Vulnerabilities</b> bleed, hemorrage, exhaustion, poisoned</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Senses</b> Darkvision 60 ft., Passive Perception 9</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Languages</b> Understands any it spoke in life, but cannot speak</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Challenge</b> 1/2 (100 XP)<span class="right"><b>Proficiency Bonus</b> +2</span></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="detail-title">Actions</td>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Worn Crossbow</b> Ranged Weapon Attack:</i> +4 to hit, range 50/150 ft, one target. <i>On Hit:</i> 5 (1d6 + 2) Piercing damage</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Rusted Dagger</b> Melee or Ranged Weapon Attack:</i> +4 to hit, reach 5 ft or range 20/60 ft, one target. <i>On Hit:</i> 4 (1d4 +2) Piercing damage in melee; or 4 (1d4 +2) Piercing damage at range</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Unearthly Glare</b></i> The skeleton soldier's hollow eye sockets emit an unnatural, frightening glow. The skeleton soldier picks 1 creature it can see within 30 feet. That creature must make a DC12 Wisdom save. On a failure, that creature is Unsettled until the start of the skeleton soldier's next turn. A creature which cannot see the skeleton is immune to this effect. Once this effect fails or ends, the targetted creature is immune to this ability for the next 24 hours.</td>
+      </tr>
+    </table>
+  </details>
+<!--Skeleton Soldier (Pikeman)-->
+  <details class="monster-sum"><summary><span class="name"><b>Skeleton Soldier (Pikeman)</b></span><span class="right">Medium Undead, Unaligned, CR 1/2</span></summary>
+    <table class="monster-block">
+      <tr><!--Name and CR-->
+        <td colspan="100%" class="name">Skeleton Soldier (Crossbowman) <span class="right">CR 1/2</span></td>
+      </tr>
+      <tr><!--Species and Alignment-->
+        <td colspan="100%" class="type">Medium Undead, Unaligned</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Armor Class</b> 12 (tattered gambeson, rotting shield)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Hit Points</b> 22 (4d8 + 4)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Speed</b> 30 ft.</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr class="stats"><b><!--Ability Scores-->
+        <td><b>STR</b></td>
+        <td><b>DEX</b></td>
+        <td><b>CON</b></td>
+        <td><b>INT</b></td>
+        <td><b>WIS</b></td>
+        <td><b>CHA</b></td>
+      </tr>
+      <tr class="stats">
+        <td class="stat-num">14 (+2)</td>
+        <td class="stat-num">10 (+0)</td>
+        <td class="stat-num">12 (+2)</td>
+        <td class="stat-num">7 (-2)</b></td>
+        <td class="stat-num">8 (-1)</b></td>
+        <td class="stat-num">10 (+0)</b></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Damage Vulnerabilities</b> bludgeoning</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Damage Immunities</b> poison</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Condition Vulnerabilities</b> bleed, hemorrage, exhaustion, poisoned</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Senses</b> Darkvision 60 ft., Passive Perception 9</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Languages</b> Understands any it spoke in life, but cannot speak</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Challenge</b> 1/2 (100 XP)<span class="right"><b>Proficiency Bonus</b> +2</span></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="detail-title">Actions</td>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Rusty Spear</b> Melee Weapon Attack:</i> +4 to hit, reach 5 ft, one target. <i>On Hit:</i> 5 (1d6 + 2) Piercing damage, or 6 (1d8 + 2) Piercing damage if used with two hands to make melee attack.</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Rusted Dagger</b> Melee or Ranged Weapon Attack:</i> +4 to hit, reach 5 ft or range 20/60 ft, one target. <i>On Hit:</i> 4 (1d4 +2) Piercing damage in melee; or 4 (1d4 +2) Piercing damage at range</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Unearthly Glare</b></i> The skeleton soldier's hollow eye sockets emit an unnatural, frightening glow. The skeleton soldier picks 1 creature it can see within 30 feet. That creature must make a DC12 Wisdom save. On a failure, that creature is Unsettled until the start of the skeleton soldier's next turn. A creature which cannot see the skeleton is immune to this effect. Once this effect fails or ends, the targetted creature is immune to this ability for the next 24 hours.</td>
+      </tr>
+    </table>
+  </details>
+</details>
+<br>
+<details class="cr-level"><summary>CR 1</summary><!--CR 1-->
+<!--CR 1-1-->
+  <details class="monster-sum"><summary><span class="name"><b>Goblin</b></span><span class="right">Small Humanoid, Unaligned, CR 1/4</span></summary>
+    <table class="monster-block">
+      <tr><!--Name and CR-->
+        <td colspan="100%" class="name">Goblin <span class="right">CR 1/4</span></td>
+      </tr>
+      <tr><!--Species and Alignment-->
+        <td colspan="100%" class="type">Small Humanoid, Unaligned</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Armor Class</b> 13 (leather)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Hit Points</b> 7 (2d6 + 0)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Speed</b> 30 ft.</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr class="stats"><b><!--Ability Scores-->
+        <td><b>STR</b></td>
+        <td><b>DEX</b></td>
+        <td><b>CON</b></td>
+        <td><b>INT</b></td>
+        <td><b>WIS</b></td>
+        <td><b>CHA</b></td>
+      </tr>
+      <tr class="stats">
+        <td class="stat-num">8 (-1)</td>
+        <td class="stat-num">14 (+2)</td>
+        <td class="stat-num">10 (+0)</td>
+        <td class="stat-num">10 (+0)</b></td>
+        <td class="stat-num">8 (-1)</b></td>
+        <td class="stat-num">8 (-1)</b></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Skills</b> Stealth (+4)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Senses</b> Darkvision 60 ft., Passive Perception 9</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Challenge</b> 1/4 (50 XP)<span class="right"><b>Proficiency Bonus</b> +2</span></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="detail-title">Actions</td>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Shank</b> Melee Weapon Attack:</i> +4 to hit, reach 5 ft, one target. <i>On Hit:</i> 4 (1d4 + 2) Piercing damage</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Javelin</b> Melee or Ranged Weapon Attack:</i> +1 to hit, reach 5 ft or range 30/120 ft, one target. <i>On Hit:</i> 2 (1d6 - 1) Piercing damage in melee; or 2 (1d6 - 1) Piercing damage at range</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Jump On</b></i> The Goblin leaps at a creature of Medium size or larger within 5 feet of it and makes a grapple attempt against that creature. If the Goblin succeeds, it climbs upon the target, occupying the same space as and moving with the target, as well as gaining a +2 on attack rolls when using its Shank. A successful attempt by the target to break a grapple leaves the goblin prone in the nearest unoccupied space of the the target's choosing.</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="detail-title">Description</th>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details">Goblins are a piece of work</td>
+      </tr>
+    </table>
+  </details>
+</details>
+<br>
+<details class="cr-level"><summary>CR 2</summary><!--CR 2-->
+<!--Grizzly Bear-->
+  <details class="monster-sum"><summary><span class="name"><b>Grizzly Bear</b></span><span class="right">Large Beast, Unaligned, CR 2</span></summary>
+    <table class="monster-block">
+      <tr><!--Name and CR-->
+        <td colspan="100%" class="name">Grizzly Bear <span class="right">CR 2</span></td>
+      </tr>
+      <tr><!--Species and Alignment-->
+        <td colspan="100%" class="type">Large Beast, Unaligned</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Armor Class</b> 13 (natural armor)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Hit Points</b> 34 (4d10 + 12)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Speed</b> 40 ft., Swim 30 ft., Climb 30 ft.</td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr class="stats"><b><!--Ability Scores-->
+        <td><b>STR</b></td>
+        <td><b>DEX</b></td>
+        <td><b>CON</b></td>
+        <td><b>INT</b></td>
+        <td><b>WIS</b></td>
+        <td><b>CHA</b></td>
+      </tr>
+      <tr class="stats">
+        <td class="stat-num">19 (+4)</td>
+        <td class="stat-num">10 (+0)</td>
+        <td class="stat-num">16 (+3)</td>
+        <td class="stat-num">4 (-3)</b></td>
+        <td class="stat-num">13 (+1)</b></td>
+        <td class="stat-num">7 (-2)</b></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Skills</b> Perception (+3)</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Senses</b> Passive Perception 13</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="bio"><b>Challenge</b> 2 (450 XP)<span class="right"><b>Proficiency Bonus</b> +2</span></td>
+      </tr>
+      <tr><!--LINEBREAK-->
+        <td colspan="100%" class="linebreak"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Keen Smell</b></i> The grizzly bear has advantage on Perception checks that rely on smell.</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Desperate Fury</b></i> If the grizzly bear has less than half its hit points, it gains a +2 to its attack rolls and any Strength-based checks and saving throws.</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="detail-title">Actions</td>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Multiattack</b></i> The grizzly bear makes two attacks: one with its claws and one with its bite</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Claw</b> Melee Weapon Attack:</i> +7 to hit, reach 5 ft, one target. <i>On Hit:</i> 12 (2d6 + 5) Slashing damage.</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Bite</b> Melee Weapon Attack:</i> +7 to hit, reach 5 ft, one target. <i>On Hit:</i> 9 (1d8 + 5) Piercing damage.</td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details"><i><b>Tackle</b></i> The grizzly bear lunges up to 10 feet towards a single target. The target must make a Strength or Dexterity saving throw against an Athletics check from the grizzly bear. On a failed save, the targets takes 7 (1d4 + 5) Bludgeoning damage is knocked prone.</td>
+      </tr>
+      <tr><!--LINEBREAK 2-->
+        <td colspan="100%" class="linebreak2"></td>
+      </tr>
+      <tr>
+        <td colspan="100%" class="details">IT IS A BEAR, RUN BEFORE IT BREAKS INTO YOUR HOUSE</td>
+      </tr>
+    </table>
+  </details>
+</details>
+<hr>
+<p><a href="../#top">Back to Top</a></p> 
+  </div>
+
+
+</div>
+  <!--Javascript code for topnav-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+</html>

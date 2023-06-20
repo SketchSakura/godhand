@@ -1,0 +1,666 @@
+<html>
+  <head><title>Godhand - Basic Rules</title>
+    <link href="../css-sheets/topnav.css" rel="stylesheet">
+    <link href="../css-sheets/layout.css" rel="stylesheet">
+    <style>
+      h1{font-size:25px; padding:5px;}
+      h2{font-size:23px; padding:3px; background-color:rgb(207,171,121);}
+      h3{font-size:20px;padding:3px; background-color:rgb(207,171,121);}
+      .ruleslink{font-family:papyrus, fantasy;}
+    </style>
+  </head>
+<body>
+  <div id="sidebar" class="sidebar"><!--Full Link Sidebar-->
+      <a href="../index.html" class="main-link">&#9864 &nbsp;About</a><br>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Rules</summary>
+        &nbsp;&nbsp;<a href="rules/basics.html">&#9864 &nbsp;Basics</a>
+        <br>&nbsp;&nbsp;<a href="rules/combat.html">&#9864 &nbsp;Combat</a>
+        <br>&nbsp;&nbsp;<a href="rules/magic.html">&#9864 &nbsp;Magic</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../classes.html" class="main-link">&hairsp;Classes</a></summary>
+        <!--Class Dropdown-->
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#barbarian">Barbarian</a></summary><!--Barbarian-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#bard">Bard</a></summary><!--Bard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#druid">Druid</a></summary><!--Druid-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#fighter">Fighter</a></summary><!--Fighter-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-champion.html" class="sublink">Champion</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-momentum.html" class="sublink">Momentum</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-strategist.html" class="sublink">Strategist</a>
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#hierophant">Hierophant</a></summary><!--Hierophant-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/hiero-truth.html" class="sublink">Truth</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/hiero-violence.html" class="sublink">Violence</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#monk">Monk</a></summary><!--Monk-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#paladin">Paladin</a></summary><!--Paladin-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#rogue">Rogue</a></summary><!--Rogue-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/rogue-fatale.html" class="sublink">Fatale</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/rogue-lowlife.html" class="sublink">Lowlife</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#salaryman">Salaryman</a></summary><!--Salaryman-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#scholar">Scholar</a></summary><!--Scholar-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#sorcerer">Sorcerer</a></summary><!--Sorcerer-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#warlock">Warlock</a></summary><!--Warlock-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#warlord">Warlord</a></summary><!--Warlord-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#wizard">Wizard</a></summary><!--Wizard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-anatomist.html"  class="sublink">Anatomist</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-profane.html" class="sublink">Profane</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-enlightened.html" class="sublink">Enlightened</a>
+        </details>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../folk.html" class="main-link">&hairsp;Folk</a></summary>
+        <!--Folk Dropdown-->
+        &nbsp;&nbsp;<a href="../folk.html#catfolk">&#9864 Catfolk</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#changeling">&#9864 Changeling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#colun">&#9864 Colún</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#dwarf">&#9864 Dwarf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#elf">&#9864 Elf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#halfling">&#9864 Halfling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#human">&#9864 Human</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#orc">&#9864 Orc</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#raska">&#9864 Raska</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#half-folk">&#9864 Half-Folk Rules</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#bloodlines">&#9864 Bloodlines</a>
+      </details>
+      <a href="../feats.html" class="main-link">&#9864 &nbsp;Feats</a><br>
+      <details class="main-dropdown"><summary>&#9862<a href="../spells/guide.html" class="main-link">&hairsp;Spells</a></li></summary>
+        <!--Spell Dropdown-->
+        &nbsp;&nbsp;<a href="../spells/guide.html">&#9864 Spell Guide</a>
+        <br>&nbsp;&nbsp;<a href="../spells/bard.html">&#9864 Bard</a>
+        <br>&nbsp;&nbsp;<a href="../spells/druid.html">&#9864 Druid</a>
+        <br>&nbsp;&nbsp;<a href="../spells/hierophant.html">&#9864 Hierophant</a>
+        <br>&nbsp;&nbsp;<a href="../spells/warlock.html">&#9864 Warlock</a>
+        <br>&nbsp;&nbsp;<a href="../spells/wizard.html">&#9864 Wizard</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Items</a></summary>
+        <!--Item Dropdown-->
+        &nbsp;&nbsp;<a href="../items/armorweapons.html">&#9864 Armor & Weapons</a>
+        <br>&nbsp;&nbsp;<a href="../items/equips.html">&#9864 Equipment</a>
+        <br>&nbsp;&nbsp;<a href="../items/magicitems.html">&#9864 Magic Items</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Bestiary</a></summary>
+        &nbsp;&nbsp;<a href="../bestiary/page-1.html">&#9864 &nbsp;CR 0 - 5</a>
+      </details>
+  </div>
+<div id="main"><!--Encapsulated header nav and body-->
+  <div id="logo"> <!--Godhand Logo-->
+    <a href="../index.html"><img src="../images/Godhand logo.png" class="logo"></a> <!--Godhand logo-->
+  </div>
+  <div class="topnav" id="myTopnav"> <!--Topnavbar-->
+    <a href="../index.html">About</a>
+    <div class="nav-dropdown active"><!--Rules Dropdown-->
+      <button class="dropbtn">Rules &#9662</button>
+      <div class="dropdown-content">
+        <a href="basics.html">Basics</a>
+        <a href="combat.html">Combat</a>
+        <a href="magic.html">Magic</a>
+      </div>
+    </div>
+    <a href="../folk.html">Folk</a>  
+    <div class="nav-dropdown"><!--Classes Dropdown-->
+      <button class="dropbtn"><a href="../classes.html" style="padding:0px;">Classes</a> &#9662</button>
+      <div class="dropdown-content"> <!--Classes variety-->
+        <a href="../classes.html#barbarian">Barbarian</a>
+        <a href="../classes.html#bard">Bard</a>
+        <a href="../classes.html#druid">Druid</a>
+        <a href="../classes.html#fighter">Fighter</a>
+        <a href="../classes.html#hierophant">Hierophant</a>
+        <a href="../classes.html#monk">Monk</a>
+        <a href="../classes.html#paladin">Paladin</a>
+        <a href="../classes.html#rogue">Rogue</a>
+        <a href="../classes.html#salaryman">Salaryman</a>
+        <a href="../classes.html#scholar">Scholar</a>
+        <a href="../classes.html#sorcerer">Sorcerer</a>
+        <a href="../classes.html#warlock">Warlock</a>
+        <a href="../classes.html#warlord">Warlord</a>
+        <a href="../classes.html#wizard">Wizard</a>
+      </div>
+    </div>
+    <a href="../feats.html">Feats</a>
+    <div class="nav-dropdown"><!--Spells Dropdown-->
+      <button class="dropbtn"><a href="../spells/guide.html" style="padding:0px;">Spells</a> &#9662</button>
+      <div class="dropdown-content">
+        <a href="../spells/guide.html">Spell Guide</a>
+        <a href="../spells/bard.html">Bard</a>
+        <a href="../spells/druid.html">Druid</a>
+        <a href="../spells/hierophant.html">Hierophant</a>
+        <a href="../spells/warlock.html">Warlock</a>
+        <a href="../spells/wizard.html">Wizard</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Items Dropdown-->
+      <button class="dropbtn">Items &#9662
+      </button>
+      <div class="dropdown-content">
+        <a href="../items/armorweapons.html">Armor & Weapons</a>
+        <a href="../items/equips.html">Equipment</a>
+        <a href="../items/magicitems.html">Magic Items</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Bestiary Dropdown-->
+      <button class="dropbtn">Bestiary &#9662 </button>
+      <div class="dropdown-content">
+        <a href="../bestiary/page-1.html">CR 0 - 5</a>
+      </div>
+    </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!--Javascript button for smaller screens-->
+  </div>
+<br>
+  <div id="mainbody"> <!--Main Content-->
+  <h1 style="font-size:40px">
+    Basic Rules
+  </h1>
+  <a id="top"></a>
+    <table> <!--table of contents and info blurb-->
+      <tr>  
+      <td style="border:0">
+        <table class="toc" style="background-color: rgb(232, 193, 139);">
+        <tr>
+          <th class="toc" style="color:rgb(79, 10, 10);">Table of Contents</th>
+        </tr>
+        <tr>  
+          <td class="toc" style="color:rgb(57, 7, 7); text-align:left;" cellpadding="10" width="800px">
+            <details class="rulestoc"><!--Table of Contents-->
+              <summary><b><u>Basics</u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#dice">Dice</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#adv-and-dis">Advantage & Disadvantage</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#specific-beats">Specific Beats General</a> 
+            </details>
+            <details class="rulestoc">
+              <summary><b><u>Character Creation & Progression</u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#choose-folk">Choosing your Folk</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#choose-class">Choosing your Class</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#proficiency-and-prog">Proficiency & Character Progression</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#hit-die-and-hp">Hit Dice & Hit Points</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#describe">Describe your Character</a> 
+            </details>
+            <details class="rulestoc">
+              <summary><b><u>Equipment</u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#equip-info">Equipment Info</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#weapon-prop">Weapon Properties</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#improvised">Improvised Weapons</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#silvered">Silvered Weapons</a> 
+            </details>
+          <hr>
+            <details class="rulestoc">
+              <summary><b><u>Tables</u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#chara-progress-table">Character Progression</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#abi-table">Ability Score Modifiers</a> 
+            </details>
+          </td>
+        </tr>
+        </table>
+      </td>
+      <td style="vertical-align:top; text-align:left; border:0;">
+        <p class="info">
+          Godhand is played by a group of players led by an individual called the Dei Manus (GM), the “God Hand.”  The GM is responsible for overseeing  the game and all that happens in it. They tell the brunt of the story, serve as a sort of referee for the table and the rules. Without the GM the game is impossible, as a player might describe themselves creating a powerful explosion with magic, but without the GM there will be no reason for the explosion to be cast. There will be no goons to catch in the explosion, no idyllic pasture to set aflame with the fire created by the magic, no story to be told after the party burns down a sacred forest and needs to go on the run from a variety of very angry fae creatures.<br><br>
+          The players, in turn, make a single character to explore the story laid out by the GM. They breathe life into that character, and act in the game based on how their character would behave in any given situation.
+        </p>
+      </td>
+      </tr>
+    </table>
+<hr>
+  <details class="rules"><summary><h1><div class="tooltip">Basics<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+    <h2><a class="ruleslink" id="dice">Dice</a></h2>
+      <p class="info">
+        Godhand uses many different sets of dice, requiring dice with different numbers of sides for different rolls. One can find dice like those mentioned in this text in game stores and bookstores, but there are also plenty of systems over the internet that will perform dice rolls with the same level of good randomness as physical dice might. Also those are free, which is pretty rad. If you like feeling dice though, more power to you.<br><br>
+        In these rules, dice are referred to by their number of sides. A D4 has 4 sides (and it’s a little pyramid!), a D6 has six sides (classic dice), a D20 has 20 sides, and so on and so forth. D4, D6, D8, D10, D12, and D20 are the dice used by this system. There will sometimes be mention of “percentile dice” or something called a “D100.” These two terms mean the same thing. A D100 is rolled by rolling two 10 sided die, where one (decided before the roll) gives the 10s digit, and the other gives the 1s digit. A roll of a 5 for the 10s place, and a 7 for the 1s place, would be a 57. Two zeroes represent 100.<br><br>
+        The D20 is used for most rolls both player and GM make in Godhand, as when the outcome of an action is uncertain, such as trying to avoid the brunt of the damage in an explosion, or trying to woo a beautiful stranger, a player or the GM will roll a D20 to determine the outcome of the event. Each character, both those played, and those controlled by the GM, have capabilities determined by six ability scores. Those scores are Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. These scores typically range from 5 to 18 for most heroes, though legendary foes and monsters might have scores around 30, and pitiful creatures might have a score of 1 in something. These scores, and the ability modifiers they provide the players are the basis on which every roll in Godhand stands. The three main kinds of D20 roll are as follows:
+      </p>
+        <ul>
+          <li><b>Attack:</b> Exactly what it says. An attack roll is a d20 roll to hit something with a weapon or spell, simple and easy, most of the time.</li><br>
+          <li><b>Saves:</b> A save is a roll made to avoid a harmful effect! Saves are made to avoid explosions, rockslides, magical lightning bolts, mind control, exhaustion, and just about anything else you can think of that might kill you or do you wrong, with one exception as saves are not made however, to avoid attacks.</li><br>
+          <li><b>Checks:</b> Checks are most often made out of combat with an ability score, or a skill relevant to something a character is attempting to do. More often than not, a check will be made with a skill as opposed to a pure ability. Trying to flirt with a barmaid? That’s a performance check. Armwrestle a monster? Sounds like athletics! Sneak past a guard? Textbook stealth, dude.</li><br>
+        </ul>
+      <p style="text-align:center;">
+        A typical D20 dice roll tends to go as such:  
+        <dl style="text-align:center;">
+          <dt><b>1. </b>Dice are rolled, and modifiers are added:</dt>
+            <dd>A player rolls a D20 and adds their relevant modifier. This usually is (or at least includes) the bonus provided by the skill relevant to the roll (strength for an attack, wisdom to spot something, etcetera)</dd><br>
+          <dt><b>2. </b>Circumstantial bonuses and drawbacks are added:</dt>
+            <dd>Class features, spells, character level, feats, and the surrounding circumstances on a roll might affect any bonuses or drawbacks applied to the roll.</dd><br>
+            <dt><b>3. </b>Compare the total to the target number:</dt>
+            <dd>If the total of the roll (with benefits and drawbacks applied) meets or is higher than the target number, the roll is considered a success. If the roll is lower than the target number, it’s considered a failure. The GM is usually the one to determine the target number for these rolls.<br><br>
+            The target number for a save or a check is called the <b>Difficulty Class (DC)</b>, the target number for an attack roll is called the <b>Armor Class (AC).</b></dd>
+        </dl>
+      </p>
+    <h2><a class="ruleslink" id="adv-and-dis">Advantage & Disadvantage</a></h2>
+      <p class="info">
+        Sometimes a roll is affected by positive or negative circumstances notable enough to push the result in a specific direction. These are called advantage, and disadvantage, and function similarly to one another. A character who has advantage on a D20 roll will roll two times, and take the higher total of the two rolls. A character with disadvantage will do the opposite, rolling twice and choosing the lower of the two options. Advantage and disadvantage both only apply to D20 rolls.
+      </p>
+    <h2><a class="ruleslink" id="specific-beats">Specific Beats General</a></h2>
+      <p class="info">
+        There are a great deal of rules in this document that govern how this game plays. However, there are many abilities given to specific folks, classes, or through feats that break how the rules of the game work in one way or another. In these cases, where one rule contradicts another, the specific rule (granted by the folk/class/feat/spell/etc) always supersedes the general rule.<br><br>
+        For example, when a player’s hit points drops to “0” they are either knocked unconscious, or they begin dying. Humans have a trait that allows them to regain one hit point the moment they are reduced to 0hp, for the sake of staying up and continuing to fight. More conspicuous examples exist, usually in the form of spells that allow player characters to do things like fly without the natural ability to do so.
+      </p>
+    <h2><a class="ruleslink" id="round-down">Round Down</a></h2>
+      <p class="info">
+        The final, very general rule worth knowing before diving into the thick of the game. Whenever you end up with a fraction of a number, always round down, even if the fraction is one half or greater. The only time you wouldn’t round down is in instances of a specific rule telling you to round up.
+      </p>
+      <hr>
+    <p><a href="#top">Back to Top</a></p>
+  </details>
+  <details class="rules"><summary><h1><div class="tooltip">Character Creation & Progression<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+    <p class="flavor">
+      Before diving into the bones of what makes a character, in the mechanical sense, you should consider what sort of character you’d like to play. Their appearance (are they human? human like? just a totally unique entity?) How do they fight? Do they fight at all? What’s their personality like, and what significant events could you use to define their past? You might want to build a character based on your interests; someone into classic high fantasy for example, might enjoy playing an elf wizard who manipulates reality through their knowledge of the esoteric and arcane.<br><br>
+      Something also worth considering very seriously when building a character, is the nature of the game you’re going to be thrust into. A heavily armored warrior with no magical capabilities and a burning hatred for his fellow man, fighting constant violent impulses and the traumas of his past might struggle in a lighthearted game where all the other players are students enrolled in a magic academy. A priestly pacifist who is so devout in their beliefs that they won’t even protect or heal those that commit acts of violence would likely make players in a tactical game about soldiers fighting in a war very annoyed to play with. This isn’t to say that you shouldn’t make character concepts that are a little out there, or even ones that go against the grain of the game, but when building a character you should try to keep two things in mind:<br><br>
+      <b>1. </b>You and the GM will both have more fun if you ensure your character is either tied to, or relevant to the game’s setting, and the story the GM wants to tell.<br><br>
+    <b>2. </b> You should make a character who works well with others. Well enough at least that they aren’t dragging their party down.<br><br>
+      The two concepts previously mentioned could both work perfectly fine in their specific games, with a degree of effort on the part of the GM and player. The battle-scarred warrior could be the bodyguard of another player character (a wealthy noble, perhaps) or even a supplemental professor at the magic academy, teaching a mundane skill. A person, who despite being very cold to the world, has a soft spot for the other player characters, and wants to do whatever he can to see them succeed in their goals. A character like this can progress the story in ways that might have been very difficult for the previous iteration of the concept. The pacifist is an even simpler fix, though it would require a degree of compromise on part of the concept. A chaplain in a small mercenary band who develops the abilities of a prophet through their faith, using those powers to heal their friends when they injure themselves in battle, so even if they aren’t contributing to the violence themselves, their presence is still a firm net good for their allies, and they fill an important role on the team.<br><br>
+      When you have everything in mind about your character, and about how you’d like them to be, make use of this section to build them accurately to your vision. The character might change a little with each choice you make building them, and that’s okay! The most important part of building a character is that you come to the game with someone you’re excited to play.<br><br>
+      This section refers to a character sheet often, but for the sake of reference, a character sheet is just what you use to record the details of your character, their stats, and their abilities on.
+    </p>
+    <div class="malen-example">
+      <p class="info"><b>Building Malen:</b> Each step of the character creation process includes an example involving a player named Hazel, and her character, Malen.</p>
+    </div>
+    <h2><a class="ruleslink" id="choose-folk"><a href="folk.html">1. Choosing your Folk</a></a></h2>
+      <p class="info">
+        One of the biggest choices in building your character is determining what sort of folks they are. In a world where human warriors, fae mages, and serpentine thieves exist together, your appearance and natural abilities have some bearing on how others will perceive you, which is an interesting relationship to play with. The sort of folk you choose for your character has no inherent bearing on your abilities, though based on what you choose you will gain a set of unique traits based on which folk you choose. Halflings are lucky and brave, Catfolk are quick and (shockingly) catlike, Orcs are big and strong. It’s up to you if you want these characteristics to be at all relevant to your character, if you want to play into them, or play someone who has little use for them. An elf wizard is a classic, but an elf fighter is an interesting divergence, and could make for a memorable character!
+      </p>
+      <div class="malen-example">
+        <p class="info"><b>Building Malen, Step 1:</b> Sitting down to build her character, Hazel decides the coolest option for her character is a Human with the Nephilim Bloodline, for a powerful angelic character.</p>
+      </div>
+    <h2><a class="ruleslink" id="choose-class"><a href="classes.html">1. Choosing your Class</a></a></h2>
+      <p class="info">
+        Each character in Godhand has a class. This class determines most of their abilities, especially the ones they’ll use in combat. A player who wants to be a skilled warrior or a chivalrous knight might play a fighter. A player intending to explore the mysteries of reality, and blow up enemies with their mind would likely want to play a wizard. A player should consider what it is they’ll enjoy doing most when playing the game, be it fighting monsters, doing magic, or simply getting by on quick wit and a sharp tongue.<br><br>
+        You gain a number of benefits from your class, most of them referred to as “class features.” These class features are what set your character apart from the common people of their world, and from members of other classes. Your character also gains a number of proficiencies from their class. To talk about proficiency though, we need to delve into:
+      </p>
+    <h2><a class="ruleslink" id="proficiency-and-prog">Proficiency & Character Progression</a></h2>
+      <table style="border:0;">
+        <tr>
+          <td style="text-align:left; border:0;"> <!--all the text info-->
+            <p class="info">
+              When a roll mentions “relevant bonuses,” the two bonuses it is almost always talking about are a character’s bonus in the stat the roll uses (strength for swinging a greatsword, charisma for attempting to lie to someone), and proficiency represents a character’s training or capability in what it is they’re doing. What proficiencies a character has is determined by a great multitude of factors, background, feats, class, even some folk and bloodline abilities give a character a proficiency. It’s important to keep track of all of them! Without doing so, you might be forgetting something your character could be very good at! The proficiency bonus itself is determined by character level! As are the number of feats and ability score improvements a character has.<br><br>
+              The table on the right displays the number you add for your proficiency bonus at each level, starting with +2 at level 1, and increasing by 1 at 5th, 9th, 13th, and 17th level. The details on this table are <b><u>universal</u></b>, and apply regardless of a character’s class or combination of classes.<br><br>
+              The character progression table also mentions experience points (XP), Feats, and Ability Score Improvements (ASIs). A number of XP is assigned to each level, meaning that when a character’s total experience points increase to one of the numbers listed on the table, their level increases with it. Characters gain XP from killing monsters, completing quests, collecting treasure, learning skills, and other methods.<br><br>
+              As opposed to using experience points, your GM may choose to level characters up at specific milestones, forgoing XP entirely. Both of these are perfectly legitimate ways to play, and both ultimately come down to the GM and their preference.<br><br>
+              <b>Ability score improvements (ASI)</b> are levels where a character gains two points they can assign to their ability scores, opting to put both into one of the six to increase it by 2, or into two of the six to increase two scores by 1 point.<br><br>
+              <b>Feats</b> are little extra abilities and bonuses a character gains through progression, a player gains one at first level (unless they choose to take a bloodline in addition to their folk, which our example player did!). All feats in Godhand are listed <a href="feats.html"><u>here</u></a>.
+            </p>
+          </td>
+          <td style="border:0">
+            <table class="chara-progress toc">
+            <tr>
+              <th colspan="5"><a id="chara-progress-table">Table: Character Progression</a></th>
+            </tr>
+            <tr>
+              <td>XP</td>
+              <td>Level</td>
+              <td>Gain a Feat this Level?</td>
+              <td>Proficiency Bonus</td>
+              <td>ASI this Level?</td>
+            </tr>
+            <tr><!--Level 1-->
+              <td>0</td>
+              <td>1</td>
+              <td>&#10004</td>
+              <td>+2</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 2-->
+              <td>300</td>
+              <td>2</td>
+              <td>&#10006</td>
+              <td>+2</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 3-->
+              <td>900</td>
+              <td>3</td>
+              <td>&#10006</td>
+              <td>+2</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 4-->
+              <td>2,700</td>
+              <td>4</td>
+              <td>&#10004</td>
+              <td>+2</td>
+              <td>&#10004</td>
+            </tr>
+            <tr><!--Level 5-->
+              <td>6,500</td>
+              <td>5</td>
+              <td>&#10006</td>
+              <td>+3</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 6-->
+              <td>14,000</td>
+              <td>6</td>
+              <td>&#10006</td>
+              <td>+2</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 7-->
+              <td>23,000</td>
+              <td>7</td>
+              <td>&#10006</td>
+              <td>+3</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 8-->
+              <td>34,000</td>
+              <td>8</td>
+              <td>&#10004</td>
+              <td>+3</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 9-->
+              <td>48,000</td>
+              <td>9</td>
+              <td>&#10006</td>
+              <td>+4</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 10-->
+              <td>64,000</td>
+              <td>10</td>
+              <td>&#10006</td>
+              <td>+4</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 11-->
+              <td>85,000</td>
+              <td>11</td>
+              <td>&#10006</td>
+              <td>+4</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 12-->
+              <td>100,000</td>
+              <td>12</td>
+              <td>&#10004</td>
+              <td>+4</td>
+              <td>&#10004</td>
+            </tr>
+            <tr><!--Level 13-->
+              <td>120,000</td>
+              <td>13</td>
+              <td>&#10006</td>
+              <td>+5</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 14-->
+              <td>140,000</td>
+              <td>14</td>
+              <td>&#10006</td>
+              <td>+5</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 15-->
+              <td>165,000</td>
+              <td>15</td>
+              <td>&#10006</td>
+              <td>+5</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 16-->
+              <td>195,000</td>
+              <td>16</td>
+              <td>&#10004</td>
+              <td>+5</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 17-->
+              <td>225,000</td>
+              <td>17</td>
+              <td>&#10006</td>
+              <td>+6</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 18-->
+              <td>265,000</td>
+              <td>18</td>
+              <td>&#10006</td>
+              <td>+6</td>
+              <td>&#10006</td>
+            </tr>
+            <tr><!--Level 19-->
+              <td>305,000</td>
+              <td>19</td>
+              <td>&#10004</td>
+              <td>+6</td>
+              <td>&#10004</td>
+            </tr>
+            <tr><!--Level 20-->
+              <td>355,000</td>
+              <td>20</td>
+              <td>&#10006</td>
+              <td>+6</td>
+              <td>&#10006</td>
+            </tr>
+            </table>
+          </td> 
+        </tr>
+      </table>
+      <p class="info">
+        Regardless of all of this, record your character level and proficiency bonus on your sheet when starting the game. <b>If you begin at a higher level than 1</b>, record all other class features you gain in addition to the ones at 1st level, and account for any feats, ability score increases, or increases in proficiency bonus you would gain from starting at the level which you begin playing the game.
+      </p>
+    <h2><a class="ruleslink" id="hit-die-and-hp">2. Hit Dice & Hit Points</a></h2>
+      <p class="info">
+        In addition to the character progression details, and class features, when considering your character’s class you should also know about hit dice, and hit points. Hit points define how well a character handles combat, they aren’t necessarily a representation of how physically durable the character is, more an abstraction of how long a character can last in combat without being injured or lethally wounded. Your total hit points are determined by your hit dice, and your constitution score.<br><br>
+        At 1st level, you have one hit die, determined by your class. When you gain a level, you gain an additional hit die. Should you take levels in a class different from the one you begin in, you gain that class’ hit die as opposed to the one given by your starting class. (A fighter who takes a level in the wizard class gains a d6 hit die for that level as opposed to a d10).<br><br>
+        To calculate your hit points at first level, assume you had rolled the maximum number on your hit die, and then add your constitution modifier. This is your max hp! To calculate at the following levels, you have a choice. You may either roll your hit dice every time you level up, adding the total to your max hp, or you may take the average on the dice (4 for a d6, 5 for a d8, 6 for a d10, and 7 for a d12) and add that number to your max hp. Regardless of the option you choose, you add your constitution modifier to your max hp at every level you gain.
+      </p>
+      <div class="malen-example">
+        <p class="info">
+          <b>Building Malen, Step 2:</b> Hazel imagines Malen as a powerful warrior, beating down fully armed enemies with her bare hands, and able to take a hit from almost anyone. She notes the first level fighter class features and records them on her sheet.<br><br>
+          As a 1st level fighter, Malen has a d10 hit die and starts with hit points equal to 10 + her constitution modifier. Hazel notes this and records the final number after she figures out Malen’s constitution score (step 3). She also notes that the proficiency bonus for a level 1 character is +2. She does not choose a feat, as she had decided to make Malen a Nephilim in step 1.
+        </p>
+      </div>
+    <h2><a class="ruleslink" id="ability-scores">3. Ability Scores</a></h2>
+      <table style="border:0;">
+        <tr>
+          <td style="text-align:left; border:0;">
+            <p class="info">The six ability scores in Godhand are as follows:</p>
+              <ul>
+                <li><b>Strength: </b>Which measures one’s raw physical might, and how effectively they use it</li>
+                <li><b>Dexterity: </b>Which measures reaction speed and application of fine motor skills</li>
+                <li><b>Constitution: </b>Which measures of vitality and endurance</li>
+                <li><b>Intelligence: </b>Which measures a person’s learned knowledge, and ability to reason</li>
+                <li><b>Wisdom: </b>Which measures a person’s willpower, awareness, and intuition </li>
+                <li><b>Charisma: </b>Which measures one’s force of personality</li>
+              </ul>
+            <p class="info">
+              <b>Strength</b> is used for attack and damage rolls for <b>melee</b> weapons.<br><br>
+              <b>Dexterity</b> is used for attack and damage rolls for <b>ranged</b> weapons.<br><br>
+              (Note: There are exceptions to the above, as there are some ranged weapons that use strength, and some melee weapons (or attacks) that use dexterity).<br><br>
+              Both strength and dexterity can be used to calculate AC.
+            </p> 
+          </td>
+          <td style="border:0;">
+            <table class="abi" border="1">
+              <tr>
+                <th colspan="2"><a id="abi-table">Table: Ability Score Modifiers</a></th>
+              </tr>
+              <tr>
+                <td>Ability Score</td>
+                <td>Modifier</td>
+              </tr>
+              <tr>
+                <td>0-1</td>
+                <td>-5</td>
+              </tr>
+              <tr>
+                <td>2-3</td>
+                <td>-4</td>
+              </tr>
+              <tr>
+                <td>4-5</td>
+                <td>-3</td>
+              </tr>
+              <tr>
+                <td>6-7</td>
+                <td>-2</td>
+              </tr>
+              <tr>
+                <td>8-9</td>
+                <td>-1</td>
+              </tr>
+              <tr>
+                <td>10-11</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>12-13</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>14-15</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>16-17</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>18-19</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>5</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <p class="info">
+        <b>Constitution</b> is used to calculate maximum HP.<br><br>
+        <b>Intelligence, Wisdom, and Charisma</b> are used in spellcasting, and for checks (which are explained later in PLACEHOLDER)<br><br>
+        The actual ability score is used for very little in Godhand, but the ability score modifiers derived from the scores will likely be used for almost every roll made, and beyond (like your strength or dexterity modifier being used to calculate AC). The table to right represents ability scores, and what modifier a score equals.<br><br>
+        When determining your ability scores, you have two options:<br>
+        <ol>
+          <li>For each ability score, you may roll 4 d6 die, dropping the lowest result rolled.  When you’ve done this 6 times, you’ve generated the numbers you’ll use for your ability scores, and may assign each number to each ability as you wish.</li><br>
+          <li>Choose from this array of numbers: 16, 15, 14, 11, 10, 7. Assign each of these numbers to a skill of your choice.</li>
+        </ol>
+      </p>
+      <div class="malen-example">
+        <p class="info">
+          <b>Building Malen, Step 3:</b> Wanting her to be a quick, dexterous combatant, but also a tough fighter, and a charismatic individual, Hazel places her 16 in dexterity, her 15 in charisma, and her 14 in constitution. With her lower stats, she places her 11 in strength, her 10 in intelligence, and her 7 in wisdom.<br><br>
+          As a human, Malen has 3 +1s she can place into her stats. Hazel allocates them into dexterity, charisma, and strength. Malen’s final stats are 12, 17, 14, 10, 7, 16.
+        </p>
+      </div>
+    <h2><a class="ruleslink" id="describe">4. Describe your Character</a></h2>
+      <p class="info">
+        Consider how your character looks, their mannerisms, how they might dress, and other little details. This is also a good place to consider any backstory your character might have, and what that backstory might have, and how they might fit into the greater story of the game. You should consider your character’s background, their ability scores, and their folk and bloodline details when describing their appearance.
+      </p>
+      <div class="malen-example">
+        <p class="info">
+          <b>Building Malen, Step 4:</b> Hazel Determines that Malen is a beautiful human woman with light brown skin and long, meticulously kept hair. Her eyes are a warm shade of yellow and she dresses herself like one who is always traveling, in light, comfortable clothes that do little to restrict her range of motion, and don’t weigh her down when she makes long stretches on the road. She is muscular, but skinny, and she stands just a few inches under six feet. When she uses her abilities as a nephilim to transform, her visage becomes terrible and confusing, a faceless winged monster ringed by white hot flame, sculpted from marble and held together by gold, without any face to look upon.
+        </p>
+      </div>
+    <h2><a class="ruleslink" id="equip-yourself">5. Equip Yourself</a></h2>
+      <p class="info">
+        This is under development
+      </p>
+      <div class="malen-example">
+        <p class="info">
+          Building Malen, Step 5: Hazel intends to make Malen an unarmed warrior, so she opts to not take any weapons, despite the options available to fighter. A perfectly valid choice.
+        </p>
+      </div>
+    <hr>
+    <p><a href="#top">Back to Top</a></p>
+  </details>
+  <details class="rules"><summary><h1><div class="tooltip">Equipment<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+    <h2><a class="ruleslink" id="equipment-info">Equipment Info</a></h2>
+      <p class="info">
+        THis is under development
+      </p>
+    <h2><a class="ruleslink" id="weapon-prop">Weapon Properties</a></h2>
+      <p class="info">
+        Many weapons have special properties related to their use, as shown in the Weapons table.
+        <details class="sub-list"><summary><b>List of Weapon Properties</b></summary>
+          <br>
+          <a id="ammunition"><b>Ammunition: </b></a>You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield. If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an <a href="#improvised">improvised weapon</a> (see “Improvised Weapons” section below). A sling must be loaded to deal any damage when used in this way.<br><Br>
+          <a id="finesse"><b>Finesse: </b></a>When making an attack with a finesse weapon, you use your choice of your Strength <b>or</b> Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.<br><br>
+          <a id="heavy"><b>Heavy: </b></a>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon’s size and bulk make it too large for a Small creature to use effectively.<br><br>
+          <a id="light"><b>Light: </b></a>A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.<br><br>
+          <a id="loading"><b>Loading: </b></a>Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.<br><br>
+          <a id="range"><b>Range: </b></a>A weapon that can be used to make a ranged attack has a range in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon’s normal range in feet, and the second indicates the weapon’s long range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can’t attack a target beyond the weapon’s long range.<br><br>
+          <a id="reach"><b>Reach: </b></a>This weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for opportunity attacks with it.<br><br>
+          <a id="special"><b>Special: </b></a>A weapon with the special property has unusual rules governing its use, explained in the weapon’s description (see <a href="#special-weapons">“Special Weapons”</a> section below).<br><br>
+          <a id="thrown"><b>Thrown: </b></a>If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon. For example, if you throw a handaxe, you use your Strength, but if you throw a dagger, you can use either your Strength or your Dexterity, since the dagger has the finesse property.<br><br>
+          <a id="two-handed"><b>Two-Handed: </b></a>This weapon requires two hands when you attack with it.<br><br>
+          <a id="versatile"><b>Versatile: </b></a>This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee attack.
+        </details>
+      </p>
+    <h2><a class="ruleslink" id="improvised"><b>Improvised Weapons</b></a></h2>
+      <p class="info">
+        Sometimes characters don’t have their weapons and have to attack with whatever is at hand. An improvised weapon includes any object you can wield in one or two hands, such as broken glass, a table leg, a frying pan, a wagon wheel, or a dead goblin.<br><br>
+        Often, an improvised weapon is similar to an actual weapon and can be treated as such. For example, a table leg is akin to a club. At the GM’s option, a character proficient with a weapon can use a similar object as if it were that weapon and use his or her proficiency bonus.<br><br>
+        An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns a damage type appropriate to the object). If a character uses a ranged weapon to make a melee attack, or throws a melee weapon that does not have the thrown property, it also deals 1d4 damage. An improvised thrown weapon has a normal range of 20 feet and a long range of 60 feet.
+      </p>
+    <h2><a class="ruleslink" id="silvered"><b>Silvered Weapons</b></a></h2>
+      <p class="info">
+        Some monsters that have immunity or <a href="combat.html#damage-resist"><u>resistance</u></a> to nonmagical weapons are susceptible to silver weapons, so cautious adventurers invest extra coin to plate their weapons with silver. You can silver a single weapon or ten pieces of ammunition for 100 gp. This cost represents not only the price of the silver, but the time and expertise needed to add silver to the weapon without making it less effective.
+      </p>
+    <h2><a class="ruleslink" id="special-weapons">Special Weapons</a></h2>
+      <p class="info">
+        Weapons with special rules are described here.<br><br>
+        <a id="lance-special"><b>Lance: </b></a>You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren’t mounted.<br><br>
+        <a id="net-special"><b>Net: </b></a>A Large or smaller creature hit by a net is <a href="combat.html#restrained"><u>restrained</u></a> until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.
+      </p>
+      <hr>
+      <p><a href="#top">Back to Top</a></p>
+  </details>
+  </div>
+
+
+</div>
+  <!--Javascript code for topnav-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+</html>

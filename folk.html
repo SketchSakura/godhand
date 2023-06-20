@@ -1,0 +1,793 @@
+<html>
+  <head><title>Godhand - Folks</title>
+    <link href="css-sheets/folk.css" rel="stylesheet">
+    <link href="css-sheets/topnav.css" rel="stylesheet">
+    <link href="css-sheets/layout.css" rel="stylesheet">
+    <style>
+      h1{font-size:25px; padding:5px;}
+      h2{font-size:23px; padding:3px; background-color:rgb(207,171,121);}
+      h3{font-size:20px;padding:3px; background-color:rgb(207,171,121);}
+    </style>
+  </head>
+<body>
+  <div id="sidebar" class="sidebar"><!--Full Link Sidebar-->
+      <a href="index.html" class="main-link">&#9864 &nbsp;About</a><br>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Rules</summary>
+        &nbsp;&nbsp;<a href="rules/basics.html">&#9864 &nbsp;Basics</a>
+        <br>&nbsp;&nbsp;<a href="rules/combat.html">&#9864 &nbsp;Combat</a>
+        <br>&nbsp;&nbsp;<a href="rules/magic.html">&#9864 &nbsp;Magic</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="classes.html" class="main-link">&hairsp;Classes</a></summary>
+        <!--Class Dropdown-->
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#barbarian">Barbarian</a></summary><!--Barbarian-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#bard">Bard</a></summary><!--Bard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#druid">Druid</a></summary><!--Druid-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#fighter">Fighter</a></summary><!--Fighter-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-champion.html" class="sublink">Champion</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-momentum.html" class="sublink">Momentum</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-strategist.html" class="sublink">Strategist</a>
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#hierophant">Hierophant</a></summary><!--Hierophant-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/hiero-truth.html" class="sublink">Truth</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/hiero-violence.html" class="sublink">Violence</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#monk">Monk</a></summary><!--Monk-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#paladin">Paladin</a></summary><!--Paladin-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#rogue">Rogue</a></summary><!--Rogue-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/rogue-fatale.html" class="sublink">Fatale</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/rogue-lowlife.html" class="sublink">Lowlife</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#salaryman">Salaryman</a></summary><!--Salaryman-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#scholar">Scholar</a></summary><!--Scholar-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#sorcerer">Sorcerer</a></summary><!--Sorcerer-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#warlock">Warlock</a></summary><!--Warlock-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#warlord">Warlord</a></summary><!--Warlord-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#wizard">Wizard</a></summary><!--Wizard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-anatomist.html"  class="sublink">Anatomist</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-profane.html" class="sublink">Profane</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-enlightened.html" class="sublink">Enlightened</a>
+        </details>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="folk.html" class="main-link">&hairsp;Folk</a></summary>
+        <!--Folk Dropdown-->
+        &nbsp;&nbsp;<a href="folk.html#catfolk">&#9864 Catfolk</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#changeling">&#9864 Changeling</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#colun">&#9864 Colún</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#dwarf">&#9864 Dwarf</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#elf">&#9864 Elf</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#halfling">&#9864 Halfling</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#human">&#9864 Human</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#orc">&#9864 Orc</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#raska">&#9864 Raska</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#half-folk">&#9864 Half-Folk Rules</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#bloodlines">&#9864 Bloodlines</a>
+      </details>
+      <a href="feats.html" class="main-link">&#9864 &nbsp;Feats</a><br>
+      <details class="main-dropdown"><summary>&#9862<a href="spells/guide.html" class="main-link">&hairsp;Spells</a></li></summary>
+        <!--Spell Dropdown-->
+        &nbsp;&nbsp;<a href="spells/guide.html">&#9864 Spell Guide</a>
+        <br>&nbsp;&nbsp;<a href="spells/bard.html">&#9864 Bard</a>
+        <br>&nbsp;&nbsp;<a href="spells/druid.html">&#9864 Druid</a>
+        <br>&nbsp;&nbsp;<a href="spells/hierophant.html">&#9864 Hierophant</a>
+        <br>&nbsp;&nbsp;<a href="spells/warlock.html">&#9864 Warlock</a>
+        <br>&nbsp;&nbsp;<a href="spells/wizard.html">&#9864 Wizard</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Items</a></summary>
+        <!--Item Dropdown-->
+        &nbsp;&nbsp;<a href="items/armorweapons.html">&#9864 Armor & Weapons</a>
+        <br>&nbsp;&nbsp;<a href="items/equips.html">&#9864 Equipment</a>
+        <br>&nbsp;&nbsp;<a href="items/magicitems.html">&#9864 Magic Items</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Bestiary</a></summary>
+        &nbsp;&nbsp;<a href="bestiary/page-1.html">&#9864 &nbsp;CR 0 - 5</a>
+      </details>
+  </div>
+<div id="main"><!--Encapsulated header nav and body-->
+  <div id="logo"> <!--Godhand Logo-->
+    <a href="index.html"><img src="images/Godhand logo.png" class="logo"></a> <!--Godhand logo-->
+  </div>
+  <div class="topnav" id="myTopnav"> <!--Topnavbar-->
+    <a href="index.html" >About</a>
+    <div class="nav-dropdown"><!--Rules Dropdown-->
+      <button class="dropbtn">Rules &#9662</button>
+      <div class="dropdown-content">
+        <a href="rules/basics.html">Basics</a>
+        <a href="rules/combat.html">Basics</a>
+        <a href="rules/magic.html">Magic</a>
+      </div>
+    </div>
+    <a href="folk.html" class="active">Folk</a>  
+    <div class="nav-dropdown"><!--Classes Dropdown-->
+      <button class="dropbtn"><a href="classes.html" style="padding:0px;">Classes</a> &#9662</button>
+      <div class="dropdown-content"> <!--Classes variety-->
+        <a href="classes.html#barbarian">Barbarian</a>
+        <a href="classes.html#bard">Bard</a>
+        <a href="classes.html#druid">Druid</a>
+        <a href="classes.html#fighter">Fighter</a>
+        <a href="classes.html#hierophant">Hierophant</a>
+        <a href="classes.html#monk">Monk</a>
+        <a href="classes.html#paladin">Paladin</a>
+        <a href="classes.html#rogue">Rogue</a>
+        <a href="classes.html#salaryman">Salaryman</a>
+        <a href="classes.html#scholar">Scholar</a>
+        <a href="classes.html#sorcerer">Sorcerer</a>
+        <a href="classes.html#warlock">Warlock</a>
+        <a href="classes.html#warlord">Warlord</a>
+        <a href="classes.html#wizard">Wizard</a>
+      </div>
+    </div>
+    <a href="feats.html">Feats</a>
+    <div class="nav-dropdown"><!--Spells Dropdown-->
+      <button class="dropbtn"><a href="spells/guide.html" style="padding:0px;">Spells</a> &#9662</button>
+      <div class="dropdown-content">
+        <a href="spells/guide.html">Spell Guide</a>
+        <a href="spells/bard.html">Bard</a>
+        <a href="spells/druid.html">Druid</a>
+        <a href="spells/hierophant.html">Hierophant</a>
+        <a href="spells/warlock.html">Warlock</a>
+        <a href="spells/wizard.html">Wizard</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Items Dropdown-->
+      <button class="dropbtn">Items &#9662
+      </button>
+      <div class="dropdown-content">
+        <a href="items/armorweapons.html">Armor & Weapons</a>
+        <a href="items/equips.html">Equipment</a>
+        <a href="items/magicitems.html">Magic Items</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Bestiary Dropdown-->
+      <button class="dropbtn">Bestiary &#9662 </button>
+      <div class="dropdown-content">
+        <a href="bestiary/page-1.html">CR 0 - 5</a>
+      </div>
+    </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!--Javascript button for smaller screens-->
+  </div>
+<br>
+  <div id="mainbody"> <!--Main Content-->
+    <h1 style="font-size:40px;">
+      Folk</a>
+    </h1>
+    <a id="top"></a>
+        <table> <!--table of contents and info blurb-->
+          <tr>  
+          <td style="border:0;">
+            <table class="toc" style="background-color: rgb(232, 193, 139);">
+            <tr>
+              <th class="toc" style="color:rgb(79, 10, 10)">Table of Contents</th>
+            </tr>
+            <tr>  
+              <td class="toc" style="color:rgb(57, 7, 7); text-align:left" cellpadding="10" width="250px">
+                <details class="toc-list" open><!--Table of Contents-->
+                  <summary><b>Folks</b></summary> 
+                  &nbsp;&nbsp;&nbsp;<a href="#catfolk">Catfolk</a> 
+                  <br>&nbsp;&nbsp;&nbsp;<a href="#changeling">Changeling</a> 
+                  <br>&nbsp;&nbsp;&nbsp;<a href="#colun">Colún</a> 
+                  <br>&nbsp;&nbsp;&nbsp;<a href="#dwarf">Dwarf</a>
+                  <br>&nbsp;&nbsp;&nbsp;<a href="#elf">Elf</a>
+                  <br>&nbsp;&nbsp;&nbsp;<a href="#halfling">Halfling</a>
+                  <br>&nbsp;&nbsp;&nbsp;<a href="#human">Human</a>
+                  <br>&nbsp;&nbsp;&nbsp;<a href="#orc">Orc</a>
+                  <br>&nbsp;&nbsp;&nbsp;<a href="#raska">Raska</a>
+                  <br><hr>
+                  &nbsp;&nbsp;&nbsp;<a href="#half-folk">Half-Folk Rules</a>
+                  <br>&nbsp;&nbsp;&nbsp;<a href="#bloodlines">Bloodlines</a>
+                </details>
+              </td>
+            </tr>
+            </table>
+          </td>
+          <td style="vertical-align:top;border:0;">
+            <p>One of the most important, and most exciting parts of making a character, figuring out just what sort of folks they happen to be! Should one walk in that terrible city that rests beyond all mortal reality, should they stand in the shadow of that wretched tower that haunts so many, they would find themselves surrounded by many different from them.
+          <br><br>  
+            There would be humans, firm and enduring, working difficult jobs that many others would refuse. There would be the Raska, cold of blood and sharp of tongue, with their yellow snakelike eyes and long sharp fangs. The Elves, ancient and haughty, either masters of their art with a great myriad of stories to tell, or terrible fools, the likes of which no story could properly do justice. One could go on for time eternal about these people that inhabit this all realities, on the obsessions of the Dwarves, the powers of the Colún, and the enigmatic nature of the Changelings. Many of these peoples are detailed here, but hundreds (if not thousands) more exist.
+            </p></td>
+          </tr>
+        </table>
+    <hr>
+     <!--Catfolk-->
+      <details class="main-info"><summary><h1><div class="tooltip">Catfolk<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+      <p class="flavor"><i><a id="catfolk">Catfolk</a> are for the people who want to tap into their feline side.</i></p>
+        <h2>Ability Scores</h2>
+        <p class="info">
+          Choose one ability score to receive a +2, and another to receive a +1. Catfolk tend to be much more dexterous than most, with at least one of these bonuses in Dexterity.
+        </p>
+        <h2>Age</h2>
+        <p class="info">
+          Catfolk physically mature rapidly, growing to full-size around the age of 5 (though they are still considered children until they are around the age of 20, as with most humanoids).  They tend to live an average lifespan, dying of natural causes around 120-150 years of age.
+        </p>
+        <h2>Size</h2>
+        <p class="info">
+          Catfolk tend to be a bit smaller than humans, standing around five feet tall. As a catfolk, your size is medium.
+        </p>
+        <h2>Speed</h2>
+        <p class="info">
+          As a Catfolk, your base speed is 30 feet, and due to your sharp claws, you have a climbing speed of 20 feet.
+        </p>
+        <h2>Darkvision</h2>
+        <p class="info">
+          You can see up to 60 feet in darkness as if it were dim light. You cannot discern colors, however, as your vision is much rougher than in daylight.
+        </p>
+        <h2>Feline Sprint</h2>
+        <p class="info">
+          When you move on your turn in combat, you can choose to double your speed for that turn. Once you use this ability, you can’t use it again until you have not moved at all on one of your subsequent turns.
+        </p>
+        <h2>Claws</h2>
+        <p class="info">
+          You have a sharp set of teeth that can be used to easily shred flesh. Your bite is a natural weapon which inflicts 1d4 + your Strength or Dexterity modifier slashing damage.
+        </p>
+        <h2>Catlike</h2>
+        <p class="info">
+          You gain proficiency in Perception and Acrobatics.
+        </p>
+        <h2>Squish</h2>
+        <p class="info">
+          When squeezing through small spaces or moving through other character’s squares on a map, catfolk treat themselves as being one size smaller.
+        </p>
+        <hr>
+        <div class="half-notes">
+          <p class="info"><b>* Half-Folk Notes:</b> All catfolk abilities except Squish are applicable for use when making a half-catfolk character.</p>
+        </div>
+        <p class="info"><a href="#top">Back to Top</a></p>
+      </details>
+      <hr>
+     <!--Changeling-->
+      <details class="main-info"><summary><h1><div class="tooltip">Changeling<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+        <p class="flavor"><i><a id="changeling">Changelings</a> are rare Humanoid creatures with the ability to shift their appearance to assume the forms of other Humanoid creatures. While all Changelings have a “true form” they were born in, most don’t tend to present themselves that way, often opting to appear as a more common kind of creature. Often, Changelings will have distinct personas tied to the different forms in which they present themselves - sometimes these personas might even be their own “people” entirely, independent of any central identity.</i></p>
+        <h2>Ability Scores</h2>
+        <p class="info">
+          Choose one ability score to receive a +2, and another to receive a +1.  Alternatively, choose any three unique ability scores to receive a +1.  Most Changelings have one of these ability score increases in Charisma, as swapping between personas comes naturally to them.
+        </p>
+        <h2>Age</h2>
+        <p class="info">
+          Changelings have a natural lifespan similar to humans, if a bit shorter. They reach adulthood at 20 years of age, and almost never live past ninety years.  </p>
+        <h2>Size</h2>
+        <p class="info">
+          Changelings are medium-sized, but vary massively in how they choose to present themselves aside from this.  </p>
+        <h2>Speed</h2>
+        <p class="info">
+          As a Changeling, your base speed is 30 feet.
+        </p>
+        <h2>Shapechange</h2>
+        <p class="info">
+          As an action, you can alter your appearance and voice, taking on the appearance of any Humanoid creature you can imagine as long as they are also of the same size as you. You control all aspects of these changes, from the length of your hair, to the color of your eyes, to the prints on your fingers. Your equipment, clothing, and abilities do not change based on the appearance you assume - for example, you do not gain access to the Resilient ability if you choose to appear as a Human - however, you do gain one ability of your choice based on how you choose to present yourself.
+        </p>
+          <details class="sub-list"><summary><b>Shapechange Options:</b></summary>
+            <ul>
+              <li><b>Sturdy:</b> You fill out your muscles and strengthen your frame. You gain proficiency with the athletics skill. If you already have proficiency with athletics when you assume this form, your carrying capacity is doubled.</li>
+              <li><b>Alluring:</b> You assume a form of a person that appears attractive, trustworthy, or good-natured. You may make any Charisma-based skill checks with advantage. You may use this ability a number of times equal to your proficiency, regaining uses of the ability on a long rest.</li>
+              <li><b>Mundane:</b> You take on an appearance which is forgettable and beneath notice. You have advantage on Stealth checks made to hide in urban environments, and you are treated as invisible while you’re part of a crowd. You may not gain these benefits while wearing something that naturally makes you stick out, like flamboyant clothes or a suit of plate armor.</li>
+              <li><b>Dynamic:</b> You build yourself to move faster and react more quickly, trimming fat, lengthening out bones, and placing muscle in strategic places. Your base speed increases by 10 feet.</li>
+              <li><b>Frightening:</b> You take on an appearance that is horrifying, otherworldly, or just off-putting enough to keep others at arm's length. You have disadvantage on any Persuasion and Deception checks, but advantage with Intimidation checks. Also, as an action, you may choose one creature which can see you and make an Intimidation check, contested by an Insight check from the chosen creature. If you win this contest, your target is frightened of you for one round. A creature that wins the contest or a creature that has already been frightened by you in this way cannot be targeted by this ability for the next 24 hours.</li>
+            </ul>
+          </details>
+        <p class="info">
+          You may only benefit from one of these bonuses at any time, and may swap one ability for another in this list at the end of each long rest.
+        </p>
+        <h2>Imitator</h2>
+        <p class="info">
+          You are able to easily notice and copy the mannerisms and speech patterns of other people.  After observing any Humanoid creature for one hour, you can use your Shapechange ability to copy their appearance so perfectly that you are nearly indistinguishable.  Additionally, you are able to closely imitate their body language and speech mannerisms, provided that you also speak the same language as them.  You have Advantage on any checks made to tell you and the creature you copied apart.  This ability does not allow you to learn a language you do not already understand, nor does it give any additional information you would not already know.
+        </p>
+        <h2>Polyglot</h2>
+        <p class="info">To better swap between personas and blend in, nearly all Changelings are naturally good at learning new languages.  You learn one additional language of your choice.</p>
+        <hr>
+        <div class="half-notes">
+          <p class="info"><b>* Half-Folk Notes:</b> There are no “Half-Changelings.” A creature born from the union of a Changeling and another folk will, in 3 out of 4 instances, be the same kind of creature as their non-changeling parent. The rest of the time, however, these children will turn out to be a Changeling. A Changeling born like this might have some aspects of their non-changeling parent in their true form - a Changeling with an Orc father might have tusks, for example - but they will still still be a full Changeling, and not an Orc.</p>
+        </div>
+        <p><a href="#top">Back to Top</a></p>
+      </details>
+      <hr>
+    <!--Colun-->
+      <details class="main-info"><summary><h1><div class="tooltip">Colún<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+        <p class="flavor"><i><a id="colun">Colún</a> are cool forest dwellers, part-Fae related to Giants.</i></p>
+        <h2>Ability Scores</h2>
+        <p class="info">
+          Choose one ability score to receive a +2, and another to receive a +1. They tend to be stronger and more in tune with nature than most, with at least one of these ability scores in Strength or Wisdom.
+        </p>
+        <h2>Age</h2>
+        <p class="info">
+          Colún mature at a much slower rate than most other humanoids, reaching adulthood around the age of 50. They can frequently live to about 500 years of age.
+        </p>
+        <h2>Size</h2>
+        <p class="info">
+          Colún are big and generally taller than most others, most often falling between 6 and 8 feet tall - though there are always outliers. As a Colún, your size is medium.
+        </p>
+        <h2>Speed</h2>
+        <p class="info">
+          As a Colún, your base speed is 30 feet.
+        </p>
+        <h2>Powerful Build</h2>
+        <p class="info">
+          When determining your lift and carry weight, you count as being one size larger.
+        </p>
+        <h2>Speech of the Wilds</h2>
+        <p class="info">
+          Plants and animals understand the meaning of your words, though you yourself have no means to understand them. When you speak to beasts, plants, vegetation, and monstrosities that are not hostile towards you and your allies, you have advantage on checks made to influence them. All of these things understand your words when spoken to.
+        </p>
+        <h2>Colún Magic</h2>
+        <p class="info">
+          As an action, you can cause seeds to sprout, flowers to bloom, and plants to bear ripe fruit. At first level, you may only target a single plant that you can touch with this ability, but at 5th level, you may use this ability to affect all plants in a ten foot radius, centered around you. You may only use this feature as an area of effect once (regaining the ability to do so again after a long rest) and you may not cause the affected plants to become so overgrown that they cause any destruction or impose difficult terrain.
+        </p>
+        <h2>Into the Mist</h2>
+        <p class="info">
+          As an action, you may cast the Fog Cloud spell once per long rest. When you cast the spell through this feature, creatures in the cloud are only lightly obscured from your view - you are still heavily obscured by the fog. You may also cast the spell using a spell slot, but you do not gain the additional benefits of casting it through the ability.
+        </p>
+        <h2>Animal Shape</h2>
+        <p class="info">
+          Choose a single CR 0 beast without a swimming, flying, or burrowing speed. You are capable of taking on the form of this beast once, regaining the ability to do so after a long rest. While in your animal form, your Strength, Dexterity, and Constitution scores - as well as your hit point count - are replaced by the beast’s stat block. You cannot cast or concentrate on spells in this form, and after a number of hours equal to your proficiency bonus or when you are reduced to 0hp in your animal form, you revert to your humanoid shape.
+        </p>
+        <hr>
+        <div class="half-notes">
+          <p class="info"><b>* Half-Folk Notes:</b> Half Colún can make use of any Colún features except Speech of the Wilds, and Into the Mist.</p>
+        </div>
+        <p><a href="#top">Back to Top</a></p>
+      </details>
+      <hr>
+    <!--Dwarf-->
+      <details class="main-info"><summary><h1><div class="tooltip">Dwarf<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+        <p class="flavor"><i><a id="dwarf">Dwarves</a> are stout folks most at home in the underground.</i></p>
+        <h2>Ability Scores</h2>
+        <p class="info">
+          Choose one ability score to receive a +2, and another to receive a +1. Dwarves are known for being stout and densely-built, and are likely to have a bonus in constitution.
+        </p>
+        <h2>Age</h2>
+        <p class="info">
+          Dwarves mature at the same rate as other creatures, reaching adulthood around 20 years of age.  They are fairly long-lived, often reaching upwards of 350 years of age.
+        </p>
+        <h2>Size</h2>
+        <p class="info">
+          Shorter and stockier than most, Dwarves stand around 4 feet on average, normally 5 feet at the tallest. As a Dwarf, your size is medium.
+        </p>
+        <h2>Speed</h2>
+        <p class="info">
+          As a Dwarf, your base speed is 25 feet.
+        </p>
+        <h2>Iron Gut</h2>
+        <p class="info">
+          Dwarves rarely fall ill and are known for their ability to eat nearly anything.  As a Dwarf, you have advantage on saving throws made against effects which deal poison damage or cause the poisoned condition, as well as resistance to poison damage.
+        </p>
+        <h2>Eyes of the Architect</h2>
+        <p class="info">
+          Tool-making and engineering are prevalent skills in most Dwarven societies in order to support their underground homes. The time required to craft any item is halved. 
+        </p>
+        <h2>Inherent Balance</h2>
+        <p class="info">
+          Those raised in Dwarven societies have tools in their hand from a young age.  Once per long rest, choose one weapon, set of armor, or set of tools you possess.  Until your next long rest, treat that piece of equipment as you would its +1 equivalent, as long as you are the one using it.  Weapons do not deal magic damage when used in this manner.
+        </p>
+        <h2>Master of the Craft</h2>
+        <p class="info">
+          You have proficiency with a set of tools of your choice. At third level, this proficiency becomes expertise.
+        </p>
+        <h2>Darkvision</h2>
+        <p class="info">
+          You can see up to 60 feet in darkness as if it were dim light. You cannot discern colors, however, as your vision is much rougher than in daylight.
+        </p>
+        <hr>
+        <div class="half-notes">
+          <p class="info"><b>* Half-Folk Notes:</b> A half-Dwarf can make use of any Dwarf features.</p>
+        </div>
+        <p><a href="#top">Back to Top</a></p>
+      </details>
+      <hr>
+    <!--Elf-->
+      <details class="main-info"><summary><h1><div class="tooltip">Elf<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+        <p class="flavor"><i><a id="elf">Elves</a> are a people touched by magic and are among the longest-living folks known.  Their immense lifespan defines many aspects of their being.  What would be a lifetime for most is scarcely enough time for an Elf to reach what they consider adulthood.  Because of this, Elves often keep to themselves and other longer-lived types, and their cultures tend to be deeply steeped in long-standing tradition.</i></p>
+        <h2>Ability Scores</h2>
+        <p class="info">
+          Choose one ability score to receive a +2, and another to receive a +1. Elves tend to be more nimble and dexterous than most creatures, and due to their incredibly long lifespans, they often contain a wealth of knowledge as well. Most Elves would have at least one of these bonuses in Dexterity or Wisdom.
+        </p>
+        <h2>Age</h2>
+        <p class="info">
+          Elves have an immense natural lifespan, measuring their age in decades rather than years. While they reach adulthood physically at the same time as most other creatures (around 20 years old), most Elves would consider themselves young until they are at least a century old, and it is not unheard of for an Elf to live to see 750 years.
+        </p>
+        <h2>Size</h2>
+        <p class="info">
+          Elves have as much variety among them as other folks, though they tend to be on the tall side with relatively slender builds. As an Elf, your size is medium.
+        </p>
+        <h2>Speed</h2>
+        <p class="info">
+          As an Elf, your base speed is 30 feet.
+        </p>
+        <h2>Trance</h2>
+        <p class="info">
+          As an Elf, sleep is more of a luxury than a necessity. As opposed to falling asleep, you may instead choose to enter a sort of meditative trance, during which your mind rests and your body heals itself. You remain semi-conscious, and only need to remain in this state for 4 hours to gain the benefits of a long rest.
+        </p>
+        <h2>Darkvision</h2>
+        <p class="info">
+          You can see up to 60 feet in darkness as if it were dim light. You cannot discern colors, however, as your vision is much rougher than in daylight.
+        </p>
+        <h2>Keen Senses</h2>
+        <p class="info">
+          You have proficency in perception.
+        </p>
+        <h2>Scion of Magic &diam;</h2>
+        <p class="info">
+          As an Elf, you are raised among magic. It is with you all your life, and even if you don’t opt to study it, you still have some basic knowledge of how to practically apply it in your day to day life. You learn one cantrip and one first level spell of your choice from the Wizard spell list. At third level, you learn a second level spell of your choice from the Wizard spell list. You may cast a spell you know in this way once, regaining the ability to do so on a long rest. You may also cast these spells using any spell slots you have. Intelligence is your spellcasting ability for these spells.
+        </p>
+        <hr>
+        <div class="half-notes">
+          <p class="info"><b>* Half-Folk Notes:</b> When making a half-Elf, the only Elf feature they cannot gain is Trance.</p>
+        </div>
+        <details class="sub-list"><summary><b>&diam; Different Types of Elves:</b></summary>
+          <p class="flavor"><i>Elves are found nearly everywhere there is life; forests, underground, the ocean, even other planes of existence.  Wherever it is possible for life to be supported, there are likely also Elves.</i></p>
+          <h2 style="background-color:transparent;">Sea Elves</h2>
+          <p class="info">A Sea Elf replaces the <b>Scion of Magic</b> feature with these features:</p>
+          <h3>Adept Swimmer</h3>
+          <p class="info">You gain a swimming speed equal to your walking speed.</p>
+          <h3>Gills</h3>
+          <p class="info">
+            You have a set of gills that you can use to breathe water as well as air.
+          </p>
+          <h3>Jaws</h3>
+          <p class="info">
+            You have a sharp set of teeth that can be used to easily shred flesh. Your bite is a natural weapon that inflicts 1d4 + your Strength or Dexterity modifier piercing damage. In addition, you can chew through things other creatures might consider inedible, like bone, and weaker construction materials such as thatching or wall plaster.
+          </p>
+          <div class="half-notes">
+            <p class="info"><b>* Half-Folk Notes:</b> When making a half-Sea Elf, only Gills are unavailable for use.</p>
+          </div>
+          <h2 style="background-color:transparent;">Dark Elves</h2>
+          <p class="info">A Dark Elf gains these features, and alterations to their current features:</p>
+          <h3>Superior Darkvision</h3>
+          <p class="info">Your Darkvision lets you see up to 120 feet away instead of 60.</p>
+          <h3>Sunlight Sensitivity</h3>
+          <p class="info">
+            You have disadvantage on attack rolls and perception checks that rely on sight while in direct sunlight.
+          </p>
+          <h3>Low Magic <u>(Replaces Scion of Magic)</u></h3>
+          <p class="info">
+            You learn a cantrip and a first level spell of your choice from the warlock spell list. At third level, you learn a second level spell of your choice from the warlock spell list. Charisma is your spellcasting ability for these spells. You may cast a spell you know in this way once, regaining the ability to do so on a long rest. You may also cast these spells using any spell slots you have. Intelligence is your spellcasting ability for these spells.
+          </p>
+          <div class="half-notes">
+            <p class="info"><b>* Half-Folk Notes:</b> All Dark Elf features are usable when creating a half-Dark Elf.</p>
+          </div>
+          <h2 style="background-color:transparent;">Wood Elves</h2>
+          <p class="info">A Wood Elf replaces <b>Scion of Magic</b> with these features:</p>
+          <h3>Fleet of Foot</h3>
+          <p class="info">As a Wood Elf, your base speed equals 35 feet.</p>
+          <h3>Primeval Current</h3>
+          <p class="info">
+            You learn a druid cantrip of your choice. Wisdom is your spellcasting ability for this cantrip.
+          </p>
+          <h3>All of the Animals</h3>
+          <p class="info">
+            As part of a long rest you can harvest the hide and bones of a creature you’ve recently killed to create one of the following items: A spear, a dagger, or 5 arrows. The creature must be small sized or larger to be used in this way. With a medium or larger creature you gain the ability to make a shield, or a set of either hide or leather armor. You must use an applicable set of artisans tools or a blade of some kind to harvest the materials necessary to make these items.
+          </p>
+          <div class="half-notes">
+            <p class="info"><b>* Half-Folk Notes:</b> All Wood Elf features are usable when creating a half-Wood Elf.</p>
+          </div>
+        </details>
+        <p><a href="#top">Back to Top</a></p>
+      </details>
+      <hr>
+      <details class="main-info"><summary><h1><div class="tooltip">Halfling<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+        <p class="flavor"><i><a id="halfling">Halflings</a> are the tiny folks.</i></p>
+        <h2>Ability Scores</h2>
+        <p class="info">
+          Choose three unique abilities to receive a +1.
+        </p>
+        <h2>Age</h2>
+        <p class="info">
+          Halflings mature at the same rate as most others, reaching adulthood around the age of 20, and living about three centuries in their natural lifespan.
+        </p>
+        <h2>Size</h2>
+        <p class="info">
+          Known for their small stature, most Halflings stand between 2½ and 3½ feet tall. As a Halfling, you are small sized.
+        </p>
+        <h2>Speed</h2>
+        <p class="info">
+          A Halfling's base speed is 25 feet.
+        </p>
+        <h2>Lucky</h2>
+        <p class="info">
+          When you roll a natural one on an ability check, an attack roll, or a saving throw, you may re-roll.  You must use the new roll, even if that roll is also a natural one.
+        </p>
+        <h2>Brave</h2>
+        <p class="info">
+          You have advantage on saving throws against being frightened. Additionally, once per long rest when you are frightened, you may choose to ignore the effects of the frightened condition for a number of rounds equal to your proficiency bonus, after which the effect is resumed as normal.
+        </p>
+        <h2>Simple Comfort</h2>
+        <p class="info">
+          Halflings have learned to appreciate the little things in life.  After finishing a long rest or having a good meal, you may make one attack roll, ability check, or saving throw with advantage for the next 24 hours. You may not hold more than one use of this ability at a time.
+        </p>
+        <h2>Often Overlooked</h2>
+        <p class="info">
+          Many foes underestimate you due to your smaller stature. When a medium or larger creature targets you with an attack or spell, that creature must make a wisdom saving throw (the DC of this save equals 10 + your proficiency bonus) if they can see any of your allies which are medium sized or larger. On a failed save the creature must choose a new target, or lose the attack or spell. You may not use this ability against a creature which has seen you land an attack or cast a spell.
+        </p>
+        <hr>
+        <div class="half-notes">
+          <p class="info"><b>* Half-Folk Notes:</b> All Halfling abilities are available to a half-Halfling, though “Often Overlooked” is only available to a half-folk character who is small sized.</p>
+        </div>
+        <p><a href="#top">Back to Top</a></p>
+      </details>
+      <hr>
+      <details class="main-info"><summary><h1><div class="tooltip">Human<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+        <p class="flavor"><i><a id="human">Humans</a> are all backbone. Tough and adaptable, they are short lived but ambitious, often going places that no one else is willing to go. They live everywhere and travel the world over, often underestimated due to their seemingly mundane nature.  A Human’s strength comes primarily from their endurance and resilience; it is these driving traits that keep them going, to the eternal frustration of many.</i></p>
+        <h2>Ability Scores</h2>
+        <p class="info">
+          As a Human, choose three unique ability scores and increase them by +1. Most Humans living dangerous or difficult lives have one of those points in Constitution.
+        </p>
+        <h2>Age</h2>
+        <p class="info">
+          Humans reach adulthood around the age of 20 and only live to see a century if they’re both lucky and in good physical health.
+        </p>
+        <h2>Size</h2>
+        <p class="info">
+          Humans vary greatly in size, with heights, weights and builds across a broad spectrum.  All Humans are medium-sized.
+        </p>
+        <h2>Speed</h2>
+        <p class="info">
+          As a human, your base speed is 30 feet.
+        </p>
+        <h2>Resilient</h2>
+        <p class="info">
+          You’re naturally inclined to show greater fortitude in the face of raw physical exhaustion than other kinds. You have advantage on any saving throws made against Exhaustion, and treat any Exhaustion levels you have as being one level lower than they are. 
+        </p>
+        <h2>Relentless</h2>
+        <p class="info">
+          You regain a single hit die when you complete a short rest. This increases to 2 hit dice at 9th level, and 3 hit dice at 17th level.
+        </p>
+        <h2>Burning Spirit</h2>
+        <p class="info">
+          When you are reduced to 0 hit points, you may choose to remain conscious with 1 hit point instead. You may use this ability once per long rest, and cannot use this ability if you take damage which would kill you outright.
+        </p>
+        <h2>People Person</h2>
+        <p class="info">
+          You have experience dealing with all sorts of strange situations involving people who are very different from yourself. Because of this, you can loosely communicate even with those who might not speak the same languages as you. As an action, through a vague series of gesticulations, you can communicate very simple ideas with creatures with whom you do not share a language without the need for a skill check - for example, “cross that bridge over there” or “keep watch in this area.”  A creature must have an intelligence score of 8 or higher to understand you in this way.
+        </p>
+        <h2>Skillful</h2>
+        <p class="info">
+          You gain proficiency with a single skill of your choice.
+        </p>
+        <hr>
+        <div class="half-notes">
+          <p class="info"><b>* Half-Folk Notes:</b> When making a half-Human, you may take any Human trait but Skillful.</p>
+        </div>
+        <p><a href="#top">Back to Top</a></p>
+      </details>
+      <hr>
+      <details class="main-info"><summary><h1><div class="tooltip">Orc<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+        <p class="flavor"><i>Where Humans gain their toughness from the ability to carry on and endure great punishment, <a id="orc">Orcs</a> gain their toughness from raw physical vigor. Of the types of people that might inhabit a world, Orcs and humans are probably the most alike one another. Both are shorter lived than some of the other folks around them, and both may at times be considered “uncivilized” by the type of Elf or Dwarf to look down their noses at those different from them. Orcs and Humans are both natural-born survivors, as well, though often in very different ways.</i></p>
+        <h2>Ability Scores</h2>
+        <p class="info">
+          Choose one ability score to receive a +2, and another to receive a +1. Orcs tend to be physically stronger than other kinds, and an Orc living a dangerous or difficult life would likely have one of these bonuses given to their strength score.
+        </p>
+        <h2>Age</h2>
+        <p class="info">
+          Orcs age in a similar manner to humans, reaching adulthood around age 20, and rarely (though occasionally) living to see a century.
+        </p>
+        <h2>Size</h2>
+        <p class="info">
+          On average, Orcs are bigger and more muscular than most. Most Orcs are between 6 and 7 feet tall. That said, they still somewhat vary in height and build. All Orcs are medium-sized.
+        </p>
+        <h2>Speed</h2>
+        <p class="info">
+          As an Orc, your base speed is 30 feet.
+        </p>
+        <h2>Powerful Build</h2>
+        <p class="info">
+          You are considered one size larger when calculating your lift and carry capacity.
+        </p>
+        <h2>Sprinter</h2>
+        <p class="info">
+          Tapping into all your stamina, you can push past your normal limits and move with incredible speed. You may dash as a bonus action. You may use this ability a number of times equal to your proficiency bonus, regaining uses on a long rest. Alternatively, you may expend a hit die to use this ability again when no uses remain.
+        </p>
+        <h2>Pillar of Strength</h2>
+        <p class="info">
+          Orcs are naturally capable of impressive feats of strength.  When you make a Strength saving throw or ability check using Strength, you may choose to do so with advantage. You may use this ability a number of times equal to your proficiency bonus, and regain all uses after a long rest.
+        </p>
+        <h2>Fell-Handed</h2>
+        <p class="info">
+          You are naturally deft with a weapon in your hand.  If you miss a melee attack while you have Advantage on that attack, you may still deal damage of that weapon’s type equal to your Strength modifier.
+        </p>
+        <h2>Darkvision</h2>
+        <p class="info">
+          You can see up to 60 feet in darkness as if it were dim light. You cannot discern colors, however, as your vision is much rougher than in daylight.
+        </p>
+        <hr>
+        <div class="half-notes">
+          <p class="info"><b>* Half-Folk Notes:</b> When building a character who is half-Orc, all Orc traits are applicable to use.</p>
+        </div>
+        <p><a href="#top">Back to Top</a></p>
+      </details>
+      <hr>
+      <details class="main-info"><summary><h1><div class="tooltip">Raska<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+        <p class="flavor"><i><a id="raska">Raska</a> are snake people :D</i></p>
+        <h2>Ability Scores</h2>
+        <p class="info">
+          Choose one ability score to receive a +2, and another to receive a +1.
+        </p>
+        <h2>Age</h2>
+        <p class="info">
+          Raska tend to have an average lifespan, rarely living past 150 years of age.
+        </p>
+        <h2>Size</h2>
+        <p class="info">
+          The Raska’s resemblance to human beings extends to their size, usually standing between 5 and 6½ feet tall.  Your size is medium.
+        </p>
+        <h2>Speed</h2>
+        <p class="info">
+          As a Raska, your base speed is 30 feet.
+        </p>
+        <h2>Darkvision</h2>
+        <p class="info">
+          You can see up to 60 feet in darkness as if it were dim light. You cannot discern colors, however, as your vision is much rougher than in daylight.
+        </p>
+        <h2>Friend to Snakes</h2>
+        <p class="info">
+          You can speak to and be understood by snakes, though you are unable to understand them in return. Any snakes you interact with are treated as being charmed by you, and will follow commands you give them to the best of their ability as long as it will not obviously harm them (such as telling them to jump off of a cliff or into fire).
+        </p>
+        <h2>Venomous</h2>
+        <p class="info">
+          You have a set of fangs that produce natural venom, which you can apply to your weapons and ammunition or use as a poison on its own.  Spending an action, you apply the venom to a weapon or other object (such as a food item). If ingested or applied to an open wound, the venom deals poison damage equal to a number of d8s multiplied by your proficiency bonus.  When applied to a weapon, the venom only applies this damage to a single strike before it is used up.  After 24 hours, the venom dries up and cannot be used anymore.  You may extract your venom for this purpose once per long rest.
+        </p>
+        <h2>Inoculated</h2>
+        <p class="info">
+          You have resistance to poison damage, and immunity to the poisoned condition
+        </p>
+        <h2>Cold-Blooded</h2>
+        <p class="info">
+          You have immunity to the charmed condition, and vulnerability to cold damage.
+        </p>
+        <hr>
+        <div class="half-notes">
+          <p class="info"><b>* Half-Folk Notes:</b> A Half-Raska can take any Raska trait except for Inoculated.</p>
+        </div>
+        <p><a href="#top">Back to Top</a></p>
+      </details>
+      <hr style="height:6px;">
+      <details class="main-info"><summary><h1><div class="tooltip">Half-Folk Rules<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+        <p class="flavor"><a id="half-folk">People</a> love one another regardless of their differences. Being different from your lover in some way isn’t going to stop you from loving them, and it often won’t stop the two of you from having children together. A player may want to play a character from a union of two different kinds of folks, so to do that, use the following rules:</p>
+        <h2>Ability Scores</h2>
+        <p class="info">
+          A half-folk character may choose one ability score to receive a +2, and another to receive a +1.  Alternatively, choose any three unique ability scores to receive a +1.
+        </p>
+        <h2>Age</h2>
+        <p class="info">
+          Lifespan for this character is determined by the average of their parents' potential lifespans.  For example, a half-Human/half-Elf would likely live to be around 350 before growing old.
+        </p>
+        <h2>Size</h2>
+        <p class="info">
+          Size is also determined by the average between the parents’ size. The child of two medium creatures will be a medium creature. The child of two small creatures will be a small creature. The child of a small and a medium creature could be either small or medium, at the choice of the player.
+        </p>
+        <h2>Speed</h2>
+        <p class="info">
+          Speed is also determined by the average between the parents’, rounded down to the nearest multiple of five. For example, a character who’s half-Human and half-Orc has a speed of 30. A character who’s half-Human and half-Dwarf has a speed of 25.
+          <br><br>
+          (Note: A character who’s half-Wood Elf/half Dwarf would have a speed of 25, but if they were to take fleet of foot as an ability, their base speed would be 35. When building a character who uses the half-folk rules, specific rules will always take precedence over general ones!)
+        </p>
+        <h2>Inherited Features</h2>
+        <p class="info">
+          Choose two abilities, one from each group of folk your character’s parents belong to. When choosing these abilities, check the Half-Folk Notes associated with the abilities, to see if any of them aren’t available to a half-folk character.
+        </p>
+        <h2>Unique Features</h2>
+        <p class="info">
+          Half-folk often have a unique cultural experience, often having to fit into two very different cultures simultaneously. Below is a set of features unique to half-kind characters. Choose two of these when making your character:
+          <details class="sub-list"><summary><b>Options</b></summary>
+          <ul>
+            <li><b>Prodigy:</b>  You gain expertise in one skill or set of tools with which you are proficient.</li><br>
+            <li><b>Jack of all Trades:</b> Gain proficiency in two additional skills.</li><br>
+            <li><b>Paragon:</b> Choose a third feature from either of your parent’s potential folk abilities.</li><br>
+            <li><b>Grit:</b> You gain a pool of “grit points” equal to your proficiency bonus. When you fail an ability check or a saving throw, you may spend one of these grit points to roll 1d4 and add it to the total of the roll, potentially causing it to succeed. You regain any grit points on a long rest.</li><br>
+            <li><b>Innocuous:</b> You’ve learned to better blend in with a crowd. You gain proficiency with the stealth skill and disguise kit. Additionally, you have advantage on stealth checks made in an urban environment.</li><br>
+            <li><b>Everready:</b> You’ve grown used to expecting the worst from others. You gain proficiency with insight, and you can’t be Surprised by creatures that you can see.</li><br>
+            <li><b>Mediator:</b> You are good at diffusing tense situations. When initiative is rolled, you may try and talk an opposing group down from conflict. Make a persuasion check, contested by an Insight check from the highest CR creature opposing you.  If said creature has an intelligence of less than 8, the check is deferred to the next-highest CR creature, and if there is a tie, the creature with the higher Wisdom makes the check. If you succeed, initiative is stopped for the moment. It may begin again at any time if the opposing party fails to find common ground with you and your allies, or if any of your allies attempts to harm the opposing party. This ability automatically fails if none of the opposing creatures have an intelligence score of 8 or higher.</li>
+          </ul>
+          </details>
+        </p>
+      </details>
+      <details class="main-info"><summary><h1><div class="tooltip">Bloodlines<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+        <p class="flavor"><a id="bloodlines">Bloodlines</a> are character options that go beyond what manner of folk they might be, often playing into more supernatural characteristics and abilities of a character’s nature, granting them a more intense edge than ordinary folks. To claim a bloodline, a player chooses just how far they want their character to be diverged from their initial nature. A character chooses their bloodline and sacrifices their first level feat to gain one ability of those available to their bloodline. They may sacrifice one of the traits they gain from their folk to gain a second ability from their bloodline, and sacrifice a second trait from their folk to gain a third bloodline trait. A character may have three bloodline traits at maximum.</p>
+        <h2>Nephilim</h2>
+        <p class="info">Nephilim are individuals tied to divinity, angels, demigods, chosen ones, and others might fall under the umbrella of ‘Nephilim.’ Their appearances vary wildly, with some individuals simply being strikingly good looking, while others are more disconcerting examples of unknowable divinity (creatures with many eyes or arms, tongues of flame above them, heads of animals, and so on). Regardless, you as a creature are divine in nature, and it is through that divinity, that you gain a sort of power unknown to others. Choose three of the Nephilim traits listed below to represent your divine nature:</p>
+        <details class="sub-list"><summary><b>Nephilim Traits</b></summary>
+          <ul>
+            <li><b>Divine Gravitas (Medium size characters only):</b> You are much larger than most, your great size an indicator that you are not of common mortal stock.<br><br>When determining your lift and carry weight, you count as being one size larger. Additionally, you add 1d4 to your melee weapon attacks.</li><br>
+            <li><b>Many Eyes:</b> Your body is, put simply, covered in a multitude of eyes. You gain proficiency with the perception skill. If you choose to gain proficiency with perception through your background or class, you instead gain expertise.<br><br>You see all around you, in 360 degrees. You are aware of things that happen behind you, beside you, and in other so called “blind spots” people might have.</li><br>
+            <li><b>Four Armed:</b> You have a secondary set of arms in addition to your primary two. These arms function as your normal arms do, with two exceptions:
+              <ul><li>Your secondary arms can only wield weapons with the light property.</li><li>You cannot hold a shield in your secondary arms.</li></ul>
+            If you wish to engage in multi-weapon fighting with weapons wielded in all 4 arms (or an unarmed strike with each arm), you can choose to use a bonus action to make an attack with every one of your arms, following the first one. When doing this, you cannot be wielding any weapons that lack the light property. You cannot add your proficiency bonus to any attacks made in this way, nor your ability modifier to any damage rolls made on this turn when attacking in this way.</li><br>
+            <li><b>Transformation:</b> As an action, your form shifts into a horrifying visage of divinity that you remain in for a minute. Any creatures within 30 feet that can see you must succeed on a wisdom saving throw against your spell save DC or be frightened for the duration. Any frightened creature may attempt this save again at the start of their turn, ending the effect on a success.
+              <br><br>
+            Additionally, you create a destructive aura around yourself that deals damage equal to your level as your choice of radiant or necrotic damage to any creatures within it. The radius for this aura is 10 feet.
+              <br><br>  
+            You regain use of this ability on a long rest.
+              </li><br>
+            <li><b>Winged:</b> You gain a flying speed of 10 feet. This speed increases by 10 at 4th level, and again at 8th level. It also benefits from any speed increases you may have from feats, class features, or spells.</li><br>
+            <li><b>Healing Hands:</b> As a bonus action, you may lay your hands on an ally and heal them for a number of hit points equal to your level. You must be able to touch your ally to use this ability. You regain the use of this ability on a short or long rest.</li><br>
+            <li><b>Magician's Red:</b> You gain two cantrips and a first level spell of your choice from the Hierophant spell list. You can cast the spell once without using a spell slot, and then again using any spell slots you have available to you from your class. You choose the modifier you use to cast these spells (choosing from Intelligence, Wisdom, and Charisma) when you gain this feature.<br><br>You regain the ability to cast your spell without a spell slot on a long rest.</li><br>
+            <li><b>Divine Resistance:</b> You gain resistance to necrotic and radiant damage.</li><br>
+            <li><b>Misbegotten:</b> Your existence is the result of something both angelic and demonic. When you choose this trait, pick a trait from the Cambion traits list. You gain that trait as opposed to one from the Nephilim list.</li>
+          </ul>
+        </details>
+        <h2>Cambion</h2>
+        <p class="info">As a Cambion, you are tied to demons and hell, the darker powers that linger in this world presided in some way over your birth. You are, in some part, a demon (perhaps a demon entirely, or merely just descended from one). This is reflected in your appearance. You may have bright red skin and sharp horns, thick fur, jagged teeth, empty black eyes, a long tail, or some other unsettling aspect that signifies a demonic nature. Choose three traits listed below to represent your demonic nature:</p>
+        <details class="sub-list"><summary><b>Cambion Traits:</b></summary>
+          <ul>
+            <li><b>Scion of Flame:</b> You learn the <i>Firebolt</i> cantrip. You may choose your spellcasting modifier for this cantrip when you gain this ability (choosing from Intelligence, Wisdom, and Charisma). You add that ability modifier to the initial damage of your <i>Firebolt</i> spell (but not the burn damage).<br><br>When you take the attack action, you may replace one of your attacks (should you have multiple) with a single casting of <i>Firebolt</i>.</li><br>
+            <li><b>Fiendish Resistance:</b> You gain resistance to fire damage.</li><br>
+            <li><b>Charmer:</b> You learn the <i>Charm Person</i> spell. You may cast this spell a number of times equal to your proficiency bonus without a spell slot, and then may use any spell slots you might have to cast the spell again.<br><br>You regain the ability to cast this spell without a spell slot on a long rest.</li><br>
+            <li><b>Black Blooded:</b> You gain advantage on saves against the poisoned condition. In addition, when someone hits you with a melee attack, you may force them to make a constitution saving throw (the DC for this saving throw is equal to 8 + your CON bonus + your proficiency bonus). If the creature fails, they are poisoned for the next minute. A creature poisoned in this way may repeat the saving throw at the end of their turns, ending the condition on a success.<br><br>You may use this feature a number of times equal to your proficiency bonus, regaining all uses of it after a short or long rest.</li><br>
+            <li><b>Animalistic:</b> Choose a single CR 0 beast without a swimming, flying, or burrowing speed. You are capable of taking on the form of this beast once, regaining the ability to do so after a long rest. While in your animal form, your Strength, Dexterity, and Constitution scores - as well as your hit point count - are replaced by the beast’s stat block. You cannot cast or concentrate on spells in this form, and after a number of hours equal to your proficiency bonus or when you are reduced to 0hp in your animal form, you revert to your humanoid shape.<br><br>Your humanoid form gains animalistic qualities associated with the animal it is you are able to shift into (a person capable of turning into a wolf might gain a thick coat of fur, and sharp teeth, for example).</li><br>
+            <li><b>Bestial Aspect:</b> You gain one of the following animalistic traits that grant you an edge in combat. (Note, you may absolutely have sharp teeth, clawed fingers, horns, and hooves without choosing any of these options, these abilities simply represent your ability to use those parts of yourself adequately in combat). Choose one of the following:
+            <details class="sub-list"><summary><b>Beastial Aspect Options</b></summary>
+              <ul>
+                <li><b>Bite:</b> You gain a bite attack that deals piercing damage equal to 1d6 + your strength modifier. If the roll on the d6 is greater than 3, the creature must make a constitution saving throw or gain the bleed condition. The DC for this saving throw is equal to 8 + your strength modifier + your proficiency bonus.</li><br>
+                <li><b>Horns:</b> You gain the ability to use your horns in a gore attack that deals 1d8 + your strength modifier in piercing damage. If the attack lands, you may attempt to knock the target creature prone. Both you and the target creature roll an athletics check, contested. If you beat their roll, you knock the creature prone.</li><br>
+                <li><b>Claws:</b> Your hands end in sharp claws, allowing you to make claw attacks. These attacks deal 1d6 slashing. When you attack with a claw, or a melee weapon, if you aren’t wielding anything in your off hand, you may use a bonus action to make a claw attack, adding your strength modifier to the damage of the attack.</li><br>
+                <li><b>Hooves:</b> Your walking speed increased by 5 feet.</li><br>
+              </ul>
+            </details>
+            You may take this trait multiple times, choosing a different aspect each time you do.
+            </li><br>
+            <li><b>Barbed Hide:</b> Your skin is rough, and harms others at the touch. Your AC increases to 12 + your constitution modifier when you aren’t wearing armor or using some other form of unarmored defense (such as the monk and barbarian features, or the ascetic fighting style).<br><br>Additionally, you deal 1d6 of piercing damage to any creatures grappling you, or being grappled by you.</li><br>
+            <li><b>Fearsome:</b> Your appearance is naturally unsettling to others. You gain proficiency with the intimidation skill. If you choose to gain proficiency with intimidation through your background or class, you instead gain expertise.</li><br>
+            <li><b>Pact-Maker:</b> You gain the ability to make truly binding pacts. To make a pact with a creature, you and it must lock hands and each must state what they will do to uphold their end of the pact. This process takes one minute.<br><br>If either party breaks the pact at any point in time, they instantly take a number of d10s equal to your level in necrotic damage. You, and you alone decide what constitutes a break in the pact, despite its seemingly mutual nature.</li><br>
+            <li><b>Misbegotten:</b> Your existence is the result of something both angelic and demonic. When you choose this trait, pick a trait from the Cambion traits list. You gain that trait as opposed to one from the Nephilim list.</li>
+          </ul>
+        </details>
+        <hr>
+        <p><a href="#top">Back to Top</a></p>
+      </details>
+      <hr>
+      <p><a href="#top">Back to Top</a></p>
+  </div>
+
+
+</div>
+  <!--Javascript code for topnav-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+</html>

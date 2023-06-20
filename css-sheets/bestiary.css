@@ -1,0 +1,72 @@
+details.cr-level{
+  color:rgb(79, 10, 10);
+  font-size: 20px;
+  cursor:pointer;
+  border-width:1px;
+  background-color:rgb(254,255,239);
+  border-style:solid;
+  border-width:0.5px;
+  border-color:rgb(158, 109, 72);
+  padding:3px;
+  margin-right:4%;
+  margin-left:1%;}
+details.cr-level>summary{
+  font-weight:normal;}
+details.monster-sum>summary{
+  color:rgb(79, 10, 10);
+  font-size: 18px;
+  font-family: arial;
+  list-style:none;
+  cursor:pointer;
+  border-style:none none solid none;
+  border-width:1.5px;}
+details.monster-sum{
+  margin-left:10px;
+  margin-bottom:5px;
+  padding:2px;
+  margin-right:1%;
+  box-shadow:1px 1px 2px black;
+  background-color:rgb(254,237,197);}
+table.monster-block{
+  width:750px;
+  margin-left:auto;
+  margin-right:auto;
+  border:0;}
+td.name{
+  font-family:Garamond;
+  color:rgb(79, 10, 10);
+  font-size:25px;
+  font-weight:bold;
+  text-align:left;}
+td.linebreak{
+  background-color: rgb(79, 10, 10);
+  padding:2px;}
+td.linebreak2{
+  background-color: rgb(79, 10, 10);
+  padding:0.5px;}
+td.type{
+  font-size:14px;
+  font-family:Georgia;
+  text-align:left;}
+td.bio{
+  font-size:16px;
+  color:rgb(79, 10, 10);
+  font-family: arial;
+  text-align:left;}
+tr.stats{
+  text-align:center;
+  color:rgb(79, 10, 10);
+  font-family:arial;}
+td.stat-num{
+  padding:3px;}
+td.detail-title{
+  color:rgb(57, 7, 7);
+  letter-spacing:2px;
+  font-family:arial;
+  font-size:18px;
+  text-align:left;}
+td.details{
+  font-size:16px;
+  font-family:arial;
+  padding-bottom:5px;
+  text-align:left;}

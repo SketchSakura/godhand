@@ -1,0 +1,297 @@
+/*Sidebar info*/
+#sidebar{
+  height:100%;
+  width:13%;
+  position: fixed; /* Stay in place */
+  z-index: 2; 
+  top: 0;
+  left: 0;
+  background-color: rgb(223,162,115);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 25px; /* Place content some from the top */
+  transition: 0.5s;
+}
+#sidebar a{
+  text-decoration: none;
+  color: rgb(79, 10, 10);
+  padding:8px;
+}
+#sidebar a:hover{
+  color: white;
+}
+#sidebar a.sublink{
+  font-size:16px;
+}
+#sidebar ul{
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+.main-link{
+  font-size:20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+details.main-dropdown{
+  color:rgb(79, 10, 10);
+  font-size: 18px;
+  padding-bottom: 0px;
+  margin-left: 0.5%;}
+details.main-dropdown>summary{
+  color:rgb(79, 10, 10);
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 6.5px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+details.subclass{
+  color:rgb(79, 10, 10);
+  font-size: 18px;
+  padding-bottom: 0px;
+  margin-left:2%;
+}
+details.subclass>summary{
+  color:rgb(79, 10, 10);
+  list-style: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left:2%
+}
+
+
+/*Main content area*/
+#main{
+  margin-left: 13%;
+  margin-right:12%;
+  background-color:rgb(254,237,197);
+}
+#logo{
+  margin-left:auto;
+  margin-right: auto;
+  text-align:center;
+}
+body{
+  background-color: rgb(254,237,197);
+}
+a{
+  text-decoration:none;
+  color:rgb(79, 10, 10);
+  font-family:arial;
+}
+a:hover{
+  color: white;
+}
+h1, h2, h3, h4{
+  font-family: Papyrus,fantasy;
+  color:rgb(79, 10, 10);
+}
+p{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:18px;
+  color:rgb(57,7,7);
+}
+p.flavor{
+  font-size:20px;
+  vertical-align:center;}
+td{
+  text-align:center;
+  color:rgb(57, 7, 7);
+  font-size:14px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding-left:5px;
+  padding-right:5px;
+}
+th{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:rgb(57, 7, 7);
+}
+tr:nth-child(even){
+  background-color:rgb(207, 171, 121);
+}
+.toc, .spellblock, .levelup, th, td{
+  border:1px solid black;
+}
+ul, ol, li, dl, dd{
+  color:rgb(57, 7, 7);
+  font-size: 18px;
+  font-family: arial;}
+details.main-info, details.class>summary, details.rules>summary, details.combat>summary{
+  color:rgb(79, 10, 10);
+  list-style:none;
+  cursor:pointer;
+  border-style:none none dotted none;
+  border-width:2px;}
+p.info{
+  margin-left:10px;
+}
+details.sub-list{
+  color:rgb(79, 10, 10);
+  font-family:arial;
+  font-size:18px;
+  margin-left:4%;}
+details.sub-list>summary{
+  background-color:rgb(231, 190, 133);
+  margin-left:-2%}
+span.right{
+  float:right;}
+
+
+/* Subclass Nav */
+nav.subclass{
+  background-color: rgb(231, 190, 133);
+  width:max-content;
+  font-size:18px;
+  font-family:arial;
+  padding:5px;
+  margin-left:auto;
+  margin-right:auto;}
+
+/*Folk page note for half-folks*/
+.half-notes{
+  background-color:rgb(249, 208, 151);}
+
+/*Feats pages tables*/
+details.feat-alpha>summary{
+  color:rgb(79, 10, 10);
+  font-size: 20px;
+  cursor:pointer;
+  border-style:none none dotted none;
+  border-width:1px;}
+details.feat-alpha{
+  border-style:solid;
+  border-width:0.5px;
+  border-color:rgb(158, 109, 72);
+  padding:2px;
+  margin-right:4%;
+  margin-left:1%;
+  background-color:rgb(254,255,239);}
+details.feat-details>summary{
+  color:rgb(79, 10, 10);
+  font-size: 18px;
+  font-family: arial;
+  list-style:none;
+  cursor:pointer;
+  border-style:none none solid none;
+  border-width:1.5px;} 
+details.feat-details{
+  margin-left:10px;
+  margin-bottom:5px;
+  padding:2px;
+  margin-right:1%;
+  box-shadow:1px 1px 2px black;
+  background-color:rgb(254,237,197);}
+details.feat-details[open]{
+  box-shadow:3px 3px 5px black;
+  padding: 2px;}
+
+
+/* Rules TOC edit */
+details.rulestoc>summary{
+  cursor:pointer;}
+details.rulestoc{
+  margin-left:1%;}
+
+/* Spell list dropdown */
+details.spell-level>summary{
+  color:rgb(79, 10, 10);
+  font-size: 20px;
+  cursor:pointer;
+  border-style:none none dotted none;
+  border-width:1px;}
+details.spell-level{
+  border-style:solid;
+  border-width:0.5px;
+  border-color:rgb(158, 109, 72);
+  padding:2px;
+  margin-right:4%;
+  margin-left:1%;
+  background-color:rgb(254,255,239);}
+details.spell-details>summary{
+  color:rgb(79, 10, 10);
+  font-size: 18px;
+  font-family: arial;
+  list-style:none;
+  cursor:pointer;
+  border-style:none none solid none;
+  border-width:1.5px;} 
+details.spell-details{
+  margin-left:10px;
+  padding:2px;
+  margin-right:1%;
+  margin-bottom:5px;
+  box-shadow:1px 1px 2px black;
+  background-color:rgb(254,237,197);}
+details.spell-details[open]{
+  box-shadow:3px 3px 5px black;
+  padding: 2px;}
+p.spellsum{
+  font-size:16px;
+  font-family:helvetica;
+  margin:0;
+}
+.spellname, .abju, .conj, .divin, .enchant, .evoc, .illusion, .necro, .transmute{
+  font-size:22px;
+  font-family:Garamond,serif;}
+span.abju{
+  color: rgb(115, 175, 223);}
+span.conj{
+  color: rgb(113, 180, 78);}
+span.divin{
+  color: rgb(102, 213, 237);}
+span.enchant{
+  color: rgb(234, 136, 209);}
+span.evoc{
+  color: rgb(189, 65, 46);}
+span.illusion{
+  color: rgb(198, 186, 245);}
+span.necro{
+  color: rgb(58, 50, 50);}
+span.transmute{
+  color: rgb(168, 132, 59);}
+
+
+
+/*Tooltip dropdown and copyright info*/
+span.dropdown{
+  float:left;
+  position:absolute;
+  z-index: 2;
+}
+.tooltip {
+  position:relative;
+  display: inline-block;}
+.tooltip .tooltiptext{
+  visibility: hidden;
+  width: 175px;
+  background-color: rgb(231, 190, 133);
+  color:rgb(79, 10, 10);
+  text-align: center;
+  padding:5px 1px;
+  border-radius:6px;
+  position:absolute;
+  z-index:1;
+  top:5px;
+  left: 110%;
+  font-size:14px;
+  font-family:tahoma, arial;
+  font-weight:normal;}
+.tooltip .tooltiptext::after{
+  content:" ";
+  position: absolute;
+  top:50%;
+  right:100%;
+  margin-top:-5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgb(231, 190, 133) transparent transparent;}
+.tooltip:hover .tooltiptext{
+  visibility:visible;}
+p.copyright{
+  font-size:12px;
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+}
+hr{
+  height:2px;
+  border:0 none;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(128, 0, 0), rgba(0,0,0,0));}

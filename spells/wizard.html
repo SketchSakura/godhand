@@ -1,0 +1,695 @@
+<html>
+  <head><title>Godhand the Roleplaying Game</title>
+    <link href="../css-sheets/topnav.css" rel="stylesheet">
+    <link href="../css-sheets/layout.css" rel="stylesheet">
+    <style>
+      h1{font-size:25px; padding:5px;}
+      h2{font-size:23px; padding:3px;}
+      h3{font-size:20px;padding:3px; background-color:rgb(207,171,121);}
+    </style>
+  </head>
+<body>
+  <div id="sidebar" class="sidebar"><!--Full Link Sidebar-->
+      <a href="../index.html" class="main-link">&#9864 &nbsp;About</a><br>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Rules</summary>
+        &nbsp;&nbsp;<a href="../rules/basics.html">&#9864 &nbsp;Basics</a>
+        <br>&nbsp;&nbsp;<a href="../rules/combat.html">&#9864 &nbsp;Combat</a>
+        <br>&nbsp;&nbsp;<a href="../rules/magic.html">&#9864 &nbsp;Magic</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../classes.html" class="main-link">&hairsp;Classes</a></summary>
+        <!--Class Dropdown-->
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#barbarian">Barbarian</a></summary><!--Barbarian-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#bard">Bard</a></summary><!--Bard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#druid">Druid</a></summary><!--Druid-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#fighter">Fighter</a></summary><!--Fighter-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/fight-champion.html" class="sublink">Champion</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/fight-momentum.html" class="sublink">Momentum</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/fight-strategist.html" class="sublink">Strategist</a>
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#hierophant">Hierophant</a></summary><!--Hierophant-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/hiero-truth.html" class="sublink">Truth</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/hiero-violence.html" class="sublink">Violence</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#monk">Monk</a></summary><!--Monk-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#paladin">Paladin</a></summary><!--Paladin-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#rogue">Rogue</a></summary><!--Rogue-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/rogue-fatale.html" class="sublink">Fatale</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/rogue-lowlife.html" class="sublink">Lowlife</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#salaryman">Salaryman</a></summary><!--Salaryman-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#scholar">Scholar</a></summary><!--Scholar-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#sorcerer">Sorcerer</a></summary><!--Sorcerer-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#warlock">Warlock</a></summary><!--Warlock-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#warlord">Warlord</a></summary><!--Warlord-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#wizard">Wizard</a></summary><!--Wizard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/wiz-anatomist.html"  class="sublink">Anatomist</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/wiz-profane.html" class="sublink">Profane</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/wiz-enlightened.html" class="sublink">Enlightened</a>
+        </details>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../folk.html" class="main-link">&hairsp;Folk</a></summary>
+        <!--Folk Dropdown-->
+        &nbsp;&nbsp;<a href="../folk.html#catfolk">&#9864 Catfolk</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#changeling">&#9864 Changeling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#colun">&#9864 Colún</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#dwarf">&#9864 Dwarf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#elf">&#9864 Elf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#halfling">&#9864 Halfling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#human">&#9864 Human</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#orc">&#9864 Orc</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#raska">&#9864 Raska</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#half-folk">&#9864 Half-Folk Rules</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#bloodlines">&#9864 Bloodlines</a>
+      </details>
+      <a href="../feats.html" class="main-link">&#9864 &nbsp;Feats</a><br>
+      <details class="main-dropdown"><summary>&#9862<a href="guide.html" class="main-link">&hairsp;Spells</a></li></summary>
+        <!--Spell Dropdown-->
+        &nbsp;&nbsp;<a href="guide.html">&#9864 Spell Guide</a>
+        <br>&nbsp;&nbsp;<a href="bard.html">&#9864 Bard</a>
+        <br>&nbsp;&nbsp;<a href="druid.html">&#9864 Druid</a>
+        <br>&nbsp;&nbsp;<a href="hierophant.html">&#9864 Hierophant</a>
+        <br>&nbsp;&nbsp;<a href="warlock.html">&#9864 Warlock</a>
+        <br>&nbsp;&nbsp;<a href="wizard.html">&#9864 Wizard</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Items</a></summary>
+        <!--Item Dropdown-->
+        &nbsp;&nbsp;<a href="../items/armorweapons.html">&#9864 Armor & Weapons</a>
+        <br>&nbsp;&nbsp;<a href="../items/equips.html">&#9864 Equipment</a>
+        <br>&nbsp;&nbsp;<a href="../items/magicitems.html">&#9864 Magic Items</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Bestiary</a></summary>
+        &nbsp;&nbsp;<a href="../bestiary/page-1.html">&#9864 &nbsp;CR 0 - 5</a>
+      </details>
+  </div>
+<div id="main"><!--Encapsulated header nav and body-->
+  <div id="logo"> <!--Godhand Logo-->
+    <a href="../index.html"><img src="../images/Godhand logo.png" class="logo"></a> <!--Godhand logo-->
+  </div>
+  <div class="topnav" id="myTopnav"> <!--Topnavbar-->
+    <a href="../index.html" >About</a>
+    <div class="nav-dropdown"><!--Rules Dropdown-->
+      <button class="dropbtn">Rules &#9662</button>
+      <div class="dropdown-content">
+        <a href="../rules/basics.html">Basics</a>
+        <a href="../rules/combat.html">Basics</a>
+        <a href="../rules/magic.html">Magic</a>
+      </div>
+    </div>
+    <a href="../folk.html">Folk</a>  
+    <div class="nav-dropdown"><!--Classes Dropdown-->
+      <button class="dropbtn"><a href="../classes.html" style="padding:0px;">Classes</a> &#9662</button>
+      <div class="dropdown-content"> <!--Classes variety-->
+        <a href="../classes.html#barbarian">Barbarian</a>
+        <a href="../classes.html#bard">Bard</a>
+        <a href="../classes.html#druid">Druid</a>
+        <a href="../classes.html#fighter">Fighter</a>
+        <a href="../classes.html#hierophant">Hierophant</a>
+        <a href="../classes.html#monk">Monk</a>
+        <a href="../classes.html#paladin">Paladin</a>
+        <a href="../classes.html#rogue">Rogue</a>
+        <a href="../classes.html#salaryman">Salaryman</a>
+        <a href="../classes.html#scholar">Scholar</a>
+        <a href="../classes.html#sorcerer">Sorcerer</a>
+        <a href="../classes.html#warlock">Warlock</a>
+        <a href="../classes.html#warlord">Warlord</a>
+        <a href="../classes.html#wizard">Wizard</a>
+      </div>
+    </div>
+    <a href="../feats.html">Feats</a>
+    <div class="nav-dropdown active"><!--Spells Dropdown-->
+      <button class="dropbtn"><a href="guide.html" style="padding:0px;">Spells</a> &#9662</button>
+      <div class="dropdown-content">
+        <a href="guide.html">Spell Guide</a>
+        <a href="bard.html">Bard</a>
+        <a href="druid.html">Druid</a>
+        <a href="hierophant.html">Hierophant</a>
+        <a href="warlock.html">Warlock</a>
+        <a href="wizard.html">Wizard</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Items Dropdown-->
+      <button class="dropbtn">Items &#9662
+      </button>
+      <div class="dropdown-content">
+        <a href="../items/armorweapons.html">Armor & Weapons</a>
+        <a href="../items/equips.html">Equipment</a>
+        <a href="../items/magicitems.html">Magic Items</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Bestiary Dropdown-->
+      <button class="dropbtn">Bestiary &#9662 </button>
+      <div class="dropdown-content">
+        <a href="../bestiary/page-1.html">CR 0 - 5</a>
+      </div>
+    </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!--Javascript button for smaller screens-->
+  </div>
+<br>
+  <div id="mainbody"> <!--Main Content-->
+    <h1 style="font-size:40px">
+      Wizard Spell List
+    </h1>
+    <a id="top"></a>
+    <details class="spell-level"><summary>Cantrips</summary>
+      <!--Spell 0-1-->
+      <details class="spell-details"><summary><span class="spellname"><b>Spell Name</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Range&nbsp;&nbsp;|&nbsp;&nbsp;Casting Time&nbsp;&nbsp;<span class="right">Casting Components (V/S/M)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;School of Magic</span>
+        <br><p class="spellsum">Short description of the spell</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Spell Name</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Instantaneous</td>
+                <td style="padding-right:25px;"><b><i>1st-level (School of Magic)</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">Here is the description of the spell in its entirety.</td>
+              </tr>
+              </table>
+      </details>
+    </details>
+    <hr>
+    <details class="spell-level"><summary>1st-level Spells</summary>
+      <!--Crawling Skin-->
+      <details class="spell-details"><summary><span class="spellname"><b>Crawling Skin</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;30 ft&nbsp;&nbsp;|&nbsp;&nbsp;1 action&nbsp;&nbsp;<span class="right">V | S | M (a small, live insect)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="conj">Conjuration</span></span>
+        <br><p class="spellsum">You summon a swarm of small bugs on target, invoking discomfort.</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Crawling Skin</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M (a small, live insect)</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>1 round</td>
+                <td style="padding-right:25px;"><b><i>1st-level Conjuration</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  You summon a swarm of small bugs on a target’s skin and clothes that skitter across their skin and invoke a very visceral sort of discomfort. While their skin is infested in this way, the target is too distracted, and too uncomfortable to fully focus on combat. They must make a wisdom saving throw, if they fail, they must choose between taking an action, a bonus action, or moving on their turn, as they can only do one of the three.
+                </td>
+              </tr>
+              </table>
+      </details>
+      <!--Electrocute-->
+      <details class="spell-details"><summary><span class="spellname"><b>Electrocute</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Self (15-ft cone)&nbsp;&nbsp;|&nbsp;&nbsp;1 action&nbsp;&nbsp;<span class="right">V | S&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="evoc">Evocation</span></span>
+        <br><p class="spellsum">Unleash a 15 ft. cone of lighting from your fingertips that persists</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Electrocute</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>Self (15 ft. cone)</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Concentration, up to 1 round</td>
+                <td style="padding-right:25px;"><b><i>1st-level Evocation</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  You stretch out your hands and writhing lightning springs forth from your fingertips. Each creature in a 15 ft. cone must make a dexterity saving throw, taking 4d6 damage on a failed save, and half as much on a successful one. While you’re concentrating on the spell, the lightning persists in the same cone. Any creature that enters the cone on their turn must make a dexterity saving throw, the creature takes 2d6 damage on a failed save, and none on a successful one.
+                </td>
+              </tr>
+              </table>
+      </details>
+      <!--Fickle Minion-->
+      <details class="spell-details"><summary><span class="spellname"><b>Fickle Minion</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;30 ft&nbsp;&nbsp;|&nbsp;&nbsp;1 action&nbsp;&nbsp;<span class="right">V | S | M (a few drops of your own blood, fresh)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="conj">Conjuration</span></span>
+        <br><p class="spellsum">Short description of the spell</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Fickle Minion</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M (a few drops of your own blood, fresh)</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Concentration, up to 1 minute</td>
+                <td style="padding-right:25px;"><b><i>1st-level Conjuration</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  You invoke the name of a great dark power, calling upon one of its many minions to come forth and do your dark bidding. You summon one imp, which you control with a bonus action on your turn. If you don’t use your bonus action to control the imp, it takes no action. If you lose concentration on the spell, the imp flies into a rage and does everything in its power to attack and kill you for the remaining duration of the spell.
+                </td>
+              </tr>
+              </table>
+      </details>
+      <!--Flash Freeze-->
+      <details class="spell-details"><summary><span class="spellname"><b>Flash Freeze</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Self (15-ft cone)&nbsp;&nbsp;|&nbsp;&nbsp;1 action&nbsp;&nbsp;<span class="right">S&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="evoc">Evocation</span></span>
+        <br><p class="spellsum">Release an explosion of frost in front of you.</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Flash Freeze</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>S</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>Self (15 ft. cone)</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Instantaneous</td>
+                <td style="padding-right:25px;"><b><i>1st-level Evocation</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  You cause an explosion of frost to cover a group of creatures in front of you in a 15 ft. cone. Each creature must make a constitution saving throw, taking 2d8 cold damage on a failure, or half as much on a success. At the start of their next turn, a creature that failed the save has their speed halved.
+                </td>
+              </tr>
+              </table>
+      </details>
+      <!--Fog Cloud-->
+      <details class="spell-details"><summary><span class="spellname"><b>Fog Cloud</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;120 ft&nbsp;&nbsp;|&nbsp;&nbsp;1 action&nbsp;&nbsp;<span class="right">V | S | M (A single ice cube)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="transmute">Transmutation</span></span>
+        <br><p class="spellsum">Create a 20-ft sphere of obscuring fog at a point in range</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Fog Cloud</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M (A single ice cube)</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>120 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Concentration, up to 1 hour</td>
+                <td style="padding-right:25px;"><b><i>1st-level Transmutation</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  When you cast this spell, you instantly force the water in an area to condense rapidly. You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.<br><br>
+                  <b>At higher levels:</b> When you cast this spell at 3rd level or higher, you treat the area of the fog as being lightly obscured so long as you concentrate on the spell. If you lose concentration, you treat the fog as being heavily obscured, but the fog remains for the duration without you concentrating on the spell.
+                </td>
+              </tr>
+              </table>
+      </details>
+      <!--Grease-->
+      <details class="spell-details"><summary><span class="spellname"><b>Grease</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;60 ft&nbsp;&nbsp;|&nbsp;&nbsp;1 action&nbsp;&nbsp;<span class="right">V | S | M (a bit of pork rind or butter)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="conj">Conjuration</span></span>
+        <br><p class="spellsum">Create slick grease in a 10-foot square at a point within range</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Grease</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M (a bit of pork rind or butter)</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>60 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>1 minute</td>
+                <td style="padding-right:25px;"><b><i>1st-level Conjuration</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration. When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.<br><br>
+                  Additionally, if fire damage is dealt to the grease at any point in time, it erupts violently into flame, and any creatures standing in the grease take the damage dealt to the grease and begin burning (as the burning condition). Dealing this damage burns all the grease away, ending the spell.
+                </td>
+              </tr>
+              </table>
+      </details>
+      <!--Invoke Mortality-->
+      <details class="spell-details"><summary><span class="spellname"><b>Invoke Mortality</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;60 ft&nbsp;&nbsp;|&nbsp;&nbsp;1 action&nbsp;&nbsp;<span class="right">V&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="necro">Necromancy</span></span>
+        <br><p class="spellsum">Target makes Wisdom saving throw or be frightened.</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Invoke Mortality</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>60 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Concentration, up to 1 minute</td>
+                <td style="padding-right:25px;"><b><i>1st-level Necromancy</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  You awaken the sense of mortality in one creature you can see within range, making it acutely aware of just how simple it would be for it to die. A construct or undead with less than 8 intelligence is immune to this effect. The target must succeed on a Wisdom saving throw or else become frightened of you until the spell ends. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br><br>
+                  <b>At Higher Levels:</b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
+                </td>
+              </tr>
+              </table>
+      </details>
+      <!--Jet of Flame-->
+      <details class="spell-details"><summary><span class="spellname"><b>Jet of Flame</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Self (15-ft cone)&nbsp;&nbsp;|&nbsp;&nbsp;1 action&nbsp;&nbsp;<span class="right">V | S&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="evoc">Evocation</span></span>
+        <br><p class="spellsum">Creates a cone of flames from hand </p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Jet of Flame</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>Self (15 ft. cone)</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Instantaneous</td>
+                <td style="padding-right:25px;"><b><i>1st-level Evocation</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">Throwing out a hand, a torrent of raging flame erupts from it! Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 2d6 fire damage on a failed save and gains the burning condition. Creatures who succeed on the save take half damage and do not begin burning.<br><br>
+                  The fire ignites any flammable objects in the area that aren’t being worn or carried.<br><br>
+                  <b>At Higher Levels:</b> When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d6 for each slot level above 1st.
+                </td>
+              </tr>
+              </table>
+      </details>
+      <!--Jump-->
+      <details class="spell-details"><summary><span class="spellname"><b>Jump</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Touch&nbsp;&nbsp;|&nbsp;&nbsp;1 action&nbsp;&nbsp;<span class="right">V | S | M (a grasshopper's hind leg)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="transmute">Transmutation</span></span>
+        <br><p class="spellsum">Creature touched has jump distance tripled.</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Jump</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M (a grasshopper's hind leg)</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>Touch</td>
+                <td style="padding-right:25px;"><b>Duration: </b>1 minute</td>
+                <td style="padding-right:25px;"><b><i>1st-level Transmutation</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  For the duration, a creature you touch has their jump distance tripled.
+                </td>
+              </tr>
+              </table>
+      </details>
+      <!--Lesser Charm-->
+      <details class="spell-details"><summary><span class="spellname"><b>Lesser Charm</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;30 ft&nbsp;&nbsp;|&nbsp;&nbsp;1 action&nbsp;&nbsp;<span class="right">V | S&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="enchant">Enchantment</span></span>
+        <br><p class="spellsum">Short description of the spell</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Lesser Charm</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>1 hour</td>
+                <td style="padding-right:25px;"><b><i>1st-level Enchantment</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  You subtly manipulate the mind of another to cause them to view you in a more inherently favorable light. One target within range must make a wisdom saving throw, or be charmed by you for the duration. If you or your allies are fighting the creature, it makes the saving throw with advantage. A creature charmed by you in this way will carry out any simple course of action you suggest to it, so long as that course of action does not require any great deal of effort, or meaningful risk on the part of the creature. When the spell ends, the creature knows it was charmed by you.<br><br>
+                  <b>At Higher Levels:</b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
+                </td>
+              </tr>
+              </table>
+      </details>
+      <!--Pestilent Cloud-->
+      <details class="spell-details"><summary><span class="spellname"><b>Pestilent Cloud</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;30 ft&nbsp;&nbsp;|&nbsp;&nbsp;1 action&nbsp;&nbsp;<span class="right">V | S | M (a piece of unclean cloth)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="conj">Conjuration</span></span>
+        <br><p class="spellsum">Fill a 10-ft radius air of space with unclean miasma</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Pestilent Cloud</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M (a piece of unclean cloth)</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Concentration, up to 1 minute</td>
+                <td style="padding-right:25px;"><b><i>1st-level Conjuration</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  You fill the air of a space within range with a 10 foot radius sphere of unclean miasma. Any creature that breathes within the area must make a constitution saving throw, or take 1d8 viral damage, and become poisoned for the duration. A creature that starts its turn in the sphere must make the saving throw again or take another 1d8 viral damage.
+                </td>
+              </tr>
+              </table>
+      </details>
+      <!--Shield-->
+      <details class="spell-details"><summary><span class="spellname"><b>Shield</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Self&nbsp;&nbsp;|&nbsp;&nbsp;1 reaction (hit by attack)&nbsp;&nbsp;<span class="right">V | S&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="abju">Abjuration</span></span>
+        <br><p class="spellsum">Create an invisible wall to ward off an attack.</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Shield</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 reaction, which you take when you are hit by an attack</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>Self</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Special (Instantaneous or 1 Round, chosen at casting)</td>
+                <td style="padding-right:25px;"><b><i>1st-level Abjuration</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">You use your magic to ward yourself against an attack, letting blades and arrows strike an invisible wall that explodes with the runes aligned with your magic upon impact. When you cast this spell, you can choose to gain either +2 to AC until the start of your next turn, or +5 AC against a single attack.</td>
+              </tr>
+              </table>
+      </details>
+    </details>
+    <hr>
+    <details class="spell-level"><summary>2nd-level Spells</summary>
+      <!--Spell 2-1-->
+      <details class="spell-details"><summary><span class="spellname"><b>Spell Name</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Range&nbsp;&nbsp;|&nbsp;&nbsp;Casting Time&nbsp;&nbsp;<span class="right">Casting Components (V/S/M)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;School of Magic</span>
+        <br><p class="spellsum">Short description of the spell</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Spell Name</b></p></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Instantaneous</td>
+                <td style="padding-right:25px;"><b><i>1st-level (School of Magic)</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">Here is the description of the spell in its entirety.</td>
+              </tr>
+            </table>
+      </details>
+    </details>
+    <hr>
+    <details class="spell-level"><summary>3rd-level Spells</summary>
+      <!--Spell 3-1-->
+      <details class="spell-details"><summary><span class="spellname"><b>Spell Name</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Range&nbsp;&nbsp;|&nbsp;&nbsp;Casting Time&nbsp;&nbsp;<span class="right">Casting Components (V/S/M)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;School of Magic</span>
+        <br><p class="spellsum">Short description of the spell</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Spell Name</b></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Instantaneous</td>
+                <td style="padding-right:25px;"><b><i>1st-level (School of Magic)</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">Here is the description of the spell in its entirety.</td>
+              </tr>
+            </table>
+          </p>
+      </details>
+    </details>
+    <hr>
+    <details class="spell-level"><summary>4th-level Spells</summary>
+      <!--Spell 4-1-->
+      <details class="spell-details"><summary><span class="spellname"><b>Spell Name</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Range&nbsp;&nbsp;|&nbsp;&nbsp;Casting Time&nbsp;&nbsp;<span class="right">Casting Components (V/S/M)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;School of Magic</span>
+        <br><p class="spellsum">Short description of the spell</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Spell Name</b></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Instantaneous</td>
+                <td style="padding-right:25px;"><b><i>1st-level (School of Magic)</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">Here is the description of the spell in its entirety.</td>
+              </tr>
+            </table>
+          </p>
+      </details>
+    </details>
+    <hr>
+    <details class="spell-level"><summary>5th-level Spells</summary>
+      <!--Spell 5-1-->
+      <details class="spell-details"><summary><span class="spellname"><b>Spell Name</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Range&nbsp;&nbsp;|&nbsp;&nbsp;Casting Time&nbsp;&nbsp;<span class="right">Casting Components (V/S/M)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;School of Magic</span>
+        <br><p class="spellsum">Short description of the spell</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Spell Name</b></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Instantaneous</td>
+                <td style="padding-right:25px;"><b><i>1st-level (School of Magic)</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">Here is the description of the spell in its entirety.</td>
+              </tr>
+            </table>
+          </p>
+      </details>
+    </details>
+    <hr>
+    <details class="spell-level"><summary>6th-level Spells</summary>
+      <!--Spell 6-1-->
+      <details class="spell-details"><summary><span class="spellname"><b>Spell Name</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Range&nbsp;&nbsp;|&nbsp;&nbsp;Casting Time&nbsp;&nbsp;<span class="right">Casting Components (V/S/M)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;School of Magic</span>
+        <br><p class="spellsum">Short description of the spell</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Spell Name</b></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Instantaneous</td>
+                <td style="padding-right:25px;"><b><i>1st-level (School of Magic)</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">Here is the description of the spell in its entirety.</td>
+              </tr>
+            </table>
+          </p>
+      </details>
+    </details>
+    <hr>
+    <details class="spell-level"><summary>7th-level Spells</summary>
+      <!--Spell 7-1-->
+      <details class="spell-details"><summary><span class="spellname"><b>Spell Name</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Range&nbsp;&nbsp;|&nbsp;&nbsp;Casting Time&nbsp;&nbsp;<span class="right">Casting Components (V/S/M)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;School of Magic</span>
+        <br><p class="spellsum">Short description of the spell</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Spell Name</b></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Instantaneous</td>
+                <td style="padding-right:25px;"><b><i>1st-level (School of Magic)</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">Here is the description of the spell in its entirety.</td>
+              </tr>
+            </table>
+          </p>
+      </details>
+    </details>
+    <hr>
+    <details class="spell-level"><summary>8th-level Spells</summary>
+      <!--Spell 8-1-->
+      <details class="spell-details"><summary><span class="spellname"><b>Spell Name</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Range&nbsp;&nbsp;|&nbsp;&nbsp;Casting Time&nbsp;&nbsp;<span class="right">Casting Components (V/S/M)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;School of Magic</span>
+        <br><p class="spellsum">Short description of the spell</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Spell Name</b></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Instantaneous</td>
+                <td style="padding-right:25px;"><b><i>1st-level (School of Magic)</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">Here is the description of the spell in its entirety.</td>
+              </tr>
+            </table>
+          </p>
+      </details>
+    </details>
+    <hr>
+    <details class="spell-level"><summary>9th-level Spells</summary>
+      <!--Spell 9-1-->
+      <details class="spell-details"><summary><span class="spellname"><b>Spell Name</b></span>&nbsp;&nbsp;|&nbsp;&nbsp;Range&nbsp;&nbsp;|&nbsp;&nbsp;Casting Time&nbsp;&nbsp;<span class="right">Casting Components (V/S/M)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;School of Magic</span>
+        <br><p class="spellsum">Short description of the spell</p></summary><!--Single Spell Template-->
+          <p style="margin-left:10px; font-family:helvetica;">
+            <table class="spellblock" style="color:rgb(57,7,7);">
+              <tr>
+                <td style="padding-right:100px;"><b>Spell Name</b></th>
+                <td style="padding-right:25px;"><b>Casting Time: </b>1 action</td>
+                <td style="padding-right:25px;"><b>Casting Components: </b>V S M</td>
+              </tr>
+              <tr>
+                <td style="padding-right:25px;"><b>Range: </b>30 feet</td>
+                <td style="padding-right:25px;"><b>Duration: </b>Instantaneous</td>
+                <td style="padding-right:25px;"><b><i>1st-level (School of Magic)</i></b></td>
+              </tr>
+              <tr>
+                <td colspan="3">Here is the description of the spell in its entirety.</td>
+              </tr>
+            </table>
+          </p>
+      </details>
+    </details>
+    <p><a href="#top">Back to Top</a></p>  
+  </div>
+
+
+</div>
+  <!--Javascript code for topnav-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+</html>

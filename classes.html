@@ -1,0 +1,1752 @@
+<html>
+  <head><title>Godhand - Classes</title>
+    <link href="css-sheets/topnav.css" rel="stylesheet">
+    <link href="css-sheets/layout.css" rel="stylesheet">
+    <style>
+      h1{font-size:25px; padding:5px;}
+      h2{font-size:23px; padding:3px; background-color:rgb(207,171,121);}
+      h3{font-size:20px;padding:3px; background-color:rgb(207,171,121);}
+      .classlinks{font-family:papyrus, fantasy;}
+    </style>
+    </style>
+  </head>
+<body>
+  <div id="sidebar" class="sidebar"><!--Full Link Sidebar-->
+      <a href="index.html" class="main-link">&#9864 &nbsp;About</a><br>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Rules</summary>
+        &nbsp;&nbsp;<a href="rules/basics.html">&#9864 &nbsp;Basics</a>
+        <br>&nbsp;&nbsp;<a href="rules/combat.html">&#9864 &nbsp;Combat</a>
+        <br>&nbsp;&nbsp;<a href="rules/magic.html">&#9864 &nbsp;Magic</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="classes.html" class="main-link">&hairsp;Classes</a></summary>
+        <!--Class Dropdown-->
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#barbarian">Barbarian</a></summary><!--Barbarian-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#bard">Bard</a></summary><!--Bard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#druid">Druid</a></summary><!--Druid-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#fighter">Fighter</a></summary><!--Fighter-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-champion.html" class="sublink">Champion</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-momentum.html" class="sublink">Momentum</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/fight-strategist.html" class="sublink">Strategist</a>
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#hierophant">Hierophant</a></summary><!--Hierophant-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/hiero-truth.html" class="sublink">Truth</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/hiero-violence.html" class="sublink">Violence</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#monk">Monk</a></summary><!--Monk-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#paladin">Paladin</a></summary><!--Paladin-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#rogue">Rogue</a></summary><!--Rogue-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/rogue-fatale.html" class="sublink">Fatale</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/rogue-lowlife.html" class="sublink">Lowlife</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#salaryman">Salaryman</a></summary><!--Salaryman-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#scholar">Scholar</a></summary><!--Scholar-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#sorcerer">Sorcerer</a></summary><!--Sorcerer-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#warlock">Warlock</a></summary><!--Warlock-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#warlord">Warlord</a></summary><!--Warlord-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 1
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 2
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="classes.html#wizard">Wizard</a></summary><!--Wizard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-anatomist.html"  class="sublink">Anatomist</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-profane.html" class="sublink">Profane</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="subclass/wiz-enlightened.html" class="sublink">Enlightened</a>
+        </details>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="folk.html" class="main-link">&hairsp;Folk</a></summary>
+        <!--Folk Dropdown-->
+        &nbsp;&nbsp;<a href="folk.html#catfolk">&#9864 Catfolk</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#changeling">&#9864 Changeling</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#colun">&#9864 Colún</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#dwarf">&#9864 Dwarf</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#elf">&#9864 Elf</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#halfling">&#9864 Halfling</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#human">&#9864 Human</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#orc">&#9864 Orc</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#raska">&#9864 Raska</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#half-folk">&#9864 Half-Folk Rules</a>
+        <br>&nbsp;&nbsp;<a href="folk.html#bloodlines">&#9864 Bloodlines</a>
+      </details>
+      <a href="feats.html" class="main-link">&#9864 &nbsp;Feats</a><br>
+      <details class="main-dropdown"><summary>&#9862<a href="spells/guide.html" class="main-link">&hairsp;Spells</a></li></summary>
+        <!--Spell Dropdown-->
+        &nbsp;&nbsp;<a href="spells/guide.html">&#9864 Spell Guide</a>
+        <br>&nbsp;&nbsp;<a href="spells/bard.html">&#9864 Bard</a>
+        <br>&nbsp;&nbsp;<a href="spells/druid.html">&#9864 Druid</a>
+        <br>&nbsp;&nbsp;<a href="spells/hierophant.html">&#9864 Hierophant</a>
+        <br>&nbsp;&nbsp;<a href="spells/warlock.html">&#9864 Warlock</a>
+        <br>&nbsp;&nbsp;<a href="spells/wizard.html">&#9864 Wizard</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Items</a></summary>
+        <!--Item Dropdown-->
+        &nbsp;&nbsp;<a href="items/armorweapons.html">&#9864 Armor & Weapons</a>
+        <br>&nbsp;&nbsp;<a href="items/equips.html">&#9864 Equipment</a>
+        <br>&nbsp;&nbsp;<a href="items/magicitems.html">&#9864 Magic Items</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Bestiary</a></summary>
+        &nbsp;&nbsp;<a href="bestiary/page-1.html">&#9864 &nbsp;CR 0 - 5</a>
+      </details>
+  </div>
+<div id="main"><!--Encapsulated header nav and body-->
+  <div id="logo"> <!--Godhand Logo-->
+    <a href="index.html"><img src="images/Godhand logo.png" class="logo"></a> <!--Godhand logo-->
+  </div>
+  <div class="topnav" id="myTopnav"> <!--Topnavbar-->
+    <a href="index.html">About</a>
+    <div class="nav-dropdown"><!--Rules Dropdown-->
+      <button class="dropbtn">Rules &#9662</button>
+      <div class="dropdown-content">
+        <a href="rules/basics.html">Basics</a>
+        <a href="rules/combat.html">Basics</a>
+        <a href="rules/magic.html">Magic</a>
+      </div>
+    </div>
+    <a href="folk.html">Folk</a>  
+    <div class="nav-dropdown active"><!--Classes Dropdown-->
+      <button class="dropbtn"><a href="classes.html" style="padding:0px;">Classes</a> &#9662</button>
+      <div class="dropdown-content"> <!--Classes variety-->
+        <a href="classes.html#barbarian">Barbarian</a>
+        <a href="classes.html#bard">Bard</a>
+        <a href="classes.html#druid">Druid</a>
+        <a href="classes.html#fighter">Fighter</a>
+        <a href="classes.html#hierophant">Hierophant</a>
+        <a href="classes.html#monk">Monk</a>
+        <a href="classes.html#paladin">Paladin</a>
+        <a href="classes.html#rogue">Rogue</a>
+        <a href="classes.html#salaryman">Salaryman</a>
+        <a href="classes.html#scholar">Scholar</a>
+        <a href="classes.html#sorcerer">Sorcerer</a>
+        <a href="classes.html#warlock">Warlock</a>
+        <a href="classes.html#warlord">Warlord</a>
+        <a href="classes.html#wizard">Wizard</a>
+      </div>
+    </div>
+    <a href="feats.html">Feats</a>
+    <div class="nav-dropdown"><!--Spells Dropdown-->
+      <button class="dropbtn"><a href="spells/guide.html" style="padding:0px;">Spells</a> &#9662</button>
+      <div class="dropdown-content">
+        <a href="spells/guide.html">Spell Guide</a>
+        <a href="spells/bard.html">Bard</a>
+        <a href="spells/druid.html">Druid</a>
+        <a href="spells/hierophant.html">Hierophant</a>
+        <a href="spells/warlock.html">Warlock</a>
+        <a href="spells/wizard.html">Wizard</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Items Dropdown-->
+      <button class="dropbtn">Items &#9662
+      </button>
+      <div class="dropdown-content">
+        <a href="items/armorweapons.html">Armor & Weapons</a>
+        <a href="items/equips.html">Equipment</a>
+        <a href="items/magicitems.html">Magic Items</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Bestiary Dropdown-->
+      <button class="dropbtn">Bestiary &#9662 </button>
+      <div class="dropdown-content">
+        <a href="bestiary/page-1.html">CR 0 - 5</a>
+      </div>
+    </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!--Javascript button for smaller screens-->
+  </div>
+<br>
+  <div id="mainbody"> <!--Main Content-->
+  <h1 style="font-size:40px;">
+    Classes
+  </h1>
+  <a id="top"></a>
+    <table> <!--table of contents and info blurb-->
+      <tr>  
+      <td style="border:0;">
+        <table class="toc" style="background-color: rgb(232, 193, 139);">
+        <tr>
+          <th class="toc" style="color:rgb(79, 10, 10)">Table of Contents</th>
+        </tr>
+        <tr>  
+          <td class="toc" style="color:rgb(57, 7, 7); text-align:left" cellpadding="10" width="250px">
+            <details class="toc-list" open><!--Table of Contents-->
+              <summary><b>Classes</b></summary> 
+              &nbsp;&nbsp;&nbsp;<a href="#barbarian">Barbarian</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#bard">Bard</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#druid">Druid</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#fighter">Fighter</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#hierophant">Hierophant</a>  
+              <br>&nbsp;&nbsp;&nbsp;<a href="#monk">Monk</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#paladin">Paladin</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#rogue">Rogue</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#salaryman">Salaryman</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#scholar">Scholar</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#sorcerer">Sorcerer</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#warlock">Warlock</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#warlord">Warlord</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#wizard">Wizard</a>
+            </details>
+          </td>
+        </tr>
+        </table>
+      </td>
+      <td style="vertical-align:top; border:0">
+        <p>
+          (this entry is in development)
+        </p>
+      </td>
+      </tr>
+    </table>
+<hr>
+  <!--ALL THE CLASS INFO-->
+  <details class="class"><summary><h1><div class="tooltip">Barbarian<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--BARBARIAN-->
+    <p class="info">
+      <a class="classlinks" id="barbarian">This is under development</a>
+  
+  <br>
+    </p>
+  <p><a href="#top">Back to Top</a></p>
+    
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Bard<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--BARD-->
+    <p class="info">
+  <a class="classlinks" id="bard">This is under development</a>
+  
+  <br>
+    </p>
+  <p><a href="#top">Back to Top</a></p>
+  
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Druid<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--DRUID-->
+    <p class="info">
+  <a class="classlinks" id="druid">This is under development</a>
+  
+  <br>
+    </p>
+  <p><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Fighter<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--FIGHTER-->
+  <!--Fighter Table and flavor-->
+  <table style="margin-left:auto; margin-right:auto;">
+    <tr>
+    <td style="border:0"><table class="levelup">
+      <tr>
+        <th colspan="100%" class="levelup"><a id="fighter">Fighter Progression Table</a></th>
+      </tr>
+      <tr style="background-color: rgb(207, 171, 121);">
+        <th>Level</th>
+        <th>Features</th>
+      </tr>
+      <tr><!--lv 1-->
+        <td>1</td>
+        <td><a href="#fight-style">Fighting Style</a>, <a href="#fight-varied">Varied Strike</a></td>
+      </tr>
+      <tr><!--lv 2-->
+        <td>2</td>
+        <td><a href="#fight-strategies">Strategies</a></td>
+      </tr>
+      <tr><!--lv 3-->
+        <td>3</td>
+        <td><a href="#fight-subclass">Subclass</a>, <a href="#fight-second-wind">Second Wind</a></td>
+      </tr>
+      <tr><!--lv 4-->
+        <td>4</td>
+        <td><a href="#fight-asifeat">ASI & Feat</a></td>
+      </tr>
+      <tr><!--lv 5-->
+        <td>5</td>
+        <td><a href="#fight-extra">Extra Attack</a>, <a href="#fight-action-surge">Action Surge</a></td>
+      </tr>
+      <tr><!--lv 6-->
+        <td>6</td>
+        <td><a href="#fight-asifeat">ASI</a></td>
+      </tr>
+      <tr><!--lv 7-->
+        <td>7</td>
+        <td><a href="#fight-subclass">Subclass Feature</a>, <a href="#fight-strategies">Strategies (2)</a></td>
+      </tr>
+      <tr><!--lv 8-->
+        <td>8</td>
+        <td><a href="#fight-asifeat">ASI & Feat</a></td>
+      </tr>
+      <tr><!--lv 9-->
+        <td>9</td>
+        <td><a href="#fight-indomitable">Indomitable</a></td>
+      </tr>
+      <tr><!--lv 10-->
+        <td>10</td>
+        <td><a href="#fight-subclass">Subclass Feature</a></td>
+      </tr>
+      <tr><!--lv 11-->
+        <td>11</td>
+        <td><a href="#fight-extra">Extra Attack</a>, <a href="#fight-rush">Adrenaline Rush</a></td>
+      </tr>
+      <tr><!--lv 12-->
+        <td>12</td>
+        <td><a href="#fight-asifeat">ASI & Feat</a></td>
+      </tr>
+      <tr><!--lv 13-->
+        <td>13</td>
+        <td><a href="#fight-strategies">Strategies (3)</a>, <a href="#fight-indomitable">Indomitable 2</a></td>
+      </tr>
+      <tr><!--lv 14-->
+        <td>14</td>
+        <td><a href="#fight-subclass">Subclass Feature</a></td>
+      </tr>
+      <tr><!--lv 15-->
+        <td>15</td>
+        <td><a href="#fight-martial">Martial Mastery</a></td>
+      </tr>
+      <tr><!--lv 16-->
+        <td>16</td>
+        <td><a href="#fight-extra">Extra Attack</a>, <a href="#fight-stubborn">Stubborn Blood</a>, <a href="fight-asifeat">Feat</a></td>
+      </tr>
+      <tr><!--lv 17-->
+        <td>17</td>
+        <td><a href="#fight-true">True Mastery</a>, <a href="#fight-strategies">Strategies (4)</a>, <a href="#fight-indomitable">Indomitable 3</a></td>
+      </tr>
+      <tr><!--lv 18-->
+        <td>18</td>
+        <td><a href="#fight-subclass">Subclass Feature</a></td>
+      </tr>
+      <tr><!--lv 19-->
+        <td>19</td>
+        <td><a href="#fight-asifeat">ASI & Feat</a></td>
+      </tr>
+      <tr><!--lv 20-->
+        <td>20</td>
+        <td><a href="#fight-sublime">Sublime Technique</a></td>
+      </tr>
+    </table></td>
+    </tr>
+  </table>  
+    <p class="flavor">
+      <i>Flavor Text here</i>
+    </p>
+  <h2>Class Features</h2><!--Fighter class features-->
+    <p class="info">
+      <b>Hit Dice:</b> 1d10 per Fighter Level
+      <br><b>Hit Points at 1st Level:</b> 10 + your Constitution modifier
+      <br><b>Hit Points at Higher Levels:</b> 1d10 (or 6) + your Constitution modifier per fighter level after 1st
+      <br>
+      <br><b>Proficiencies</b>
+        <br>&nbsp;Armor: All armor, shields
+        <br>&nbsp;Weapons: Simple weapons, martial weapons
+        <br>&nbsp;Tools: None
+        <br>&nbsp;Saving Throws: Strength, Constitution
+        <br>&nbsp;Skills: Choose two from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, & Survival
+    </p>
+  <h2><a class="classlinks" id="fight-style">Fighting Style</a></h2>
+    <p class="info">You have a particular method of utilizing weapons and facing opponents. A very specific set of skills, etc.
+    <br>
+    <details class="sub-list"><summary><b>Dual Wielder's Style</b></summary>
+      <ul>
+        <li>You add the ability modifier you used to make your attack roll to the damage of the bonus action attack you make with two weapon fighting</li>
+        <br>
+        <li>When you use your bonus action to engage in Two-Weapon Fighting, you can choose to forgo your proficiency bonus. If you do so, you can make an additional attack with that weapon, also without your proficiency bonus. If you would normally make more than one attack with your bonus action, only one attack is made without your proficiency bonus.</li>
+      </ul>
+    </details><br>
+    <details class="sub-list"><summary><b>Duelist's Style</b></summary>
+      <ul>
+        <li>You gain a +2 bonus to damage rolls made with a weapon held in only one hand, so long as your off-hand is kept free, and you aren’t wearing heavy armor.</li>
+        <br>
+        <li>When you make a parry attempt, roll 1d4 and add it to the total.</li>
+      </ul>
+    </details><br>
+    <details class="sub-list"><summary><b>Great Weapon Fighting</b></summary>
+      <ul>
+        <li>When you land a hit with a weapon you’re holding in two or more hands, you deal additional damage equal to half your strength bonus.</li>
+        <br>
+        <li>Critical hits with a weapon you hold in both hands inflict or worsen conditions associated with its damage type (bleed and rupture for slashing and piercing weapons, fracture and break for bludgeoning weapons)</li>
+      </ul>
+    </details><br>
+    <details class="sub-list"><summary><b>Juggernaut Style</b></summary>
+      <ul>
+        <li>While wearing heavy armor, subtract your proficiency bonus from any non magical bludgeoning, piercing, or slashing damage you take. Magic armor reduces magic bludgeoning, piercing, and slashing damage.</li>
+        <br>
+        <li>You gain a +1 bonus to AC while wearing armor.</li>
+      </ul>
+    </details><br>
+    <details class="sub-list"><summary><b>Tandem Style</b></summary>
+      <ul>
+        <li>You are adept at protecting your allies. While wielding a shield or a melee weapon in one hand, you can use your bonus action to guard any ally within five feet of you. While guarding your ally in this way, all melee attacks against them have disadvantage.</li>
+        <br>
+        <li>When you use your reaction to interpose, the damage you take is reduced by your proficiency bonus.</li>
+      </ul>
+    </details><br>
+    <details class="sub-list"><summary><b>Brawler Style</b></summary>
+      <ul>
+        <li>You gain proficiency with improvised weapons</li>
+        <br>
+        <li>The damage die for your unarmed strikes increases a step (from 1 to d4, d4 to d6, or d6 to d8)</li>
+        <br>
+        <li>You can use your bonus action to make a grapple, shove, or trip attempt. You can also use this bonus action to automatically deal damage to any creature grappled by you. The damage dealt this way is equal to your strength modifier.</li>
+      </ul>
+    </details><br>
+    <details class="sub-list"><summary><b>Ascetic Style</b></summary>
+      <ul>
+        <li>While not wearing armor, you gain a bonus to AC equal 10 + your proficiency bonus + your strength or dexterity bonus (your choice). You lose this bonus if you equip armor or a shield.</li>
+        <br>
+        <li>The damage die for your unarmed strikes increases a step (from 1 to d4, d4 to d6, or d6 to d8)</li>
+        <br>
+        <li>You may use either strength or dexterity for your unarmed strike attack and damage rolls.</li>
+      </ul>
+    </details><br>
+    <details class="sub-list"><summary><b>Archery Style</b></summary>
+      <ul>
+        <li>You may add your strength modifier to damage rolls when using bows.</li>
+        <br>
+        <li>You no longer have disadvantage on ranged attack rolls made on targets within 5 feet of you.</li>
+        <br>
+        <li>When you use your Pinpoint Shot, the additional damage die is maximized</li>
+      </ul>
+    </details><br>
+    <details class="sub-list"><summary><b>Throwing Style</b></summary>
+      <ul>
+        <li>Drawing a weapon with the Thrown property no longer uses your Object Interaction.</li>
+        <br>
+        <li>Once on each of your turns, when you make an attack with a weapon that has the Thrown property, you may move 5 feet without provoking attacks of opportunity.</li>
+        <br>
+        <li>When a target fails their save against your Pinpoint Shot, their movement is reduced to 0 until the end of their next turn.</li>
+      </ul>
+    </details>
+    </p>
+    <h2><a class="classlinks" id="fight-varied">Varied Strikes</a></h2>
+    <p class="info">
+      Being either a traditionally trained, or intrinsically more tactically inclined combatant, you’ve found a variety of ways to use your weapons and skill that applies far beyond merely harming others. At 1st level, you gain these options to use in combat:
+    </p>
+    <details class="sub-list"><summary><b>Options:</b></summary>
+      <ul>
+        <li><b>Parry:</b> As a reaction when you are targeted by a weapon attack, you can choose to add your proficiency bonus to your Armor Class against an attack that would otherwise hit. You must be wielding a shield or a martial weapon to use this reaction.</li><br>
+        <li><b>Cleave:</b> As an action, you may make a single melee weapon attack against a creature. Choose another creature within 5 feet of the original target and within your weapon reach. If the original attack roll would hit the second creature, it takes damage equal to your Strength modifier. The damage is of the same type dealt by the original attack.</li><br>
+        <li><b>Kick:</b> As an action, you may unbalance a target within your melee reach. Make an attack roll. If it hits, you reduce the target’s Armor Class by a number equal to half your maximum unarmed damage die (minimum 1) until the beginning of your next turn. For example, if your unarmed damage die is 1, then the target’s AC would be reduced by 1. If your unarmed damage die is 1d4, then the target’s AC would be reduced by 2. If your target has more than two legs, your attack roll has disadvantage.</li><br>
+        <li><b>Pinpoint Shot:</b> As an action, you may make an attack with a ranged weapon or a melee weapon with the Thrown property. If the attack hits, it deals an additional damage die and the target must succeed on a strength save with a DC equal to 8+your proficiency bonus+your strength modifier or be knocked prone.</li><br>
+      </ul>
+    </details>
+  <h2><a class="classlinks" id="fight-strategies">Strategies</a></h2>
+    <p class="info">
+      At 2nd level, you gain a fighter strategy. This defines more sharply how you approach combat. To use a strategy, you enter a stance associated with it as a bonus action. You remain in that stance until you choose to exit it, or you enter another strategy’s stance as a bonus action. You gain an additional strategy at 7th, 13th, and 17th level.
+    </p>
+      <details class="sub-list"><summary><b>Options:</b></summary>
+        <p class="info"><b>Defensive Focus:</b> You enter a guarded stance. While in this stance, you may attempt to parry any number of attacks made against you, but your own attacks only deal half damage.
+        <br><br>
+        <b>Aggressive:</b> You approach combat more harshly and recklessly than your peers. When you attack you may declare you’re attacking aggressively. When you do so, roll two damage totals, and take the higher result. Any creature you attack aggressively has advantage on attack rolls made to hit you on its turn.
+        <br><br>
+        <b>Bulwark:</b> When you adopt this stance,you may extend the effect of your Parry to your allies within your weapon reach, but you cannot use your Parry to protect against attacks targeting you.
+        <br><br>
+        <b>Choke-up:</b> You take a tighter grip on your melee weapon to ensure accurate attacks, at the cost of those attacks being less effective. You gain advantage on all melee attacks you make, when you land a hit while using this strategy, roll two damage totals and take the lower result.
+        <br><br>
+        <b>Flurry:</b> You may choose to forgo your proficiency bonus on all attacks you make in a single turn. When you do so, you gain an extra attack. This increases to two extra attacks at 11th level.
+        <br><br>
+        <b>Sniper:</b> You make attack rolls at your weapon’s longer range normally, ignore half cover, and have advantage on perception checks. While using this strategy, your movement speed is reduced to 10 feet per turn.
+        <br><br>
+        <b>Commander:</b> You may take the help action as a bonus action. You may forgo one attack per turn to order an ally to use their reaction to make an attack of their own. Focusing on your allies so much draws your attention that it’s more difficult to handle yourself. The focus cost of your varied strike abilities is doubled when you use any of this strategy’s abilities on your turn.
+        <br><br>
+        <b>Close-Quarters Shooter:</b> When you adopt this stance, you can no longer make ranged weapon attacks outside your weapon’s first range increment. When you roll damage on a ranged weapon attack, including your Pinpoint Shot, roll twice and take the higher total.
+        <br><br>
+        <b>Magebane:</b> When you adopt this stance, and someone casts a spell within 30 feet of you, they provoke an attack of opportunity. If the attack hits, they must make a concentration check or lose the spell. Your Parry also works against spell attacks. (still thinking of a disadvantage for this one)
+        </p>
+      </details>
+  <h2><a class="classlinks" id="fight-subclass">Subclass</a></h2>
+    <p class="info">
+      Starting at 3rd level, you may chose a subclass from the following below and gain a feature. You will gain more feature from your chosen subclass at 7th, 10th, and 14th level.
+    </p>
+    <nav class="subclass">
+      <a href="subclass/fight-champion.html">Champion</a>  |  
+      <a href="subclass/fight-momentum.html">Momentum</a>  |  
+      <a href="subclass/fight-strategist.html">Strategist</a>
+    </nav>
+  <h2><a class="classlinks" id="fight-second-wind">Second Wind</a></h2>
+    <p class="info">
+      You have the ability to bounce back when in the thick of a fight. As a bonus action, you may expend a number of hit dice up to your proficiency bonus, and heal for that total. You must complete a short or long rest before using this ability again.
+    </p>
+  <h2><a class="classlinks" id="fight-asifeat">ASI & Feat</a></h2>
+  <p class="info">
+    When you reach 4th level, and again at 12th and 19th level, you gain both an ability score improvement, and a feat. At 8th and 16th level, you gain only a feat. As a fighter, you gain an additional ASI at 6th level.
+  </p>
+  <h2><a class="classlinks" id="fight-extra">Extra Attack</a></h2>
+    <p class="info">
+      Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. Additionally, you may replace one of these attacks with a Universal Maneuver.
+      <br><br>
+      The number of attacks increases to three when you reach 11th level in this class and to four when you reach 16th level in this class.
+    </p>
+  <h2><a class="classlinks" id="fight-action-surge">Action Surge</a></h2>
+    <p class="info">
+      At 5th level, your adrenaline spikes when you bounce back from a heavy blow. When you use a <a href="#fight-second-wind"><u>Second Wind</u></a>, you gain an additional action on your turn.
+    </p>
+  <h2><a class="classlinks" id="fight-indomitable">Indomitable</a></h2>
+    <p class="info">
+      At 9th level, choose a single one of these conditions:
+      <ul>
+        <li>Blinded</li>
+        <li>Charmed</li>
+        <li>Deafened</li>
+        <li>Frightened</li>
+        <li>Poisoned</li>
+        <li>Petrified</li>
+      </ul>
+      <p class="info">You gain immunity to your chosen condition. At 13th level you gain another immunity of your choice, though you may select from these additional conditions:</p>
+      <ul>
+        <li>Paralyzed</li>
+        <li>Restrained</li>
+        <li>Stunned</li>
+      </ul>
+      <p class="info">At 18th level you gain your last immunity from this feature, and your list of options grows to include:</p>
+      <ul>
+        <li>Grappled</li>
+        <li>Prone</li>
+        <li>Incapacitated</li>
+        <li>Exhausted</li>
+      </ul>
+    </p>
+  <h2><a class="classlinks" id="fight-rush">Adrenaline Rush</a></h2>
+    <p class="info">
+      At 11th level, you bounce back from death with fierce determination. When you use your <a href="fight-second-wind"><u>Second Wind</u></a>, you also gain Temporary Hit Points equal to your Fighter level, and gain resistance to all damage until the end of your next turn. Any remaining temporary hit points vanish when combat ends.
+    </p>
+  <h2><a class="classlinks" id="fight-martial">Martial Mastery</a></h2>
+    <p class="info">
+      At 15th level, you hone your martial prowess into a distinct style that grants you powerful abilities. Choose one of the Martial Masteries below:
+    <details class="sub-list"><summary><b>Martial Mastery Options:</b></summary>
+      <p class="info">
+        <b>Earthshaker:</b> When you hit with an attack that uses your strength modifier, you may choose to have every creature of your choice within 15 feet of your target take damage equal to your strength modifier. Additionally, the ground around your target becomes difficult terrain. Your Cleave strikes every creature within 30 feet of you, and deals normal weapon damage.
+        <br><br>
+        <b>Bulwark:</b> You are treated as having total cover from ranged attacks. Additionally, if you are subjected to an effect that forces a strength saving throw to avoid damage, you take no damage on a success, and half damage on a failure.
+        <b>Blitzing Skirmisher:</b> Attacks of opportunity no longer require your reaction. When an enemy within 30 feet of you targets you or one of your allies, they provoke an attack of opportunity. When an enemy would provoke an attack of opportunity, you may move up to your speed to take that attack of opportunity.
+        <br><br>
+        <b>Longshot:</b> The second range increment is doubled for all weapons you use that have one, and you no longer have disadvantage on attack rolls made against targets outside your first range increment. You ignore Total Cover and when you make a ranged weapon attack, your damage is maximized.
+        <br><br>
+        <b>Diehard:</b> When you reach 0 hit points, you may choose to remain up. While you have 0 hit points, you roll death saves as normal, and all attacks you make have disadvantage. When you take damage while using this ability, you may choose to roll a constitution save with a DC equal to 10 or half the damage taken (whichever is higher). If you succeed on the save, you do not incur a failed death save from the damage taken. If you fail, you incur a failed death save. If you reach 3 failed death saves, you die as normal If you succeed on 3 death saves, you regain 1 hit point.
+      </p>
+    </details>
+    </p>
+  <h2><a class="classlinks" id="fight-stubborn">Stubborn Blood</a></h2>
+    <p class="info">
+      At 16th level, you become a terror on the battlefield when you recover your breath. When you use your <a href="#fight-second-wind"><u>Second Wind</u></a>, you immediately end all conditions of your choice affecting you. If the condition requires a save, you are treated as having succeeded on that save. You are immune to all conditions until the end of your next turn.
+    </p>
+  <h2><a class="classlinks" id="fight-true">True Mastery</a></h2>
+  <p class="info">
+    At 17th level, choose one weapon type with which you are proficient (longswords, warhammers, handaxes, etc). You double your proficiency bonus when making attack rolls with that type of weapon.
+  </p>
+  <h2><a class="classlinks" id="fight-sublime">Sublime Technique</a></h2>
+  <p class="info">
+    At 20th level, your swordplay is perfected. As an action, you may roll your weapon’s damage die and add your strength and dexterity modifier. Any creature of your choice with hit dice less than the number rolled are slain instantly.<br><br>
+    You must complete a short or long rest before using this ability again.
+  </p>
+  <hr>
+  <p><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Hierophant<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--HIEROPHANT-->
+  <!--HIEROPHANT Table and flavor-->
+  <table style="margin-left:auto; margin-right:auto;">
+    <tr>
+    <td style="border:0"><table class="levelup">
+      <tr>
+        <th colspan="100%"><a id="hierophant">Hierophant Progression Table</a></th>
+      </tr>
+      <tr style="background-color: rgb(207, 171, 121);"><!--HEADER START-->
+        <th rowspan="2">Level</th>
+        <th rowspan="2">Features</th>
+        <th rowspan="2">Cantrips</th>
+        <th colspan="9">Spell Slots per Spell Level</th>
+      </tr>
+      <tr style="background-color: rgb(207, 171, 121);">
+        <td>1st</td>
+        <td>2nd</td>
+        <td>3rd</td>
+        <td>4th</td>
+        <td>5th</td>
+        <td>6th</td>
+        <td>7th</td>
+        <td>8th</td>
+        <td>9th</td>
+      </tr><!--HEADER ENDS-->
+      <tr> <!--LV 1-->
+        <td>1</td>
+        <td><a href="#hiero-spell">Spellcasting</a>, <a href="#hiero-domain">Divine Domain</a></td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 2-->
+        <td>2</td>
+        <td><a href="#hiero-aspect">Aspect</a></td>
+        <td>3</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 3-->
+        <td>3</td>
+        <td><a href="#hiero-domain">Domain Feature</a>, <a href="hiero-give-of-yourself">Give of Yourself</a></td>
+        <td>3</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 4-->
+        <td>4</td>
+        <td><a href="#hiero-asifeat">ASI & Feat</a></td>
+        <td>3</td>
+        <td>4</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 5-->
+        <td>5</td>
+        <td><a href="#hiero-aspect">Aspect</a></td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 6-->
+        <td>6</td>
+        <td><a href="#hiero-domain">Domain Feature</a></td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 7-->
+        <td>7</td>
+        <td><a href="#hiero-anointed">Anoited</a></td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 8-->
+        <td>8</td>
+        <td><a href="#hiero-asifeat">Feat</a>, <a href="#hiero-domain">Domain Feature</a></td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 9-->
+        <td>9</td>
+        <td><a href="hiero-aspect">Aspect</a></td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 10-->
+        <td>10</td>
+        <td><a href="#hiero-face-div">Face Divinity</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 11-->
+        <td>11</td>
+        <td>-</td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 12-->
+        <td>12</td>
+        <td><a href="#hiero-asifeat">ASI & Feat</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 13-->
+        <td>13</td>
+        <td><a href="#hiero-aspect">Aspect</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 14-->
+        <td>14</td>
+        <td><a href="#hiero-domain">Domain Feature</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 15-->
+        <td>15</td>
+        <td>-</td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 16-->
+        <td>16</td>
+        <td><a href="#hiero-asifeat">Feat</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 17-->
+        <td>17</td>
+        <td>-</td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr> <!--LV 18-->
+        <td>18</td>
+        <td><a href="#hiero-aspect">Aspect</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr> <!--LV 19-->
+        <td>19</td>
+        <td><a href="#hiero-asifeat">ASI & Feat</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr> <!--LV 20-->
+        <td>20</td>
+        <td><a href="#hiero-face-div">Face Divinity</a></td>
+        <td>6</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+    </table></td>
+    </tr>
+  </table>
+     <p class="flavor">
+      <i>Eyes burning with a sickening gold light, a tall Raska woman levels her terrible black glaive in the direction of her enemies. Her body broken from the day’s battle before, she is wrapped in nothing but bandages and a dirtied robe, behind her sits a village, the last thing standing between this conquering force, and her homeland’s capital. She closes her eyes, and from the weapon comes a torrent of searing golden flame that travels out, and shocks the approaching soldiers as it washes over them harmlessly. They take a moment, before marching forward again. Then one speaks, and the others don’t understand him. Another, and it is the same. Columns of trained, regimented men dissolve in seconds as they all shout at one another in languages most do not understand. The invasion dies here.
+      <br><br>
+      As a Hierophant, there is an incredible likelihood that you are the only one of your kind. You are an individual who counts themselves amongst the numbers of saints, prophets, and demigods. The power you wield is unique to you and you alone, most likely granted through a god and your unwavering faith in them, your role as their servant working in the world</i>
+    </p>
+  <h2>Class Features</h2><!--HIEROPHANT class features-->
+    <p class="info">
+      <b>Hit Dice:</b> 1d6 per hierophant Level
+      <br><b>Hit Points at 1st Level:</b> 6 + your Constitution modifier
+      <br><b>Hit Points at Higher Levels:</b> 1d6 (or 4) + your Constitution modifier per hierophant level after 1st
+      <br>
+      <br><b>Proficiencies</b>
+        <br>&nbsp;Armor: none
+        <br>&nbsp;Weapons: Daggers, slings, quarterstaffs, spears
+        <br>&nbsp;Tools: None
+        <br>&nbsp;Saving Throws: Wisdom, Charisma
+        <br>&nbsp;Skills: Choose three from Insight, Medicine, Persuasion, Performance, & Religion
+      <br><br>In addition to any equipment you begin the game with, you also have a spellbook
+    </p>
+  <h2><a class="classlinks" id="hiero-spell">Spellcasting</a></h2>
+    <p class="info">
+      You work magic through your faith and a direct connection to the divine. You cast Hierophant spells.
+    <br><br><b>Cantrips</b>
+    <br>A cantrip is a simple spell that doesn’t require a great deal of a hierophant’s focus or energy to cast. As opposed to burning a spell slot, a cantrip can be cast at will, indefinitely. At 1st level, you learn three cantrips of your choice from the heirphant spell list. You gain an additional cantrip at 4th, and 8th level.
+    <br><br><b>Preparing and Casting Spells</b><br>
+      On the hierophant table you can find how many spell slots you have for leveled (1st level or higher) hierophant spells. To cast a leveled spell, you must expend a slot of the spell’s level or higher.
+    <br>
+      You prepare a number of spells per day equal to your hierophant level + your wisdom modifier. At the end of a long rest, you choose which spells to have prepared of all those available on the hierophant list.
+    <br><br><b>Casting Ability</b>
+    As a hierophant, your spellcasting ability is wisdom, as you draw divine power into the world through your faith. You use your wisdom modifier to calculate your bonus to hit with a spell, and the DC of saves against your spells (or class/subclass features, if relevant).
+    <br><br><p style="text-align:center;"><b>Spell Save DC</b> = 8 + your proficency bonus + your Wisdom modifier
+    <br><b>Spell Attack Modifier</b> = your proficiency bonus + your Wisdom modifier</p>
+    <p style="font-size:21px; text-align:center;"><a href="spells/hierophant.html"><u>Hierophant Spell List</u></a></p>
+    </p>
+  <h2><a class="classlinks" id="hiero-domain">Divine Domain</a></h2>
+    <p class="info">
+      There is a common misunderstanding of what a Hierophant is, and what exactly it is that they do. Many see them as a guiding light, a teacher and savior of the people bringing the gifts of gods to the mortals. But this is not entirely true. A Hierophant merely represents one aspect of a god's being, and the mortal connection to it.  As many Hierophants who are saviors, just as many represent the more primal or wrathful sides of the divine.<br><br>
+      Starting at 1st level, you may chose a divine domain from the following below and gain a feature. You will gain more feature from your chosen subclass at 3rd, 6th, 8th, and 14th level.
+    </p>
+    <nav class="subclass">
+      <a href="subclass/hiero-truth.html">Truth</a>  |  
+      <a href="subclass/hiero-violence.html">Violence</a>  |  
+      <a href="subclass3">Domain 3</a>
+    </nav>
+  <h2><a class="classlinks" id="hiero-aspect">Aspect</a></h2>
+    <p class="info">
+      At 2nd level, you choose the way you utilize the divine power made manifest in you. At 5th, 9th, 13th, and 18th level you will gain more features with your chosen aspect.
+      <br>
+      <details class="sub-list"><summary><b>Aspect of the Weatherer</b></summary>
+        <p class="info">You are a fighter, through and through, perhaps you were a warrior before this, perhaps the way of battle is simply a part of your faith. Whatever the case, you make use of your connection to the divine to protect others from the cold death that awaits them at the end of the sword, or to bring down the fury of gods upon your enemies. You gain the following features from your aspect:</p>
+        <ul>
+          <li><b>At 2nd level</b>, you gain proficiency in a martial weapon of your choice. You gain either proficiency with light and medium armor, or the ascetic fighting style, the choice is up to you.</li>
+          <br>
+          <li><b>At 5th level</b>, you gain moments of inspiration while in combat. When you use your action to attack with a weapon (or make an unarmed strike), you may use your bonus action to make a second attack with the same weapon (or a second unarmed strike). You may use this feature a number of times equal to your wisdom modifier, regaining all uses on a short or long rest.</li>
+          <br>
+          <li><b>At 9th level</b>, you learn to properly blend your skill with a weapon and your divine power. When you use your action to attack with a weapon (or make an unarmed strike), you may use your bonus action to cast a cantrip. You may use this feature a number of times equal to your wisdom modifier, regaining all uses on a short or long rest.</li>
+          <br>
+          <li><b>At 13th level</b>, when you hit a target with an attack with a weapon, or an unarmed strike, you deal an additional d8 of damage. You choose the damage type when you gain this ability at 9th level.</li>
+          <br>
+          <li><b>At 18th level</b>, you are encircled by spectral manifestations of your weapon of choice. These spiritual weapons guard you, and deliver strikes in tandem with your own. When a creature rolls an attack against you, you may instantly roll one against them using wisdom in place of strength or dexterity. If you hit, the target must roll their attack a second time and choose the lower value of the two, you then deal 1d8 of radiant or necrotic damage + your wisdom modifier. You may do this a number of times per round equal to your wisdom modifier.<br><br>Additionally, your bonus action attack and casts no longer have a limit upon their uses.</li>
+        </ul>
+      </details>
+      <br><details class="sub-list"><summary><b>Aspect of the Teacher</b></summary>
+        <p class="info">You are a guide, a guardian, a person of the people. You make use of your divine power to influence others, to impart upon them teachings of the world, and guidance through difficult times. You are the anchor for others, and one that many turn to for wisdom in difficult times. You gain the following features from your aspect:</p>
+        <ul>
+          <li><b>At 2nd level</b>, choose intimidation or persuasion. You gain expertise in the chosen skill.</li>
+          <br>
+          <li><b>At 5th level</b>, you may spend ten minutes in communion with your allies, reciting passages and telling stories meant to calm and inspire them. When you do this, all creatures within 30 feet of you who can understand what you say gain temp hp equal to your level, plus your wisdom modifier.</li>
+          <br>
+          <li><b>At 9th level</b>,you can call for peace before violence breaks out. When you roll initiative, you may use your reaction to try and call out to a number of opposing creatures equal to your proficiency bonus. Those creatures must make a wisdom saving throw versus your spell save DC. On a failed save, each of these creatures is charmed by you for a minute. If you successfully charm over half of your targets (or if they have a leader you manage to charm) any other opposing creatures will refrain from attacking you for the duration with their allies. While charmed in this way, you must attempt to talk your opponents down. If you or your allies attack, or attempt to flee, the creatures cease to be charmed and initiative resumes. If you fail to talk your opponents down, initiative resumes.<br><br>This ability automatically fails on creatures who cannot understand you.</li>
+          <br>
+          <li><b>At 13th level</b>, allies within 30 feet who can see or hear you add their proficiency bonus to wisdom saving throws.</li>
+          <br>
+          <li><b>At 18th level</b>, your teachings are both inspirational, and ironclad. If you spend an hour in constant, uninterrupted conversation with a creature, you may make a persuasion or intimidation check contested by an insight check from the creature. If the total of your check is higher, the creature is charmed by you for 30 days. During this time, the creature obeys any commands you give it, and acts in accordance with all teachings you impart (or have imparted) on it. At the end of this duration, the creature will continue to act in accordance with your teachings, but its willingness to obey your commands depends on the way you treated it during the previous 30 days.<br><br>Once a creature has been under the effects of this ability, it is immune to it unless something causes it to forsake you and your ideals. Your fellow player characters are immune to this ability.</li>
+        </ul>
+      </details>
+      <br><details class="sub-list"><summary><b>Aspect of the Conduit</b></summary>
+        <p class="info">You are, first and foremost, a true vessel for divine power. You are a mage, and you shape reality in accordance with your will. When you speak, the earth and the heavens alike listen, and shape themselves in accordance with your words. You appear divine to others, seeming to lack any mortal quality, possessing something far more complex in its place. You gain the following features from your aspect:</p>
+        <ul>
+          <li><b>At 2nd level</b>, you add your wisdom modifier to the damage or healing done by any spell or cantrip you cast with an instantaneous duration.</li>
+          <br>
+          <li><b>At 5th level</b>, you may use your action to take on a more divine, more horrifying, more incomprehensible shape (albeit one still recognizably humanoid). Any creatures within 30 feet that can see you must succeed on a wisdom saving throw against your spell save DC or be frightened for the duration. Any frightened creature may attempt this save again at the start of their turn, ending the effect on a success.</li>
+          <br>
+          <li><b>At 9th level</b>, after casting a leveled spell, you may use your bonus action to cast a cantrip.</li>
+          <br>
+          <li><b>At 13th level</b>, you gain a flying speed equal to your walking speed. How you gain the ability to fly is up to you. It could be anything from angelic wings, to simple levitation.</li>
+          <br>
+          <li><b>At 18th level</b>, you gain power beyond measure. You learn the wish spell, as your own means to shape reality.</li>
+        </ul>
+      </details>
+    </p>
+  <h2><a class="classlinks" id="hiero-asifeat">ASI/Feat</a></h2>
+    <p class="info">
+      When you reach 4th level, and again at 12th and 19th level, you gain both an ability score improvement, and a feat. At 8th and 16th level, you gain only a feat.
+    </p>
+  <h2><a class="classlinks" id="hiero-give-of-yourself">Give of Yourself</a></h2>
+    <p class="info">
+      Starting at 3rd level, you gain the ability to sacrifice your own energy in the form of divine power, for the sake of your allies. As a reaction you may spend a number of your hit dice equal to your proficiency bonus to perform one of the following:
+    </p>
+    <p class="info">
+    <b>Evoke Wrath</b>
+    <br>When an ally rolls damage for an attack, they roll the hit die you expended and add your wisdom modifier and the total rolled to any damage they would already deal. These dice are multiplied on critical hits. You choose the damage type added by your hit die when you gain this ability at 3rd level.
+      <br><br>
+    <b>Divine Vitae</b>
+    <br>When an ally takes damage, roll the hit die you would expend. Your ally instantly heals a number of hp equal to the total of your roll. If you use this ability on an effect that would kill an ally outright, either due to massive damage, or the nature of the effect (such as a disintegrate spell), your ally does not heal, but instead drops to 0hp and begins making death saving throws.
+    </p>
+  <h2><a class="classlinks" id="hiero-anointed">Anointed</a></h2>
+    <p class="info">
+      At 7th level, a halo forms around your head, marking you as a chosen saint of your faith. The halo appears how you choose, it could be a circle of perfect light, a crown of white hot flame, or anything of a similar nature. You may use an action to hide or to manifest the halo, while the halo surrounds your head it sheds bright light in a 10 foot radius, and dim light for 20 feet beyond that. While you manifest the halo, commoners and people of faith treat you with a very deliberate reverence and respect, while those with faiths and ideals that oppose yours might learn of your presence, and plot your downfall.
+      <br><br>You may grant yourself advantage on intimidation, persuasion, or insight checks against any creature that can see the halo a number of times equal to your proficiency bonus per long rest. In addition, you may force a creature within 30 feet of you that you’ve been speaking to for at least a minute to make a charisma saving throw against your spell save DC. If the creature fails, you learn their surface thoughts as per the detect thoughts spell. The creature is not aware of your attempt to learn their thoughts regardless of whether they succeed or fail the saving throw.
+    </p>
+  <h2><a class="classlinks" id="hiero-face-div">Face Divinity</a></h2>
+    <p class="info">
+      At 10th level, you gain the ability to invoke true divine power, calling for the aid of your god, or attempting to tap into the raw essence of your domain. Describe what it is you seek, and roll percentile dice. If the total rolled is below your level, a miracle occurs. The GM determines the nature of this miracle, depending on what you’ve sought out, and how that might be interpreted. If a miracle occurs as a result of this feature, you can’t use it again for seven days. If nothing happens, you regain the ability to use it after a long rest.<br><br>At 20th level, you invoke miracles automatically, without requiring a roll.
+    </p>
+  <p><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Monk<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--MONK-->
+    <p class="info">
+  <a class="classlinks" id="monk">This is under development</a>
+  
+  <br>
+    </p>
+  <p><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Paladin<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--PALADIN-->
+    <p class="info">
+  <a class="classlinks" id="paladin">This is under development</a>
+  
+  <br>
+    </p>
+  <p><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Rogue<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--ROGUE-->
+    <table style="margin-left:auto; margin-right:auto;">
+      <tr>
+      <td style="border:0"><table class="levelup">
+        <tr>
+          <th colspan="100%"><a id="rogue">Rogue Progression Table</a></th>
+        </tr>
+        <tr style="background-color: rgb(207, 171, 121);">
+          <th>Level</th>
+          <th width="15%">Sneak Attack Damage</th>
+          <th>Features</th>
+        </tr>
+        <tr><!--lv 1-->
+          <td>1</td>
+          <td>1d6</td>
+          <td><a href="#rogue-expert">Expertise</a>, <a href="#rogue-sneak">Sneak Attack</a>, <a href="#rogue-thieves-cant">Thieves' Cant</a></td>
+        </tr>
+        <tr><!--lv 2-->
+          <td>2</td>
+          <td>1d6</td>
+          <td><a href="#rogue-cunning">Cunning Action</a></td>
+        </tr>
+        <tr><!--lv 3-->
+          <td>3</td>
+          <td>2d6</td>
+          <td><a href="#rogue-archetype">Archetype</a></td>
+        </tr>
+        <tr><!--lv 4-->
+          <td>4</td>
+          <td>2d6</td>
+          <td><a href="#rogue-asifeat">ASI & Feat</a></td>
+        </tr>
+        <tr><!--lv 5-->
+          <td>5</td>
+          <td>3d6</td>
+          <td><a href="#rogue-uncanny">Uncanny Dodge</a></td>
+        </tr>
+        <tr><!--lv 6-->
+          <td>6</td>
+          <td>3d6</td>
+          <td><a href="#rogue-expert">Expertise</a>, <a href="#rogue-archtype">Archetype Feature</a></td>
+        </tr>
+        <tr><!--lv 7-->
+          <td>7</td>
+          <td>4d6</td>
+          <td><a href="#rogue-evasion">Evasion</a>, <a href="#rogue-risky-strike">Risky Strike</a></td>
+        </tr>
+        <tr><!--lv 8-->
+          <td>8</td>
+          <td>4d6</td>
+          <td><a href="#rogue-asifeat">ASI & Feat</a></td>
+        </tr>
+        <tr><!--lv 9-->
+          <td>9</td>
+          <td>5d6</td>
+          <td><a href="#rogue-archetype">Archetype Feature</a></td>
+        </tr>
+        <tr><!--lv 10-->
+          <td>10</td>
+          <td>5d6</td>
+          <td><a href="#rogue-asifeat">ASI</a>. <a href="#rogue-cunning-improve">Cunning Action Improvement</a></td>
+        </tr>
+        <tr><!--lv 11-->
+          <td>11</td>
+          <td>6d6</td>
+          <td><a href="rogue-reliable">Reliable Talent</a></td>
+        </tr>
+        <tr><!--lv 12-->
+          <td>12</td>
+          <td>6d6</td>
+          <td><a href="#fight-asifeat">ASI & Feat</a></td>
+        </tr>
+        <tr><!--lv 13-->
+          <td>13</td>
+          <td>7d6</td>
+          <td><a href="#rogue-archetype">Archetype Feature</a></td>
+        </tr>
+        <tr><!--lv 14-->
+          <td>14</td>
+          <td>7d6</td>
+          <td><a href="#rogue-blindsense">Blindsense</a>, <a href="#rogue-set-up">Set Up</a></td>
+        </tr>
+        <tr><!--lv 15-->
+          <td>15</td>
+          <td>8d6</td>
+          <td><a href="#rogue-slippery-mind">Slippery Mind</a></td>
+        </tr>
+        <tr><!--lv 16-->
+          <td>16</td>
+          <td>8d6</td>
+          <td><a href="#rogue-asifeat">Feat</a></td>
+        </tr>
+        <tr><!--lv 17-->
+          <td>17</td>
+          <td>9d6</td>
+          <td><a href="#rogue-archetype">Archetype Feature</a></td>
+        </tr>
+        <tr><!--lv 18-->
+          <td>18</td>
+          <td>9d6</td>
+          <td><a href="#rogue-Elusive">Elusive</a></td>
+        </tr>
+        <tr><!--lv 19-->
+          <td>19</td>
+          <td>10d6</td>
+          <td><a href="#rogue-asifeat">ASI & Feat</a></td>
+        </tr>
+        <tr><!--lv 20-->
+          <td>20</td>
+          <td>10d6</td>
+          <td><a href="#rogue-deathstroke">Deathstroke</a></td>
+        </tr>
+      </table></td>
+      </tr>
+    </table>  
+      <p class="flavor">
+        <i>Flavor Text here</i>
+      </p>
+    <h2>Class Features</h2><!--Rogue class features-->
+      <p class="info">
+      <b>Hit Dice:</b> 1d8 per Rogue Level
+      <br><b>Hit Points at 1st Level:</b> 8 + your Constitution modifier
+      <br><b>Hit Points at Higher Levels:</b> 1d8 (or 5) + your Constitution modifier per rogue level after 1st
+      <br>
+      <br><b>Proficiencies</b>
+        <br>&nbsp;Armor: Light armor
+        <br>&nbsp;Weapons: Simple weapons, hand crossbows, longswords, rapiers, shortswords
+        <br>&nbsp;Tools: Thieves' tools
+        <br>&nbsp;Saving Throws: Dexterity, Intelligence
+        <br>&nbsp;Skills: Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth
+      </p>
+    <h2><a class="classlinks" id="rogue-expert">Expertise</a></h2>
+      <p class="info">
+        At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.<br><br>
+        At 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain the benefit of Expertise.
+      </p>
+    <h2><a class="classlinks" id="rogue-sneak">Sneak Attack</a></h2>
+      <p class="info">
+        Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.<br><br>
+        You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.<br><br>
+        The amount of extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.
+      </p>
+    <h2><a class="classlinks" id="rogue-thieves-cant">Thieves' Cant</a></h2>
+      <p class="info">
+        You are familiar with Cant, a form of doublespeak and hidden messages often used by those who associate with the seedier elements of society. When you write or speak in a language you are proficient in, you may use Cant to convey secret messages to those who know to recognize it.
+      </p>
+    <h2><a class="classlinks" id="rogue-cunning">Cunning Action</a></h2>
+      <p class="info">
+        Starting at level 2, your quick thinking manifests in various ways to give yourself an advantage. You gain three of the following abilities:
+      </p>
+        <details class="sub-list"><summary><b>Cunning Action Options:</b></summary>
+          <p class="info">
+            <b>Dash:</b> As a bonus action, you may take the <a href="combat.html#dash"><u>Dash</u></a> action.<br><br>
+            <b>Quickstep:</b> As a bonus action, you may take the <a href="combat.html#disengage"><u>Disengage</u></a> action.<br><br>
+            <b>Hide:</b> As a bonus action, you may take the <a href="combat.html#hide"><u>Hide</u></a> action.<br><br>
+            <b>Search:</b> As a bonus action, you may take the <a href="combat.html#search"><u>Search</u></a> action.<br><br>
+            <b>Help:</b> As a bonus action, you may take the <a href="combat.html#help"><u>Help</u></a> action.<br><br>
+            <b>Interact:</b> As a bonus action, you may Interact without using your <a href="combat.html#use-object"><u>Object Interaction</u></a>.<br><br>
+            <b>Feint:</b> As a bonus action, if you are wielding two weapons with which you can use <a href="combat.html#twf"><u>two-weapon fighting</u></a>, you may feint with one of them to give yourself advantage on your next attack.<br><br>
+            <b>Aim:</b> As a bonus action, you may settle in your current position and take careful aim, giving you advantage on your next attack roll. When you do this, you cannot use any of your movement on your next turn.<br><br>
+            <b>Dodge:</b> As a bonus action, you may adopt a defensive stance. The first attack made against you has disadvantage. This benefit lasts until the beginning of your next turn.<br><br>
+            <b>Underhand:</b> You may use a <a href="combat.html#dirty-trick"><u>dirty trick maneuver</u></a> with a bonus action.
+          </p>
+        </details>
+      <p class="info">
+        You gain an additional Cunning Action at 7th level, 13th level, and 17th level.
+      </p>
+    <h2><a class="classlinks" id="rogue-archetype">Archetype</a></h2>
+      <p class="info">
+        Starting at 3rd level, you further hone your specialty, and choose from one of the Rogue archetypes and gain a feature. You will gain more feature from your chosen archetype at 9th, 13th, and 17th level.
+      </p>
+      <nav class="subclass">
+        <a href="subclass/rogue-fatale.html">Fatale</a>  |  
+        <a href="subclass/rogue-lowlife.html">Lowlife</a>  |  
+        <a href="subclass3">Subclass 3</a>
+      </nav>
+    <h2><a class="classlinks" id="rogue-asifeat">ASI & Feat</a></h2>
+      <p class="info">
+        When you reach 4th level, and again at 12th and 19th level, you gain both an ability score improvement, and a feat. At 8th and 16th level, you gain only a feat. As a rogue, you gain an additional ASI at 10th level.
+      </p>
+    <h2><a class="classlinks" id="rogue-uncanny">Uncanny Dodge</a></h2>
+      <p class="info">
+        Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.
+      </p>
+    <h2><a class="classlinks" id="rogue-evasion">Evasion</a></h2>
+      <p class="info">
+        Beginning at 7th level, you have learned to get out of harm’s way at a moment’s notice. When you are subjected to an effect that forces you to make a dexterity saving throw and you succeed, you may move up to your full movement without provoking attacks of opportunity. If this would put you outside the area of the effect, you are not subjected to it.
+      </p>
+    <h2><a class="classlinks" id="rogue-risky-strike">Risky Strike</a></h2>
+      <p class="info">
+        Also at 7th level, you learn to take risks to do as much damage as possible. When you have advantage on an attack, you may choose to make the attack at disadvantage. If it hits, you may apply your Sneak Attack, and any damage die you roll for the attack is treated as if it had rolled the maximum number.
+      </p>
+    <h2><a class="classlinks" id="rogue-cunning-improve">Cunning Action Improvement</a></h2>
+      <p class="info">
+        At 10th level, you hone your Cunning Actions. They gain the following additional effects:
+      </p>
+        <details class="sub-list"><summary><b>Cunning Action Improvement Options:</b></summary>
+          <p class="info">
+            <b>Dash:</b> When you use your Cunning Action to <a href="combat.html#dash"><u>Dash</u></a>, you may move up to twice your movement speed.<br><br>
+            <b>Quickstep:</b> When you use your Cunning Action to <a href="combat.html#disengage"><u>Disengage</u></a>, enemies cannot take reactions to any of your actions until the start of your next turn.<br><br>
+            <b>Hide:</b> When you use your Cunning Action to <a href="combat.html#hide"><u>Hide</u></a>, you may do so even when you have no cover or are under observation.<br><br>
+            <b>Search:</b> When you use your Cunning Action to <a href="combat.html#search"><u>Search</u></a>, you automatically see through illusions.<br><br>
+            <b>Help:</b> When you use your Cunning Action to <a href="combat.html#help"><u>Help</u></a>, the effect lingers on the enemy for a number of attacks equal to your proficiency bonus until the beginning of your next turn.<br><br>
+            <b>Interact:</b> When you use your Cunning Action to Interact, you may use the object as part of the same bonus action.<br><br>
+            <b>Feint:</b> When you use your Cunning Action to Feint, you may follow up your attack with another attack.<br><br>
+            <b>Aim:</b> When you use your Cunning Action to Aim, you may move up to half your speed on your next turn.<br><br>
+            <b>Dodge:</b> When you use your Cunning Action to Dodge, the effect lingers for a number of attacks equal to your proficiency bonus until the beginning of your next turn.<br><br>
+            <b>Underhand:</b> When you use your cunning action to underhand, the target has disadvantage on their saving throw.
+          </p>
+        </details>
+    <h2><a class="classlinks" id="rogue-reliable">Reliable Talent</a></h2>
+      <p class="info">
+        Whenever you make an ability check that lets you add your proficiency bonus, and you roll a 9 or less, you may reroll one die.
+      </p>
+    <h2><a class="classlinks" id="rogue-blindsense">Blindsense</a></h2>
+      <p class="info">
+        Starting at 14th level, you know the location of invisible and hidden creatures within 30 feet of you, and can no longer be surprised.
+      </p>
+    <h2><a class="classlinks" id="rogue-set-up">Set Up</a></h2>
+      <p class="info">
+        Also at 14th level, you have learned to pry open enemy defenses to secure a better opening. When you hit with an attack and apply your sneak attack damage, you may sacrifice a number of sneak attack die up to your proficiency bonus. The target’s Armor Class is reduced by that number of die until the end of your next turn.
+      </p>
+    <h2><a class="classlinks" id="rogue-slippery-mind">Slippery Mind</a></h2>
+      <p class="info">
+        At 15th level, your mind is a bastion. You gain proficiency in Wisdom and Charisma saving throws, and if you are already proficient, you double your proficiency bonus. You are immune to Divination effects and know when you are being targeted by one.
+      </p>
+    <h2><a class="classlinks" id="rogue-elusive">Elusive</a></h2>
+      <p class="info">
+        Starting at 18th level, you become nearly impossible to hit. If an enemy would have advantage on an attack roll against you, they roll that attack normally. If an enemy would roll their attack normally, they roll with disadvantage. If an enemy would roll their attack with disadvantage, the attack fails.
+      </p>
+    <h2><a class="classlinks" id="rogue-deathstroke">Deathstroke</a></h2>
+      <p class="info">
+        Make an attack roll as normal. If you hit, the attack is a critical hit. If the attack roll is a critical hit, then you may choose to kill the target. If you do not kill the target, you must take a long rest before you can use this feature again. If you do kill the target, you must wait until the beginning of your next turn to use this feature again.
+      </p>
+    <hr>
+    <p><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Salaryman<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--SALARYMAN-->
+    <p class="info">
+  <a class="classlinks" id="salaryman">This is under development</a>
+  
+  <br>
+    </p>
+  <p><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Scholar<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--SCHOLAR-->
+    <p class="info">
+  <a class="classlinks" id="scholar">This is under development</a>
+  
+  <br>
+    </p>
+  <p><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Sorcerer<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--SORCERER-->
+    <p class="info">
+  <a class="classlinks" id="sorcerer">This is under development</a>
+  
+  <br>
+    </p>
+  <p><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Warlock<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--WARLOCK-->
+    <p class="info">
+  <a class="classlinks" id="warlock">This is under development</a>
+  
+  <br>
+    </p>
+  <p><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Warlord<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--WARLORD-->
+    <p class="info">
+  <a class="classlinks" id="warlord">This is under development</a>
+  
+  <br>
+    </p>
+  <p><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <details class="class"><summary><h1><div class="tooltip">Wizard<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary> <!--WIZARD-->
+  <!--WIZARD Table and flavor-->
+  <table style="margin-left:auto; margin-right:auto;">
+    <tr>
+      <td style="border:0"><table class="levelup">
+        <tr>
+          <th colspan="100%"><a id="wizard">Wizard Progression Table</a></th>
+        </tr>
+      <tr style="background-color: rgb(207, 171, 121);"><!--HEADER START-->
+        <th rowspan="2">Level</th>
+        <th rowspan="2">Features</th>
+        <th rowspan="2">Cantrips</th>
+        <th colspan="9">Spell Slots per Spell Level</th>
+      </tr>
+      <tr style="background-color: rgb(207, 171, 121);">
+        <td>1st</td>
+        <td>2nd</td>
+        <td>3rd</td>
+        <td>4th</td>
+        <td>5th</td>
+        <td>6th</td>
+        <td>7th</td>
+        <td>8th</td>
+        <td>9th</td>
+      </tr><!--HEADER ENDS-->
+      <tr> <!--LV 1-->
+        <td>1</td>
+        <td><a href="#wiz-spell">Spellcasting</a>, <a href="#wiz-arcane-record">Arcane Record</a></td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 2-->
+        <td>2</td>
+        <td><a href="#wiz-subclass">Subclass</a></td>
+        <td>3</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 3-->
+        <td>3</td>
+        <td><a href="#wiz-student-artifice">Student of Artifice</a></td>
+        <td>3</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 4-->
+        <td>4</td>
+        <td><a href="#wiz-asifeat">ASI & Feat</a></td>
+        <td>3</td>
+        <td>4</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 5-->
+        <td>5</td>
+        <td><a href="#wiz-mysteries-arcane">Mysteries Arcane</a></td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 6-->
+        <td>6</td>
+        <td><a href="#wiz-subclass">Subclass Feature</a></td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 7-->
+        <td>7</td>
+        <td><a href="#wiz-internalize">Internalize</a></td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 8-->
+        <td>8</td>
+        <td><a href="#wiz-asifeat">Feat</a></td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 9-->
+        <td>9</td>
+        <td>-</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 10-->
+        <td>10</td>
+        <td><a href="#wiz-subclass">Subclass Feature</a>, <a href="#wiz-mysteries-arcane">Mysteries Arcane</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 11-->
+        <td>10</td>
+        <td>-</td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 12-->
+        <td>12</td>
+        <td><a href="#wiz-asifeat">ASI & Feat</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 13-->
+        <td>13</td>
+        <td>-</td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 14-->
+        <td>14</td>
+        <td><a href="#wiz-subclass">Subclass Feature</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 15-->
+        <td>15</td>
+        <td><a href="#wiz-mysteries-arcane">Mysteries Arcane</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 16-->
+        <td>16</td>
+        <td><a href="#wiz-asifeat">Feat</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+      </tr>
+      <tr> <!--LV 17-->
+        <td>17</td>
+        <td>-</td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr> <!--LV 18-->
+        <td>18</td>
+        <td><a href="#wiz-sub-focus">Subconscious Focus</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr> <!--LV 19-->
+        <td>19</td>
+        <td><a href="#wiz-asifeat">ASI & Feat</a></td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr> <!--LV 20-->
+        <td>20</td>
+        <td><a href="#wiz-subclass">Subclass Feature</a></td>
+        <td>6</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      </table></td>
+    </tr>
+  </table>
+    <p class=flavor>
+        <i>“The time before the king was different. It was an era of freedom, in which all men were masters of their fate, and could grasp it with their bare hands. Any could strike forth and shape the world in his own image, should he be able to summon the will.<br><br> 
+      This was a cruel age. Perhaps that is unsurprising, after all, men are creatures of want and of violence. To shape the world one must drench himself in blood beforehand, so that the fluids might seep into the hard clay, and he may work it into a shape he truly desires. Slaughter was the way of things, and the smoke of war became so thick it choked the stars out of the sky. In this time there were two men, boys really. Adherents to the sword, corrupted in different ways by their own noble intentions. They walked the road together, the teacher seeking to protect innocents from the violence of the world, the student admiring the teacher’s goal and hoping to be like him, somehow.<br><br> 
+      The student would never be like his teacher, however. His goals were far more grand, and his ego had consumed any humility in his heart many years before he ever crossed paths with his teacher. The boy was obsessed with knowledge, not only study and research, but in the esoteric, true sense. He sought to become all knowing, to forge for himself that ultimate mark of divinity, so that he might not simply shape the world like the other men, but could tower above it and shape them. His goal was born of anger, of the desire to right an old wrong, but he knew in his heart that it was just, that his intentions were pure and that he would be different from the common warlords who would burn villages and slaughter children for their personal amusement.<br><br>       
+      His knowledge grew with time, and as it did he became more powerful. He could speak, and the air would listen. He could sing and make another fall in love. He could raise his hand to the sky, and it would give him lightning. He could walk and the ground would shake. He could shape the world, and he would make it his weapon.<br><br>         
+      So begins the story of the man who would be king.”<br><br> 
+      -Names, 16</i>
+    </p>
+    <h2>Class Features</h2><!--Wizard class features-->
+    <p class="info">
+      <b>Hit Dice:</b> 1d6 per Wizard Level
+      <br><b>Hit Points at 1st Level:</b> 6 + your Constitution modifier
+      <br><b>Hit Points at Higher Levels:</b> 1d6 (or 4) + your Constitution modifier per wizard level after 1st
+      <br>
+      <br><b>Proficiencies</b>
+        <br>&nbsp;Armor: none
+        <br>&nbsp;Weapons: Daggers, darts, slings, quarterstaffs, light crossbows
+        <br>&nbsp;Tools: None
+        <br>&nbsp;Saving Throws: Intelligence, Wisdom
+        <br>&nbsp;Skills: Choose two from Arcana, History, Insight, Investigation, Medicine, & Religion
+      <br><br>In addition to any equipment you begin the game with, you also have a spellbook
+    </p>
+    <h2><a class="classlinks" id="wiz-spell">Spellcasting</a></h2>
+    <p class="info">
+      As a wizard, you approach magic like a science. Your ability to cast is informed by your knowledge of the mysteries arcane, and how you might invoke them for power. You carry a spellbook filled with arcane formulae, which is the sum of all your knowledge, and the recipe book for all the magic you can cast.
+    <br><br><b>Cantrips</b>
+    <br>A cantrip is a simple spell that doesn’t require a great deal of a wizard’s focus or energy to cast. As opposed to burning a spell slot, a cantrip can be cast at will, indefinitely. At 1st level, you learn three cantrips of your choice from the wizard spell list. You gain an additional cantrip at 4th, and 8th level.
+    <br><br><b>Preparing and Casting Spells</b><br>
+      On the wizard table you can find how many spell slots you have for leveled (1st level or higher) wizard spells. To cast a leveled spell, you must expend a slot of the spell’s level or higher.
+    <br>
+      You prepare a number of spells per day equal to your wizard level + your intelligence modifier. At the end of a long rest, you choose which spells to have prepared of the ones stored in your arcane record. Any spell you don’t have prepared, you won’t be able to cast.
+    <br><br><b>Casting Ability</b>
+    As a wizard, your spellcasting ability is intelligence, as you gain the ability to invoke power through rigorous study and intense effort. You use your intelligence modifier to calculate your bonus to hit with a spell, and the DC of saves against your spells (or class/subclass features, if relevant).
+    <br><br><p style="text-align:center;"><b>Spell Save DC</b> = 8 + your proficency bonus + your Intelligence modifier
+    <br><b>Spell Attack Modifier</b> = your proficiency bonus + your intelligence modifier</p>
+    <p style="font-size:21px; text-align:center;"><a href="spells/wizard.html"><u>Wizard Spell List</u></a></p>
+    </p>
+    <h2><a class="classlinks" id="wiz-arcane-record">Arcane Record</a></h2>
+    <p class="info">
+      As a 1st level wizard, your arcane record contains six 1st level wizard spells of your choice. All your spells known are stored in this record, save for cantrips which remain fixed in your mind. The spells you add beyond that reflect research you conduct and breakthroughs you have in regards to the true shape of reality, you may also copy spells into your record you find on scrolls, or recorded by other wizards you meet on your adventures.
+      <br><br>
+      <b>Copying Spells</b>
+      <br>You can only copy spells you have the ability to cast (a 5th level wizard, for example, can’t copy a 9th level spell). To copy any spell into your record takes 2 hours and 50 gold of materials for every level of the spell being copied. 
+      <br>
+      <details class="sub-list"><b><summary>Record Options:</b></summary>
+      <dl>
+        <dt><b>Tome: </b>The classic spellbook. Your arcane record is a thick volume of complex, painstakingly outlined magic. With this record being so distinctly organized, you know where everything is, and how to access it. As an action, you may search your spellbook to find a spell you haven’t prepared. When you’ve found the spell, you may treat the spell as being “prepared” until the end of your next turn.</dt>
+        <br>
+          <dd><b>Replacing the Tome: </b>The cost of an empty spellbook is around 100gp. It would be wise for a mage who keeps their record in this way to have a second stored away in a safe place in the case of their tome being damaged or destroyed. The time, and the gold cost of copying a spell is halved when a wizard copies a spell from their spellbook into another spellbook, because they possess a greater familiarity with the subject matter, and can read and replicate their own style of writing more easily.</dd>
+          <br>
+        <dt><b>Inscribed: </b>Your magic is recorded across your body, be it in tattoos, scars, or branded into your skin, you’ve made the magic you study a distinct part of you. Because of this, you’ve imparted some level of arcane presence onto yourself. You may use your body as a spellcasting focus for spells that require a material component.</dt>
+        <br>
+          <dd><b>Replacing Inscriptions: </b>Unlike other options, there is no cost to replacing spells “lost” that had been inscribed on your skin due to things like scarring or dismemberment. The inscription process and its magical nature keep the magic at least somewhat grounded in the very background of your mind. If you are scarred or injured and lose some of your work, it is assumed that either through your own efforts to restore it, or the shifting of patterns on your skin, the integrity of the information is retained. Only when your body is totally destroyed, is your record gone as well.</dd>
+          <br>
+        <dt><b>Loose Leaf: </b>Your magic is kept together as a collection of loose notes and papers, this unorganized method of record keeping forces you to become more intimate with the knowledge you record, keeping a greater familiarity with it than a mage who might keep their knowledge organized in a book. You may attempt to draw an unprepared spell from the dregs of your memory to cast in the moments you need it most. When attempting to cast a spell you don’t have prepared, roll an intelligence check. The DC of this check is equal to 10 + the spell’s level. If you pass the check, you cast the spell as normal. If you fail, you lose the spell slot associated with the spell you were attempting to cast.</dt>
+        <br>
+          <dd><b>Replacing your Notes: </b>Like the tome, it would be prudent for a mage who keeps their arcane knowledge in notes to have a backup set. More prudent really, because notes are lost and damaged much more easily than a full book. Thankfully, the cost of buying more paper on which to scrawl more notes is negligible. The cost of actually scribing these notes however, is not. The time needed and the gold cost for replicating a spell in a new set of notes is the same as it would be to copy that spell for the first time into your record.</dd>
+      </dl>
+      </details>
+    </p>
+    <h2><a class="classlinks" id="wiz-subclass">Subclass</a></h2>
+    <p class="info">
+      Starting at 2nd level, you may chose a subclass from the following below and gain a feature. You will gain more feature from your chosen subclass at 6th, 10th, 14th, and 20th level.
+    </p>
+    <nav class="subclass">
+      <a href="subclass/wiz-anatomist.html">Anatomist</a>  |  
+      <a href="subclass/wiz-profane.html">Profane</a>  |  
+      <a href="subclass/wiz-enlightened.html">Enlightened</a>
+    </nav>
+    <h2><a class="classlinks" id="wiz-student-artifice">Student of Artifice</a></h2>
+    <p class="info">
+      Starting at 3rd level, you gain the ability to create scrolls of spells you have stored in your arcane record. The gold cost and time necessary to craft a scroll is double that of the gold cost and time it takes you to record a spell of the same level (and school, if relevant) into your arcane record, as outlining the intricacies of casting in terms a layman can understand often requires a few tries to accurately describe.
+    </p>
+    <h2><a class="classlinks" id="wiz-asifeat">ASI/Feat</a></h2>
+    <p class="info">
+      When you reach 4th level, and again at 12th and 19th level, you gain both an ability score improvement, and a feat. At 8th and 16th level, you gain only a feat.
+    </p>
+    <h2><a class="classlinks" id="wiz-mysteries-arcane">Mysteries Arcane</a></h2>
+    <p class="info">
+      At 5th level, 10th level, and 15th level, you can choose a way your record affects your casting, and brings a greater, unique strength to your magic by tapping into greater mysteries of reality.
+      <br><details class="sub-list"><summary><b>Tome:</b></summary>
+        <ul>
+          <li><b>Ritualist: </b>You can cast any spell that lacks a duration of “instantaneous” as a ritual.</li>
+          <li><b>Nomicon: </b>Your spellbook doubles as a repository of information on a specific type of creature. Choose a creature type that isn’t “humanoid.” You can instantly recognize creatures of that creature type, and may take an action to search the book and find their relevant entry. The entry tells you the creature’s HP, AC, resistances, vulnerabilities, and any relevant or unique weaknesses they might have.</li>
+          <li><b>Published: </b>Your volume has been given to a publisher and is now sold as a product. Every day, you gain a number of gold equal to half your level in royalties. You must be in a properly equipped settlement (likely a city) to collect on these royalties.</li>
+          <li><b>Cipher: </b>Your spellbook is written as something other than a spellbook. It could appear as a cookbook, a fictional novel, a collection of poetry, or something else entirely. Anyone reading it without the knowledge the book is a spellbook won’t be able to glean its true nature, anyone reading it with the knowledge of it being a spellbook must make an intelligence check against your spell save DC to understand its meaning every time they attempt to read it. In addition, your magic too becomes more difficult to read and predict. Casters have disadvantage on checks made to counterspell you.</li>
+          <li><b>Open Book: </b>If you hold the book in your off hand, you may use a bonus action to read from it as you cast. Every time you use your bonus action in this way, you can choose to add your intelligence modifier to damage dealt by your spells.</li>
+        </ul>
+      </details>
+      <br><details class="sub-list"><summary><b>Inscribed:</b></summary>
+        <ul>
+          <li><b>Warded: </b>You learn the mage armor spell, if you don’t know it already. You always have this spell prepared, and gain the ability to cast it at will.</li>
+          <li><b>Blood Mage: </b>You may call upon your vitality to draw upon magic even when your reserves are dry. You may cast a spell without using a spell slot. When you cast in this way, roll a number of hit die equal to the spell’s level +1, those hit die are expended, and your hit point maximum is reduced by a number equal to the total. This reduction is undone after you complete a long rest.</li>
+          <li><b>Rough: </b>You’ve shaped yourself into someone more resilient than the average mage. Your hit point maximum increases by 1 for every wizard level you possess and increases by 1 again with every wizard level you gain.</li>
+          <li><b>Body as a Canvas: </b>You can inscribe a spell you know on the flesh of a willing ally over the course of a long rest. When the process is complete, the ally can cast the spell you’ve inscribed as an action once, regaining the ability to do so on a long rest. A character may only have one spell inscribed on them in this way at a time.</li>
+          <li><b>A Living Work of Art: </b>When choosing this feature, choose either intimidation or performance. You gain the ability to use intelligence in place of charisma on checks with the selected skill, and advantage on checks with the associated skill when your inscriptions are visible to others.</li>
+          <li><b>Hyperfocus: </b>Your body becomes a more powerful focus for your spells. You are a +1 focus at wizard level 5, a +2 focus at wizard level 10, and a +3 focus at wizard level 15.</li>
+        </ul>
+      </details>
+      <br><details class="sub-list"><summary><b>Loose Leaf:</b></summary>
+        <ul>
+          <li><b>Fool’s Resolution: </b>Even when the formulae don’t come to you, you can force the magic you’ve taken hold of to still become something. You can use this feature to roll on the wild magic table after failing your check to cast an unprepared spell.</li>
+          <li><b>Off the Cuff: </b>You may cast a spell with the casting time of one action once as a bonus action, expending a slot one level higher than the spell’s level (for example to cast “mage armor” as a bonus action, you would use a second level slot). You regain the ability to use this feature when you complete a long rest</li>
+          <li><b>Quick Fingered: </b>After using your free object interaction, you may make an additional object interaction as a bonus action as opposed to an action.</li>
+          <li><b>Improvise: </b>You may replace an ability check you make with an arcana check once, as you improvise a simple magical solution on the fly to pull through the situation as opposed to using the relevant skill. You regain use of this ability on a short or long rest.</li>
+          <li><b>Paper Trail: </b>You gain the ability to throw a fistful of your papers in an opponent’s face, allowing you to disengage as a bonus action thanks to the distraction. When you use this ability, roll a d20. On a natural 1, you lose the components to cast a spell recorded in your notes (you choose which of your spells known you lose when you do this). Every time you do this after the first, the threshold for losing a spell doubles (from a 1 on the d20, to a 2, to a 4, and so on). The threshold resets after you take a long rest, or after you lose a spell from doing this.</li>
+        </ul>
+      </details>
+    </p>
+    <h2><a class="classlinks" id="wiz-internalize">Internalize</a></h2>
+    <p class="info">
+      At 7th level when you see a spell being cast you can use your reaction to instantly memorize the motions the mage makes, the intonation with which they evoke the power, and any components they use to cast the spell. From this information, you can work backwards in your mind to decipher some element of how this spell works, and attempt to cast it yourself. To cast a spell in this way, make an arcana check with a DC equal to 10 + the spell’s level x 2. If the spell you’re attempting to cast isn’t on the wizard spell list, you make this check with disadvantage. If you succeed the check, the spell takes effect. Regardless of whether you succeed or fail, the spell is lost. You have disadvantage on checks to keep concentration on spells cast in this way.
+      <br><br>
+      When you attempt to cast a spell in this way, you don’t use a spell slot. You may use this feature a number of times equal to your proficiency bonus before taking a long rest.
+    </p>
+    <h2><a class="classlinks" id="wiz-sub-focus">Subconscious Focus</a></h2>
+    <p class="info">
+      At 18th level, when you cast a spell that requires concentration, you may declare that you are focusing on the spell subconsciously. When you make this declaration, the spell does not require your concentration to remain active. Taking damage does not threaten to end your concentration on a subconsciously focused spell, and you may concentrate on other spells or features while having a spell active in this way. You may only focus subconsciously on one spell at a time. You cannot subconsciously focus on an internalized spell.
+      <br>
+      You must complete a short or long rest before using this feature again.
+    </p>
+  <p class="info"><a href="#top">Back to Top</a></p>
+  </details>
+    <hr>
+  <p><a href="#top">Back to Top</a></p>
+  </div>
+
+
+</div>
+  <!--Javascript code for topnav-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+</html>
