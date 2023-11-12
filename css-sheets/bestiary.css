@@ -35,9 +35,15 @@ table.monster-block{
 td.name{
   font-family:Garamond;
   color:rgb(79, 10, 10);
-  font-size:25px;
+  font-size:30px;
   font-weight:bold;
   text-align:left;}
+td.cr{
+  font-family:Garamond;
+  color:rgb(79, 10, 10);
+  font-size:15px;
+  font-weight:bold;
+  text-align:right;}
 td.linebreak{
   background-color: rgb(79, 10, 10);
   padding:2px;}
@@ -58,6 +64,9 @@ tr.stats{
   color:rgb(79, 10, 10);
   font-family:arial;}
 td.stat-num{
+  padding:3px;
+  font-size:19px;}
+td.stat-mod{
   padding:3px;}
 td.detail-title{
   color:rgb(57, 7, 7);

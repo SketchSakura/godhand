@@ -1,0 +1,848 @@
+<html>
+  <head><title>GODHAND - Bestiary Page 2</title>
+    <link href="../css-sheets/topnav.css" rel="stylesheet">
+    <link href="../css-sheets/layout.css" rel="stylesheet">
+    <link href="../css-sheets/bestiary.css" rel="stylesheet">
+    <style>
+      h1{font-size:25px; padding:5px;}
+      h2{font-size:23px; padding:3px; background-color:rgb(207,171,121);}
+      h3{font-size:20px;padding:3px; background-color:rgb(207,171,121);}
+      span.right{float: right;font-weight:normal;}
+      tr:nth-child(even){background-color:transparent;}
+      td, th{border:0;}
+    </style>
+  </head>
+<body>
+  <div id="sidebar" class="sidebar"><!--Full Link Sidebar-->
+      <a href="../index.html" class="main-link">&#9864 &nbsp;About</a><br>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Rules</summary>
+        &nbsp;&nbsp;<a href="../rules/basics.html">&#9864 &nbsp;Basics</a>
+        <br>&nbsp;&nbsp;<a href="../rules/combat.html">&#9864 &nbsp;Combat</a>
+        <br>&nbsp;&nbsp;<a href="../rules/magic.html">&#9864 &nbsp;Magic</a>
+        <br>&nbsp;&nbsp;<a href="../rules/divinity.html">&#9864 &nbsp;Divinity</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../classes.html" class="main-link">&hairsp;Classes</a></summary>
+        <!--Class Dropdown-->
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#fighter">Fighter</a></summary><!--Fighter-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/fight-champion.html" class="sublink">Champion</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/fight-momentum.html" class="sublink">Momentum</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/fight-strategist.html" class="sublink">Strategist</a>
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#hierophant">Hierophant</a></summary><!--Hierophant-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/hiero-truth.html" class="sublink">Truth</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/hiero-violence.html" class="sublink">Violence</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#rogue">Rogue</a></summary><!--Rogue-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/rogue-fatale.html" class="sublink">Fatale</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/rogue-lowlife.html" class="sublink">Lowlife</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#wizard">Wizard</a></summary><!--Wizard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/wiz-anatomist.html"  class="sublink">Anatomist</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/wiz-profane.html" class="sublink">Profane</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href="../subclass/wiz-enlightened.html" class="sublink">Enlightened</a>
+        </details>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../folk.html" class="main-link">&hairsp;Folk</a></summary>
+        <!--Folk Dropdown-->
+        &nbsp;&nbsp;<a href="../folk.html#catfolk">&#9864 Catfolk</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#changeling">&#9864 Changeling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#colun">&#9864 Colún</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#dwarf">&#9864 Dwarf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#elf">&#9864 Elf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#halfling">&#9864 Halfling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#human">&#9864 Human</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#orc">&#9864 Orc</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#raska">&#9864 Raska</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#half-folk">&#9864 Half-Folk Rules</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#bloodlines">&#9864 Bloodlines</a>
+      </details>
+      <a href="../feats.html" class="main-link">&#9864 &nbsp;Feats</a><br>
+      <details class="main-dropdown"><summary>&#9862<a href="../spells/guide.html" class="main-link">&hairsp;Spells</a></li></summary>
+        <!--Spell Dropdown-->
+        &nbsp;&nbsp;<a href="../spells/guide.html">&#9864 Spell Guide</a>
+        <br>&nbsp;&nbsp;<a href="../spells/bard.html">&#9864 Bard</a>
+        <br>&nbsp;&nbsp;<a href="../spells/druid.html">&#9864 Druid</a>
+        <br>&nbsp;&nbsp;<a href="../spells/hierophant.html">&#9864 Hierophant</a>
+        <br>&nbsp;&nbsp;<a href="../spells/warlock.html">&#9864 Warlock</a>
+        <br>&nbsp;&nbsp;<a href="../spells/wizard.html">&#9864 Wizard</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Items</a></summary>
+        <!--Item Dropdown-->
+        &nbsp;&nbsp;<a href="../items/armorweapons.html">&#9864 Armor & Weapons</a>
+        <br>&nbsp;&nbsp;<a href="../items/equips.html">&#9864 Equipment</a>
+        <br>&nbsp;&nbsp;<a href="../items/magicitems.html">&#9864 Magic Items</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Bestiary</a></summary>
+        &nbsp;&nbsp;<a href="page-1.html">&#9864 &nbsp;CF 0 - 5</a>
+        <br>&nbsp;&nbsp;<a href="page-2.html">&#9864 &nbsp;CF 6 - 15</a>
+      </details>
+  </div>
+<div id="main"><!--Encapsulated header nav and body-->
+  <div id="logo"> <!--Godhand Logo-->
+    <a href="../index.html"><img src="../images/Godhand logo.png" height=80px class="logo"></a> <!--Godhand logo-->
+  </div>
+  <div class="topnav" id="myTopnav"> <!--Topnavbar-->
+    <a href="../index.html" >About</a>
+    <div class="nav-dropdown"><!--Rules Dropdown-->
+      <button class="dropbtn">Rules &#9662</button>
+      <div class="dropdown-content">
+        <a href="../rules/basics.html">Basics</a>
+        <a href="../rules/combat.html">Combat</a>
+        <a href="../rules/magic.html">Magic</a>
+        <a href="../rules/divinity.html">Divinity</a>
+      </div>
+    </div>
+    <a href="../folk.html">Folk</a> 
+    <div class="nav-dropdown"><!--Classes Dropdown-->
+      <button class="dropbtn"><a href="../classes.html" style="padding:0px;">Classes</a> &#9662</button>
+      <div class="dropdown-content"> <!--Classes variety-->
+        <a href="../classes.html#fighter">Fighter</a>
+        <a href="../classes.html#hierophant">Hierophant</a>
+        <a href="../classes.html#rogue">Rogue</a>
+        <a href="../classes.html#wizard">Wizard</a>
+      </div>
+    </div>
+    <a href="../feats.html">Feats</a>
+    <div class="nav-dropdown"><!--Spells Dropdown-->
+      <button class="dropbtn"><a href="../spells/guide.html" style="padding:0px;">Spells</a> &#9662</button>
+      <div class="dropdown-content">
+        <a href="../spells/guide.html">Spell Guide</a>
+        <a href="../spells/bard.html">Bard</a>
+        <a href="../spells/druid.html">Druid</a>
+        <a href="../spells/hierophant.html">Hierophant</a>
+        <a href="../spells/warlock.html">Warlock</a>
+        <a href="../spells/wizard.html">Wizard</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Items Dropdown-->
+      <button class="dropbtn">Items &#9662
+      </button>
+      <div class="dropdown-content">
+        <a href="../items/armorweapons.html">Armor & Weapons</a>
+        <a href="../items/equips.html">Equipment</a>
+        <a href="../items/magicitems.html">Magic Items</a>
+      </div>
+    </div>
+    <div class="nav-dropdown active"><!--Bestiary Dropdown-->
+      <button class="dropbtn">Bestiary &#9662 </button>
+      <div class="dropdown-content">
+        <a href="page-1.html">CF 0 - 5</a>
+        <a href="page-2.html">CF 6 - 15</a>
+      </div>
+    </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!--Javascript button for smaller screens-->
+  </div>
+<br>
+  <div id="mainbody"> <!--Main Content-->
+    <h1 style="font-size:40px">Bestiary</h1>
+<a id="top"></a>
+<p>
+  This page is under development
+</p>
+<details class="cr-level"><summary>CF 6</summary><!--CF 6-->
+  <!--Woodland Horror-->
+    <details class="monster-sum"><summary><span class="name"><b>Woodland Horror</b></span><span class="right">Medium Abberation, CF 6</span></summary>
+      <table class="monster-block">
+        <tr><!--Name and CR-->
+          <td rowspan="2" colspan="5" class="name">Woodland Horror</td>
+          <td class="cr">Solo</td>
+        </tr>
+        <tr>
+          <td class="cr">CF 6</td>
+        </tr>
+        <tr><!--Species and Alignment-->
+          <td colspan="100%" class="type">Medium Abberation <span class="right">XP 2300</span></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr><!--AC, HP, and Speed-->
+          <td colspan="100%" class="bio"><b>Armor Class</b> 16 (Natural, Thick Fur Hide)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Hit Points</b> 79 (10d10 + 24)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Speed</b> Walk 30 ft., Climb 20 ft., Swim 30 ft.</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr class="stats"><b><!--Ability Scores-->
+          <td><b>STR</b></td>
+          <td><b>DEX</b></td>
+          <td><b>CON</b></td>
+          <td><b>INT</b></td>
+          <td><b>WIS</b></td>
+          <td><b>CHA</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-num">17</td>
+          <td class="stat-num">20</td>
+          <td class="stat-num">14</td>
+          <td class="stat-num">6</b></td>
+          <td class="stat-num">17</b></td>
+          <td class="stat-num">14</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-mod">+3</td>
+          <td class="stat-mod">+5</td>
+          <td class="stat-mod">+2</td>
+          <td class="stat-mod">-2</b></td>
+          <td class="stat-mod">+3</b></td>
+          <td class="stat-mod">+2</b></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Saving Throws</b> Str (+6), Dex (+8)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Senses</b> Darkvision 90 ft., Passive Perception 16</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Skills</b> Athletics (+6), Acrobatics (+8), Perception (+6), Stealth (+8), Survival (+6)<span class="right"><b>Proficiency Bonus</b> +2</span></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Languages</b> None</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Abilities</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Stalker</b></i> The woodland horror has advantage on Stealth checks. Additionally, it can take the Hide action as a bonus action, and may attempt to do so even when only lightly obscured.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Night Hunter</b></i> The woodland horror does not have disadvantage on sight-based perception checks when in darkness.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Predatory Instincts</b></i> The woodland horror has advantage on Perception checks, and advantage on Survival checks made to track other creatures.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Climbing Limbs</b></i> The woodland horror can climb even completly slick surfaces.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Hit-and-Run</b></i> The woodland horror can dash as a bonus action. Additionally, if the woodland horror attacks a creature, that creature cannot make opportunity attacks against the woodland horror.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Actions</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Multiattack</b></i> The woodland horror makes 2 hooked appendage attacks and 1 bite attack.  If two of these attacks succeed against the same creature, that creature gains a bleed.  If they already have a bleed, the bleed becomes a hemorrhage.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Hooked Appendage</b> Melee Weapon Attack:</i> +8 to hit, reach 5 ft., one target. On Hit: 14 (2d8 + 5) Slashing damage</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Bite</b> Melee Weapon Attack:</i> +8 to hit, reach 5 ft., one target. On Hit: 12 (2d6 + 5) Slashing damage</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Aerial Ambush</b></i> If a creature is 5 ft. or more below the woodland horror, the woodland horror may jump up to 20 ft towards it, landing in the other creature's space (the woodland horror does not take fall damage from this). It immediately makes 1 hooked appendage attack and 1 bite attack, and then makes an Athletics check. This check is at advantage if the target of this action does not perceive the woodland horror. The target creature must succeed a contested Strength or Dexterity saving throw, or be knocked prone. If the target creature succeeds, they remain standing and are pushed to the nearest unoccupied space.</td>
+        </tr>
+          <td colspan="100%" class="detail-title">Reactions</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Retaliation</b></i> If attacked by a melee attack, the woodland horror may immediately make 1 claw attack at the creature which attacked it, dealing half damage on a hit.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Description</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details">Many cultures have their own name for this elusive creature: the Shadow Monster, the Hooked Stalker, That Which Hunts by the Starlight.  Researchers have simply taken to calling it the Woodland Horror.  Little about this creature is agreed upon.  The general consensus, though, is that the Woodland Horror prefers to hunt by stealth, stalking its prey for miles before pouncing on them at the moment their guard is at its lowest.  It has even been said to use basic psychological attacks; some who claim to have survived an attack by the Woodland Horror claim it leaves the body parts of dismembered animals in the path of its prey to fray their nerves and debilitate their mental state.  While its appearance is similarly contested, most stories tell of its long, distinctive hooked appendages that it uses to rip apart its unfortunate meals.<br><br>None of this, of course, is verifiable information, and many dismiss sightings as nothing more than hearsay; merely stories to keep children from wandering off at night, even though old hunters will swear they could see a pair of unblinking green eyes staring back at them from the shadows of the treeline...
+          </td>
+        </tr>
+      </table>
+    </details>
+</details>
+<br>
+<details class="cr-level"><summary>CF 7</summary><!--CF 7-->
+</details>
+<br>
+<details class="cr-level"><summary>CF 8</summary><!--CF 8-->
+  <!--Animate Black Ichor-->
+    <details class="monster-sum"><summary><span class="name"><b>Animate Black Ichor</b></span><span class="right">Large Growth, CF 8</span></summary>
+      <table class="monster-block">
+        <tr><!--Name and CR-->
+          <td rowspan="2" colspan="5" class="name">Living Stone</td>
+          <td class="cr">Solo</td>
+        </tr>
+        <tr>
+          <td class="cr">CF 8</td>
+        </tr>
+        <tr><!--Species and Alignment-->
+          <td colspan="100%" class="type">Large Growth <span class="right">XP 3900</span></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr><!--AC, HP, and Speed-->
+          <td colspan="100%" class="bio"><b>Armor Class</b> 15 (Natural, Film of Ooze)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Hit Points</b> 85 (10d10 + 30)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Speed</b> Walk 20 ft.</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr class="stats"><b><!--Ability Scores-->
+          <td><b>STR</b></td>
+          <td><b>DEX</b></td>
+          <td><b>CON</b></td>
+          <td><b>INT</b></td>
+          <td><b>WIS</b></td>
+          <td><b>CHA</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-num">18</td>
+          <td class="stat-num">10</td>
+          <td class="stat-num">27</td>
+          <td class="stat-num">6</b></td>
+          <td class="stat-num">9</b></td>
+          <td class="stat-num">5</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-mod">+4</td>
+          <td class="stat-mod">+0</td>
+          <td class="stat-mod">+3</td>
+          <td class="stat-mod">-2</b></td>
+          <td class="stat-mod">-1</b></td>
+          <td class="stat-mod">-3</b></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Saving Throws</b> Str (+7), Con (+6)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Damage Resistance</b> Poison, Non-magical bludgeoning, slashing, & piercing</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Damage Vulnerabilities</b> Acid</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Condition Immunities</b> Grappled, Restrained</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Senses</b> (TBD)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Skills</b> <span class="right"><b>Proficiency Bonus</b> +3</span></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Languages</b> (TBD)</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Abilities</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Shapeless Form</b></i> The animate black ichor acts like a liquid and cannot be grappled or restrained.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Actions</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Multiattack</b></i> The animate black ichor makes 2 impale attacks. If both attacks succeed against the same creature, that creature must succeed a DC 16 Constitution saving throw or be poisoned. A creature may attempt this save again at the end of its turn.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Impale</b> Melee Weapon Attack:</i> +7 to hit, reach 10 ft., one target. On Hit: 13 (2d8 + 4) Piercing damage plus 3 (1d6) poison damage. One of the animate black ichor's arms shapes into a large spike, spearing its adversaries.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Poison Blob</b></i> The animate black ichor lobs a blob of poisonous waste up to 40 ft. away, creating a splash of toxic liquid on the ground. This puddle has a 15 ft. radius and stays where it lands for 3 rounds. A lot of water, such as from a downpour of heavy rain, may wash away this poisonous puddle. Any creature which starts their turn within the area of the puddle must succeed a DC 15 Constitution saving throw or take 13 (3d8) poison damage and gain the poisoned condition. A creature may attempt this saving throw again at the end of its turn to end this condition.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Assimilate</b></i> If the animate black ichor is within 10ft of a Medium or larger colony of standing black ichor, it may absorb a 5ft. square of it as an action, regaining 12 (2d8 + 3) hit points.  This cannot be done while in its liquid form, as with Seep.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Seep (Recharge 6/6)</b></i> The animate black ichor liquifies, seeping into the cracks in the ground beneath it momentarily. While in this state, it gains a burrow speed of 20 ft. and can move through cracks in objects as small as 1/4 inch wide without disturbing them. It may spend a bonus action to reform on any subsequent turn, provided it is in a place with enough space to do so.<br><br>When this ability is charged, the animate black ichor softly bubbles and churns.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Solo Actions/Abilities</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Creature Toss</b></i> If its first slam attack hits a creature of medium size or smaller, the living stone may forgo another attack to instead make a grapple check against that creature. If the grapple succeeds and the creature is not freed by the start of the living stone's next turn, the living stone may forgo one of its attacks to throw that creature up to 35 feet away, plus an additional 5 feet for every size degree below medium that creature is (for example, small creatures are thrown an additional 5 feet, tiny creatures an additional 10, etc). This distance is considered a fall to the thrown creature, taking the appropriate damage and making the appropriate save in order to not fall prone.<br><br>Additionally, this throw may be directed at another creature. The living stone makes a ranged attack against that creature with proficiency using its Strength score. If the attack lands, the other creature takes equivalent damage as the thrown creature and must make the same save, falling prone on a failed save.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Description</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details">Black Ichor mold is a hivemind fungus famous for its method of propagation. When a colony has grown large enough, it will shape a part of the colony into a large bipedal figure - with four "arms" and four eyes - and walk itself to a suitable new location. The sentient mold will kill anything that resides in its chosen spot, to prevent the colony from being harmed later.
+          </td>
+        </tr>
+      </table>
+    </details>
+</details>
+<br>
+<details class="cr-level"><summary>CF 9</summary><!--CF 9-->
+  <!--Warp Fiend-->
+    <details class="monster-sum"><summary><span class="name"><b>Warp Fiend</b></span><span class="right">Medium Demon, CF 9</span></summary>
+      <table class="monster-block">
+        <tr><!--Name and CR-->
+          <td rowspan="2" colspan="5" class="name">Warp Fiend</td>
+          <td class="cr">Solo | Minion</td>
+        </tr>
+        <tr>
+          <td class="cr">CF 9 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&hairsp; CF 6</td>
+        </tr>
+        <tr><!--Species and Alignment-->
+          <td colspan="100%" class="type">Medium Demon <span class="right">XP 5000 | XP 2300</span></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr><!--AC, HP, and Speed-->
+          <td colspan="100%" class="bio"><b>Armor Class</b> 16 (Natural, Unarmored Defense)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Hit Points</b> 127 (15d10 + 45)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Speed</b> Walk 40 ft.</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr class="stats"><b><!--Ability Scores-->
+          <td><b>STR</b></td>
+          <td><b>DEX</b></td>
+          <td><b>CON</b></td>
+          <td><b>INT</b></td>
+          <td><b>WIS</b></td>
+          <td><b>CHA</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-num">14</td>
+          <td class="stat-num">21</td>
+          <td class="stat-num">16</td>
+          <td class="stat-num">11</b></td>
+          <td class="stat-num">16</b></td>
+          <td class="stat-num">18</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-mod">+2</td>
+          <td class="stat-mod">+5</td>
+          <td class="stat-mod">+3</td>
+          <td class="stat-mod">+0</b></td>
+          <td class="stat-mod">+3</b></td>
+          <td class="stat-mod">+4</b></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Saving Throws</b> Wis (+7), Cha (+8)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Damage Immunities</b> Radiant, Non-magical bludgeoning, slashing, & piercing</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Condition Immunities</b> Grappled, Restrained</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Senses</b> Truesight 60 ft., Passive Perception 17</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Skills</b> Perception (+7)<span class="right"><b>Proficiency Bonus</b> +4</span></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Languages</b> (TBD)</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Abilities</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Ethereal Form</b></i> The warp fiend can pass through physical barriers such as walls and flors without harm. If it ends its turn inside a physical barrier, it is pushed out to the nearest empty space.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Bound Weapon</b></i> The warp fiend's spectral spear is magically bound to it, and if disarmed, it may spend a bonus action to immediately return its weapon to its hands.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Unstable</b></i> The warp fiend's 'body' contains a tremendous amount of energy and collapsed space.  Upon reaching 0 hit points, the warp fiend becomes unconscious but does not immediately die and begins to rupture as the energy within it starts to escape, hovering a few inches in the air as it vibrates intensely. 2 rounds after it reaches 0 hit points, it explodes unless it is healed.  All creatures within 90ft of the warp fiend must make a DC 15 Charisma saving throw, taking 16 (3d10) radiant and 22 (5d8) psychic damage or half as much on a successful save. Additionally, if the creature fails its save by 5 or more, it gains the insane condition for one minute.<br><br>Afterwards, the area within the explosion is corrupted. For the next year, any creature that enters the area of the explosion must make a DC16 Wisdom saving throw or become dazed.  They repeat this save at the start of every turn they spend within the area thereafter.  If they are already dazed, they go insane.  They retain their condition for one minute after they leave the area, or until they pass a DC16 Wisdom save at the end of their turn.  If they go insane and do not leave the area within one minute, that creature is permanently insane, and only a spell or object which can remove curses may end the effect.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Actions</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Multiattack</b></i> The warp fiend makes 3 attacks with its spectral spear.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Spectral Spear</b> Melee or Thrown Weapon Attack:</i> +9 to hit, reach 5 ft., range 15/30/45 ft., one target. On Hit: 10 (1d10 + 5) Magical Piercing damage and 4 (1d8) radiant damage. If thrown, the spectral spear will travel its full distance before immediately returning to the warp fiend.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Shimmer Step</b></i> As a bonus action, the warp fiend collapses the space nearby, spending 5 ft. of movement to instantly teleport up to 30 ft. in any direction</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Vector Strike (Recharge 6/6)</b></i> The warp fiend instantly moves 60ft in a straight line in any direction. The warp fiend makes single melee attack with its spectral spear against everything - including creatures, objects, and barriers - between its starting location and its destination. If the attack hits, it deals 16 (2d10 + 5) magical piercing and 12 (3d8) radiant damage, and any creature hit by the attack is concussed until the end of its next turn.</td>
+        </tr>
+          <td colspan="100%" class="detail-title">Solo Actions/Abilities</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Impossible Shape (1/day)</b></i> As an action, the warp fiend flashes an image of the incomprehensible vastness of the astros. Any creature which can see the warp fiend must make a DC 16 Charisma saving throw or gain the Insane condition until the end of their next turn.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Space Crush</b></i> The warp fiend crushes the space between it and another creature it can see, instantly teleporting that creature up to 30ft towards itself. This ability cannot pull a creature into space occupied by a barrier or another creature.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Description</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details">Warp Fiends are aggressively antagonistic demons comprised of pure radiant energy contained in a partly physical body. They are innate masters of folding space, able to collapse it and weave through it deftly. Very little is known about them and their existence defies explanation; at once both physical and ethereal, they contain a nearly impossible amount of energy within their shimmering bodies that seems as though it threatens to spill out at any given moment.
+          </td>
+        </tr>
+      </table>
+    </details>
+</details>
+<br>
+<details class="cr-level"><summary>CF 10</summary><!--CF 10-->
+</details>
+<br>
+<details class="cr-level"><summary>CF 11</summary><!--CF 11-->
+  <!--Living Stone-->
+    <details class="monster-sum"><summary><span class="name"><b>Living Stone</b></span><span class="right">Huge Elemental, CF 11</span></summary>
+      <table class="monster-block">
+        <tr><!--Name and CR-->
+          <td rowspan="2" colspan="5" class="name">Living Stone</td>
+          <td class="cr">Solo | Minion</td>
+        </tr>
+        <tr>
+          <td class="cr">CF 11 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&hairsp; CF 8</td>
+        </tr>
+        <tr><!--Species and Alignment-->
+          <td colspan="100%" class="type">Huge Elemental <span class="right">XP 7200 | XP 3900</span></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr><!--AC, HP, and Speed-->
+          <td colspan="100%" class="bio"><b>Armor Class</b> 15 (Natural, Stone Body)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Hit Points</b> 178 (17d10 + 85)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Speed</b> Walk 30 ft.</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr class="stats"><b><!--Ability Scores-->
+          <td><b>STR</b></td>
+          <td><b>DEX</b></td>
+          <td><b>CON</b></td>
+          <td><b>INT</b></td>
+          <td><b>WIS</b></td>
+          <td><b>CHA</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-num">22</td>
+          <td class="stat-num">8</td>
+          <td class="stat-num">22</td>
+          <td class="stat-num">5</b></td>
+          <td class="stat-num">10</b></td>
+          <td class="stat-num">7</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-mod">+6</td>
+          <td class="stat-mod">-1</td>
+          <td class="stat-mod">+6</td>
+          <td class="stat-mod">-3</b></td>
+          <td class="stat-mod">+0</b></td>
+          <td class="stat-mod">-2</b></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Saving Throws</b> Str (+10), Con (+6)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Damage Immunities</b> Poison, Psychic, Fire, Necrotic, and Non-magical bludgeoning, slashing, & piercing</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Condition Immunities</b> Bleed, Hemorrhage, Blind, Burning, Fracture, Break, Poisoned</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Senses</b> Blindsight 60 ft., Tremorsense 60 ft., Passive Perception 10</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Skills</b> Athletics (+10)<span class="right"><b>Proficiency Bonus</b> +4</span></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Languages</b> (TBD)</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Abilities</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>In Plain Sight</b></i> If the living stone is prone and not moving, it may only be distinguished from normal rocks with a DC18 Investigation check. A spell or object which detects magic will also reveal the living stone.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Immoveable Object:</b></i> The living stone has advantage against all checks made to knock it prone or move it against its will. The advantage cannot be negated in any way.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Rock Body</b></i> The living stone does not need to sleep or drink water. It must eat at least 1 ton of stone every week or it will gain a point of exhaustion for each day past this.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Destructive</b></i> The living stone automatically deals full damage to structure and buildings.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Blind</b></i> The living stone cannot see, relying solely on its hearing and tremorsense to navigate. It automatically fails perception checks based on sight.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Actions</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Multiattack</b></i> The living stone makes 2 Slam attacks, 2 Boulder Toss attacks, or 1 of each. If two attacks succeed against the same creature, that creature must make a DC 18 Strength saving throw or be knocked prone and gain a fracture. If the creature already has a fracture, it becomes a break instead.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Slam</b> Melee Weapon Attack:</i> +10 to hit, reach 10 ft., one target. On Hit: 16 (3d6 + 6) Bludgeoning damage.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Boulder Toss</b> Ranged Weapon Attack:</i> +10 to hit, range 40/80/120 ft., one target. On Hit: 15 (2d8 + 6) Bludgeoning damage.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Swipe</b></i> The living stone makes a Slam attack against every creature within reach of its Slam.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Earth Shatter (Recharge 5/6)</b></i> The living stone pounds the ground, creating massive fissures and sending massive stones flying.  Each creature in a 20ft cone must make a DC18 Dexterity saving throw.  On a failed save, a creature takes 27 (6d8) bludgeoning damage and is knocked prone.  On a successful save, a creature takes half damage and remains standing.<br><br>When charged, the ground surrounding the living stone begins to rumble ever so slightly.</td>
+        </tr>
+          <td colspan="100%" class="detail-title">Solo Actions/Abilities</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Creature Toss</b></i> If its first slam attack hits a creature of medium size or smaller, the living stone may forgo another attack to instead make a grapple check against that creature. If the grapple succeeds and the creature is not freed by the start of the living stone's next turn, the living stone may forgo one of its attacks to throw that creature up to 35 feet away, plus an additional 5 feet for every size degree below medium that creature is (for example, small creatures are thrown an additional 5 feet, tiny creatures an additional 10, etc). This distance is considered a fall to the thrown creature, taking the appropriate damage and making the appropriate save in order to not fall prone.<br><br>Additionally, this throw may be directed at another creature. The living stone makes a ranged attack against that creature with proficiency using its Strength score. If the attack lands, the other creature takes equivalent damage as the thrown creature and must make the same save, falling prone on a failed save.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Description</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details">Living stone is the name of an extremely rare phenomenon of a stone elemental spirit crossing from the Ring of the Elements to the Ring of the Sublunary and animating a group of large boulders.  While they spend most of their time dormant and are often docile, they may be easily confused or frightened by the unfamiliar environment of the Ring of the Sublunary and lash out at unsuspecting people or animals who happen to be nearby.
+          </td>
+        </tr>
+      </table>
+    </details>
+</details>
+<br>
+<details class="cr-level"><summary>CF 12</summary><!--CF 12-->
+  <!--Bone Dragon-->
+    <details class="monster-sum"><summary><span class="name"><b>Bone Dragon</b></span><span class="right">Gargantuan Draconid, CF 12</span></summary>
+      <table class="monster-block">
+        <tr><!--Name and CR-->
+          <td rowspan="2" colspan="5" class="name">Bone Dragon</td>
+          <td class="cr">Solo</td>
+        </tr>
+        <tr>
+          <td class="cr">CF 12</td>
+        </tr>
+        <tr><!--Species and Alignment-->
+          <td colspan="100%" class="type">Gargantuan Draconid <span class="right">XP 8400</span></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr><!--AC, HP, and Speed-->
+          <td colspan="100%" class="bio"><b>Armor Class</b> 17 (Natural, Fossilized Bone)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Hit Points</b> 148 (9d20 + 30)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Speed</b> Walk 30 ft., Fly 50 ft., Burrow 30 ft.</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr class="stats"><b><!--Ability Scores-->
+          <td><b>STR</b></td>
+          <td><b>DEX</b></td>
+          <td><b>CON</b></td>
+          <td><b>INT</b></td>
+          <td><b>WIS</b></td>
+          <td><b>CHA</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-num">21</td>
+          <td class="stat-num">11</td>
+          <td class="stat-num">23</td>
+          <td class="stat-num">15</b></td>
+          <td class="stat-num">16</b></td>
+          <td class="stat-num">17</b></td>
+        </tr>
+        <tr class="stats">
+          <td class="stat-mod">+5</td>
+          <td class="stat-mod">+0</td>
+          <td class="stat-mod">+6</td>
+          <td class="stat-mod">+2</b></td>
+          <td class="stat-mod">+3</b></td>
+          <td class="stat-mod">+3</b></td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Saving Throws</b> Str (+9), Con (+10), Int (+5), Wis (+6)</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Damage Resistance</b> Fire</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Damage Immunities</b> Poison, Necrotic</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Condition Immunities</b> Bleed, Hemorrhage, Blind, Charmed, Poisoned</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Senses</b> Blindsight 120 ft., Passive Perception 17</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Skills</b> <span class="right"><b>Proficiency Bonus</b> +4</span></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="bio"><b>Languages</b> The bone dragon speaks telepathically and is innately understood, and understand all spoken languages</td>
+        </tr>
+        <tr><!--LINEBREAK-->
+          <td colspan="100%" class="linebreak"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Abilities</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Legendary (3/day)</b></i> If the bone dragon fails a saving throw, it can instead choose to succeed.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Blindsense</b></i> The bone dragon cannot see, relying solely on its hearing and smell to navigate. It automatically fails perception checks based on sight, but has advantage on all hearing-based perception checks and can hear sounds to twice their normal distances.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Molesense</b></i> While underground, the bone dragon gains tremorsense out to 60 ft., and automatically detects creatures moving within 40 feet of it, provided those creatures are standing on or within the same ground as the bone dragon.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Actions</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Multiattack</b></i> The bone dragon Gores once and Eviscerates twice. If both Eviscerates succeed against the same creature, that creature is grappled by the bone dragon, caught in its maw.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Gore</b> Melee Weapon Attack:</i> +9 to hit, reach 5 ft., one target. On Hit: 16 (2d10 + 5) Piercing damage plus 4 (1d8) necrotic damage. The bone dragon gores a creature with its horns.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Eviscerate</b> Melee Weapon Attack:</i> +9 to hit, reach 5 ft., one target. On Hit: 9 (1d6 + 5) Piercing damage plus 4 (1d8) necrotic damage. The bone dragon gnashes its teeth, tearing a creature to shreds.</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Burrow/Erupt</b></i> As a bonus action, the bone dragon violently crashes into or out of the ground, shaking the earth and creating a powerful shockwave and sending earth and rubble flying. When the bone dragon transitions from flying to burrowing, or vice versa, all creatures in a 15 ft radius must make a DC 15 Dexterity saving throw taking 7 (2d6) bludgeoning damage and being knocked prone on a failed save, or half as much damage on a successful save.<br><br>Additionally, the bone dragon may choose to collide with a Large or smaller creature, dragging them along. The bone dragon Eviscerates a creature once. If the Eviscerate is successful, that creature is grappled by the bone dragon.
+          </td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details"><i><b>Deathly Gaze (Recharge 5/6)</b></i> The bone dragon unleashes a deadly beam of necrotic energy, wilting all in its gaze to dust. Each creature in a 50ft. line must make a DC18 Dexterity saving throw, taking 54 (12d8) necrotic damage on a failed save, or half as much on a successful one.<br><br>When this ability is charged, the Bone Dragon's empty eye sockets pulse with a deep red flare, and its horns ripple with crimson rings</td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="detail-title">Description</td>
+        </tr>
+        <tr><!--LINEBREAK 2-->
+          <td colspan="100%" class="linebreak2"></td>
+        </tr>
+        <tr>
+          <td colspan="100%" class="details">Of all Dragon draconid, the Bone Dragon is perhaps one of the most feared, not for its raw power (which itself is just as terrifying as other dragons), but for its cruel disposition. They are at once both extremely intellligent and difficult to reason with, taking joy in excess destruction as they raid and pillage. To see the Bone Dragon's serpentine, wingless shape coiling around itself in the skies, to hear the rapid thumps of its two dozen spindly legs of bone, or to feel the ground shake as it burrows just beneath your feet... these are some of the most harrowing experiences one can ever have.
+          </td>
+        </tr>
+      </table>
+    </details>
+</details>
+<br>
+<details class="cr-level"><summary>CF 13</summary><!--CF 13-->
+</details>
+<br>
+<details class="cr-level"><summary>CF 14</summary><!--CF 14-->
+</details>
+<br>
+<details class="cr-level"><summary>CF 15</summary><!--CF 15-->
+</details>
+<hr>
+<p><a href="../#top">Back to Top</a></p> 
+  </div>
+
+
+</div>
+  <!--Javascript code for topnav-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+</html>

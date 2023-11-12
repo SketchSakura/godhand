@@ -115,12 +115,19 @@ ul, ol, li, dl, dd{
   color:rgb(57, 7, 7);
   font-size: 18px;
   font-family: arial;}
-details.main-info, details.class>summary, details.rules>summary, details.combat>summary{
+details.main-info>summary, details.class>summary, details.rules>summary, details.combat>summary{
   color:rgb(79, 10, 10);
   list-style:none;
   cursor:pointer;
   border-style:none none dotted none;
   border-width:2px;}
+details.rules2>summary{
+  color:rgb(79, 10, 10);
+  list-style:none;
+  cursor:pointer;
+  border-style:none none none none;
+  border-width:2px;
+  margin-left:2%;}
 p.info{
   margin-left:10px;
 }

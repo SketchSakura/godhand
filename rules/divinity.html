@@ -1,0 +1,517 @@
+<html>
+  <head><title>GODHAND - Divinity Rules</title>
+    <link href="../css-sheets/topnav.css" rel="stylesheet">
+    <link href="../css-sheets/layout.css" rel="stylesheet">
+    <style>
+      h1{font-size:25px; padding:5px;}
+      h2{font-size:23px; padding:3px; background-color:rgb(207,171,121);}
+      h3{font-size:20px;padding:3px; background-color:rgb(207,171,121);}
+      .ruleslink{font-family:papyrus, fantasy;}
+      .editor-note{background-color: rgb(232, 193, 139); padding:0.5px; text-align:center; border:5px solid rgb(236, 216, 186)}
+      p.info2{margin-left:2%;}
+    </style>
+  </head>
+<body>
+  <div id="sidebar" class="sidebar"><!--Full Link Sidebar-->
+      <a href="../index.html" class="main-link">&#9864 &nbsp;About</a><br>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Rules</summary>
+        &nbsp;&nbsp;<a href="basics.html">&#9864 &nbsp;Basics</a>
+        <br>&nbsp;&nbsp;<a href="combat.html">&#9864 &nbsp;Combat</a>
+        <br>&nbsp;&nbsp;<a href="magic.html">&#9864 &nbsp;Magic</a>
+        <br>&nbsp;&nbsp;<a href="divinity.html">&#9864 &nbsp;Divinity</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../classes.html" class="main-link">&hairsp;Classes</a></summary>
+        <!--Class Dropdown-->
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#fighter">Fighter</a></summary><!--Fighter-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href=../subclass/fight-champion.html" class="sublink">Champion</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href=../subclass/fight-momentum.html" class="sublink">Momentum</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href=../subclass/fight-strategist.html" class="sublink">Strategist</a>
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#hierophant">Hierophant</a></summary><!--Hierophant-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href=../subclass/hiero-truth.html" class="sublink">Truth</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href=../subclass/hiero-violence.html" class="sublink">Violence</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#rogue">Rogue</a></summary><!--Rogue-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href=../subclass/rogue-fatale.html" class="sublink">Fatale</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href=../subclass/rogue-lowlife.html" class="sublink">Lowlife</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864 Subclass 3
+        </details>
+        <details class="subclass"><summary>&nbsp;&nbsp;&#9865<a href="../classes.html#wizard">Wizard</a></summary><!--Wizard-->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href=../subclass/wiz-anatomist.html"  class="sublink">Anatomist</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href=../subclass/wiz-profane.html" class="sublink">Profane</a>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9864<a href=../subclass/wiz-enlightened.html" class="sublink">Enlightened</a>
+        </details>
+      </details>
+      <details class="main-dropdown"><summary>&#9862<a href="../folk.html" class="main-link">&hairsp;Folk</a></summary>
+        <!--Folk Dropdown-->
+        &nbsp;&nbsp;<a href="../folk.html#catfolk">&#9864 Catfolk</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#changeling">&#9864 Changeling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#colun">&#9864 Colún</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#dwarf">&#9864 Dwarf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#elf">&#9864 Elf</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#halfling">&#9864 Halfling</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#human">&#9864 Human</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#orc">&#9864 Orc</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#raska">&#9864 Raska</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#half-folk">&#9864 Half-Folk Rules</a>
+        <br>&nbsp;&nbsp;<a href="../folk.html#bloodlines">&#9864 Bloodlines</a>
+      </details>
+      <a href="../feats.html" class="main-link">&#9864 &nbsp;Feats</a><br>
+      <details class="main-dropdown"><summary>&#9862<a href="../spells/guide.html" class="main-link">&hairsp;Spells</a></li></summary>
+        <!--Spell Dropdown-->
+        &nbsp;&nbsp;<a href="../spells/guide.html">&#9864 Spell Guide</a>
+        <br>&nbsp;&nbsp;<a href="../spells/bard.html">&#9864 Bard</a>
+        <br>&nbsp;&nbsp;<a href="../spells/druid.html">&#9864 Druid</a>
+        <br>&nbsp;&nbsp;<a href="../spells/hierophant.html">&#9864 Hierophant</a>
+        <br>&nbsp;&nbsp;<a href="../spells/warlock.html">&#9864 Warlock</a>
+        <br>&nbsp;&nbsp;<a href="../spells/wizard.html">&#9864 Wizard</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Items</a></summary>
+        <!--Item Dropdown-->
+        &nbsp;&nbsp;<a href="../items/armorweapons.html">&#9864 Armor & Weapons</a>
+        <br>&nbsp;&nbsp;<a href="../items/equips.html">&#9864 Equipment</a>
+        <br>&nbsp;&nbsp;<a href="../items/magicitems.html">&#9864 Magic Items</a>
+      </details>
+      <details class="main-dropdown"><summary>&#9862 &nbsp;Bestiary</a></summary>
+        &nbsp;&nbsp;<a href="../bestiary/page-1.html">&#9864 &nbsp;CF 0 - 5</a>
+        <br>&nbsp;&nbsp;<a href="../bestiary/page-2.html">&#9864 &nbsp;CF 6 - 15</a>
+      </details>
+  </div>
+<div id="main"><!--Encapsulated header nav and body-->
+  <div id="logo"> <!--Godhand Logo-->
+    <a href="../index.html"><img src="../images/Godhand logo.png" height=80px class="logo"></a> <!--Godhand logo-->
+  </div>
+  <div class="topnav" id="myTopnav"> <!--Topnavbar-->
+    <a href="../index.html">About</a>
+    <div class="nav-dropdown active"><!--Rules Dropdown-->
+      <button class="dropbtn">Rules &#9662</button>
+      <div class="dropdown-content">
+        <a href="basics.html">Basics</a>
+        <a href="combat.html">Combat</a>
+        <a href="magic.html">Magic</a>
+        <a href="divinity.html">Divinity</a>
+      </div>
+    </div>
+    <a href="../folk.html">Folk</a>  
+    <div class="nav-dropdown"><!--Classes Dropdown-->
+      <button class="dropbtn"><a href="../classes.html" style="padding:0px;">Classes</a> &#9662</button>
+      <div class="dropdown-content"> <!--Classes variety-->
+        <a href="../classes.html#fighter">Fighter</a>
+        <a href="../classes.html#hierophant">Hierophant</a>
+        <a href="../classes.html#rogue">Rogue</a>
+        <a href="../classes.html#wizard">Wizard</a>
+      </div>
+    </div>
+    <a href="../feats.html">Feats</a>
+    <div class="nav-dropdown"><!--Spells Dropdown-->
+      <button class="dropbtn"><a href="../spells/guide.html" style="padding:0px;">Spells</a> &#9662</button>
+      <div class="dropdown-content">
+        <a href="../spells/guide.html">Spell Guide</a>
+        <a href="../spells/bard.html">Bard</a>
+        <a href="../spells/druid.html">Druid</a>
+        <a href="../spells/hierophant.html">Hierophant</a>
+        <a href="../spells/warlock.html">Warlock</a>
+        <a href="../spells/wizard.html">Wizard</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Items Dropdown-->
+      <button class="dropbtn">Items &#9662
+      </button>
+      <div class="dropdown-content">
+        <a href="../items/armorweapons.html">Armor & Weapons</a>
+        <a href="../items/equips.html">Equipment</a>
+        <a href="../items/magicitems.html">Magic Items</a>
+      </div>
+    </div>
+    <div class="nav-dropdown"><!--Bestiary Dropdown-->
+      <button class="dropbtn">Bestiary &#9662 </button>
+      <div class="dropdown-content">
+        <a href="../bestiary/page-1.html">CF 0 - 5</a>
+        <a href="../bestiary/page-2.html">CF 6 - 15</a>
+      </div>
+    </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!--Javascript button for smaller screens-->
+  </div>
+<br>
+  <div id="mainbody"> <!--Main Content-->
+  <h1 style="font-size:40px">
+    Divinity
+  </h1>
+  <a id="top"></a>
+    <table> <!--table of contents and info blurb-->
+      <tr>  
+      <td style="border:0">
+        <table class="toc" style="background-color: rgb(232, 193, 139);">
+        <tr>
+          <th class="toc" style="color:rgb(79, 10, 10);">Table of Contents</th>
+        </tr>
+        <tr>  
+          <td class="toc" style="color:rgb(57, 7, 7); text-align:left;" cellpadding="10" width="800px">
+            <!--Table of Contents-->
+            <b>&nbsp;&nbsp;&nbsp;<a href="#divine-levels" style="font-family:Verdana, Geneva, Tahoma, sans-serif"><u>Achieving Divine levels</a></u></b>
+            <details class="rulestoc"> <!--divine Progress-->
+              <summary><b><u>Divine Progression</u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#divine-progress-table">Divine Progression Table</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#motes">Motes</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#divine-will">Divine Will</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#fated">Fated</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#asi">Ability Score Improvements</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#living-soul">Living Soul</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#regen">Regeneration</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#divine-form">Divine Form</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#domain">Domain</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#ageless">Ageless</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#godhood">Godhood</a> 
+            </details>
+            <details class="rulestoc"> <!--divine paths-->
+              <summary><b><u><a href="divine-path" style="font-family:Verdana, Geneva, Tahoma, sans-serif">Divine Paths</a></u></b></summary>
+              &nbsp;&nbsp;&nbsp;<a href="#marauder">The Marauder</a> 
+              <br>&nbsp;&nbsp;&nbsp;<a href="#fool">The Fool</a>
+              <br>&nbsp;&nbsp;&nbsp;<a href="#hand">The Hand</a> 
+            </details>
+          </td>
+        </tr>
+        </table>
+      </td>
+      <td style="vertical-align:top; text-align:left; border:0;">
+        <div class="editor-note">
+          <p class="info">
+            <b>EDITOR’S NOTE:</b> It is worth noting that this is the most recently developed content in this document. It has not been officially tested, and the quality of the writing runs the risk of being lower than other elements present here. That being said, this is intended to be a core part of our game. So much so that there is an entire chapter dedicated to it. It is almost certain to change with future game development, but for the time being, we wanted for the idea to be present, at the very least, for the sake of making it clear that we plan to take GODHAND in exciting directions beyond the familiar territories of tabletop fantasy.<br><br>
+            -Juice
+          </p>
+        </div>
+        <p class="info">
+          In addition to levels in their chosen class, GODHAND characters make progress in a second way, gaining what are known as Divine levels. Unlike class levels, which represent growth in areas of skill, strength, fortitude, experience, and in some cases raw power, Divine levels represent one’s sheer greatness, through acts and deeds. Divine levels are not trained, they are not dependent on any one specific skill or ability, they arise as the simple result of one’s actions, and mindset. As a character becomes stronger and becomes responsible for more and more great feats, they become closer and closer to ‘divinity,’ or something akin to it.
+        </p>
+      </td>
+      </tr>
+    </table>
+<hr>
+  <details class="rules"><summary><h1><a class="ruleslink" id="divine-levels"><div class="tooltip">Achieving Divine levels<span class="tooltiptext">Click to Expand/Collapse</span></div></a></h1></summary>
+    <p class="info">
+      A character can gain, at maximum, 10 Divine levels (as opposed to 20 Class levels), and these levels are gained alongside Class levels, though unlike Class levels, a character begins play with 0 Divine levels. There are three potential ways Divine levels can be gained:
+    </p>
+    <h3>Levels</h3>
+      <p class="info2">
+        For a GM who wants to thoroughly integrate Divine levels into their game, or who intends to lean more into the power fantasy Divine levels provide, while keeping them uniform across all players in their game, this is the most straightforward and balanced method of implementing them. For every <b>2</b> character levels player characters gain, they gain one Divine level. Meaning that at level <b>2</b>, their Divine level is <b>1</b>, at level <b>4</b>, their Divine level is <b>2</b>, at level <b>6</b> it is <b>3</b>, and so on.
+      </p>
+    <h3>Trials</h3>
+      <p class="info2">
+        For a GM who wants something more thematic in their implementation of Divine levels, they can devise specific trials for their players. Conflicts, great deeds, triumphs, even particularly spectacular failures can net players their Divine levels. Ultimately, the GM decides when players gain these levels, and builds arcs of the story around player characters reaching greater and greater heights.
+      </p>
+    <h3>GODHAND Moments</h3>
+      <p class="info2">
+        The most effort intensive method of gaining Divine levels, but also potentially the most satisfying, at character creation a GM might ask their players to write out a specific thing each of them want their character to accomplish. Ideally, these should be realistically achievable, easy to define goals. “Slay one hundred men,” is a better GODHAND moment than “survive an impossible battle.”
+      </p>
+    <hr>
+    <p class="info">
+      Additionally, these should be something players should be able to seek out and accomplish on their own, without a great deal of handholding by the GM. They should be tasks a player can approach proactively. “Assassinate the king and pose as his heir for the throne,” is a better GODHAND moment than “Wait until the crown is passed on to me.” Should a GM be confident enough in their ability to deliver on their player’s wishes though, none of these moments are necessarily impossible to manage, but ideally there is an established baseline.<br><br>
+      When a player character accomplishes their GODHAND moment, they instantly gain a Divine level, and must craft a new GODHAND moment, for their character to pursue after the fact.<br><br>
+      Because this method runs the risk of some player characters progressing much faster than others, when using GODHAND moments, if any player character is more than 2 Divine levels above the rest, each player character aside from them gains a Divine level, as each member of the game’s cast is bound together by fate.<br><br>
+      A GM can only use ONE of these modes of progression at once, for the sake of keeping players from gaining Divine levels at a steady pace, because none of the three function particularly well when a second method of gaining Divine levels is introduced into play.
+    </p>
+    <hr>
+<p><a href="#top">Back to Top</a></p> 
+  </details>
+  <details class="rules"><summary><h1><div class="tooltip">Divine Progression<span class="tooltiptext">Click to Expand/Collapse</span></div></h1></summary>
+    <h2><a class="ruleslink" id="divine-progress-table">Divine Progression Table</a></h2>
+    <table style="margin-left:auto; margin-right:auto;">
+      <tr>
+        <td style="border:0"><table class="levelup">
+          <tr>
+            <th>Level</th>
+            <th><a href="#asi"><u>ASI</u></a></th>
+            <th>Path Progression</th>
+            <th>Base Divine Abilities</th>
+          </tr>
+          <tr><!--Level 1-->
+            <td>1</td>
+            <td>-</td>
+            <td><a href="#divine-path">Divine Path</a></td>
+            <td><a href="#motes">Motes</a>, <a href="divine-will">Divine Will (+ 1d6)</a></td>
+          </tr>
+          <tr><!--Level 2-->
+            <td>2</td>
+            <td>-</td>
+            <td>Path Ability</td>
+            <td><a href="#fated">Fated</a></td>
+          </tr>
+          <tr><!--Level 3-->
+            <td>3</td>
+            <td>1st</td>
+            <td>Path Ability</td>
+            <td><a href="#living-soul">Living Soul</a></td>
+          </tr>
+          <tr><!--Level 4-->
+            <td>4</td>
+            <td>-</td>
+            <td>-</td>
+            <td><a href="divine-will">Divine Will (+ 1d8)</a></td>
+          </tr>
+          <tr><!--Level 5-->
+            <td>5</td>
+            <td>-</td>
+            <td>Path Ability</td>
+            <td><a href="#regen">Regeneartion</a></td>
+          </tr>
+          <tr><!--Level 6-->
+            <td>6</td>
+            <td>2nd</td>
+            <td>Path Ability</td>
+            <td><a href="divine-form">Divine Form</a></td>
+          </tr>
+          <tr><!--Level 7-->
+            <td>7</td>
+            <td>-</td>
+            <td>-</td>
+            <td><a href="divine-will">Divine Will (+ 1d10)</a></td>
+          </tr>
+          <tr><!--Level 8-->
+            <td>8</td>
+            <td>-</td>
+            <td>Path Ability</td>
+            <td><a href="#domain">Domain</a>, <a href="divine-form">Divine Form</a></td>
+          </tr>
+          <tr><!--Level 9-->
+            <td>9</td>
+            <td>3rd</td>
+            <td>Path Ability</td>
+            <td><a href="#ageless">Ageless</a></td>
+          </tr>
+          <tr><!--Level 10-->
+            <td>10</td>
+            <td>-</td>
+            <td>-</td>
+            <td><a href="#godhood">Godhood</a>, <a href="divine-form">Divine Form</a>, <a href="divine-will">Divine Will (+ 1d6)</a></td>
+          </tr>
+        </table>
+      </tr>
+    </table>
+  <h2><a class="ruleslink" id="motes">Motes</a></h2>
+    <p class="info">
+      At their first Divine level, a player character gains small motes of divinity within their soul, these little slivers of divine power within them allow them to perform great feats beyond something any sublunary creature should be capable of. A character has a number of divine motes equal to their proficiency bonus, plus their Divine level. All expended motes of divinity are recovered on a long rest.
+    </p>
+  <h2><a class="ruleslink" id="divine-will">Divine Will</a></h2>
+    <p class="info">
+      At Divine level 1, a player character can spend a mote of divinity to add an dice to any attack roll, saving throw, or ability check they make. This die is a d6, but it increases to a d8 at Divine level 4, a d10 at Divine level 7, and a d12 at Divine level 12.
+    </p>
+  <h2><a class="ruleslink" id="fated">Fated</a></h2>
+    <p class="info">
+      At Divine level 2, a character’s fate becomes etched in the cosmos, and their divine nature grants them some measure of power over death. When a character with this ability would die, either instantly by the effect of a spell or massive damage, or slowly after failing their death saving throws, they may spend a mote of divinity to instantly recover with 1 hit point in a burst of their own power, healing all allied creatures within 30 feet for 1 roll of their divine will die, and damaging all enemy creatures within 30 feet for the same value that their allies are healed.<br><br>
+      Upon using this ability, a character is instantly brought to exhaustion level 3 (unless their exhaustion level is 3 or higher, in which case they simply stabilize at 0 hit points without regaining consciousness).<br><br>
+      A character cannot use this ability again until a week’s time passes after using it.
+    </p>
+  <h2><a class="ruleslink" id="asi">Ability Score Improvements</a></h2>
+    <p class="info">
+      At Divine level 3, 6, and 9, a character gains 2 points to assign to any one skill of their choice, or to be split up among 2 skills.
+    </p>
+  <h2><a class="ruleslink" id="living-soul">Living Soul</a></h2>
+    <p class="info">
+      At Divine level 3, a character regains motes of divinity equal to their proficiency bonus on a short rest.
+    </p>
+  <h2><a class="ruleslink" id="regen">Regeneartion</a></h2>
+    <p class="info">
+      At Divine level 5, as a bonus action, a character may spend a number of motes equal to their proficiency bonus to remove one of the following conditions affecting them: <a href="combat.html#bleeding"><u>Bleeding</u></a>, <a href="combat.html#blinded"><u>Blinded</u></a>, <a href="combat.html#burning"><u>Burning</u></a>, <a href="combat.html#deafened"><u>Deafened</u></a>, <a href="combat.html#fracture"><u>Fracture</u></a>, <a href="combat.html#poisoned"><u>Poisoned</u></a>.<br><br>
+      Additionally, they may spend a number of motes up to their proficiency bonus to roll a number of their Divine Will die equal to the motes spent, and gain the total rolled as healing.
+    </p>
+  <h2><a class="ruleslink" id="divine-form">Divine Form</a></h2>
+    <p class="info">
+      At Divine level 6, a character may choose a greater, more powerful form to inhabit that is representative of their nature as a demigod. As an action, a player character may expend a number of motes equal to their proficiency bonus to transform into a monster with a challenge factor less than or equal to their character level for a number of rounds equal to half their proficiency bonus (rounded up). A character in this form gains all the monster’s physical ability scores, hit points, and special abilities. However, they retain their class abilities, and mental ability scores. If a character is reduced to 0 hit points in this form, they are reverted to their true form, and knocked unconscious.<br><br>
+      At Divine level 8, a character can maintain this form for a minute.<br><br>
+      At Divine level 10, the maximum challenge factor for this form is equal to a character's level, plus their Divine level, and they may maintain this form indefinitely.<br><br>
+      A character chooses which monster they will use as their divine form when they gain this ability, and may only transform into that, and no other creatures. When a character gains a Divine level, they may change what monster they transform into as their divine form.
+    </p>
+  <h2><a class="ruleslink" id="domain">Domain</a></h2>
+    <p class="info">
+      At Divine level 8, a character gains the ability to cast the Domain spell, if the character is not a spellcaster, or does not have spell slots high enough to cast Domain, they may instead cast the spell by expending a number of motes equal to double their proficiency bonus.<br><br>
+      Alternatively, a character may choose to expend all motes in the casting of this spell to forgo the material component. If a character expends all their motes in this way, they do not recover them until 1d8 weeks pass.
+    </p>
+  <h2><a class="ruleslink" id="ageless">Ageless</a></h2>
+    <p class="info">
+      At Divine level 9, a character ceases to age, and cannot be aged by any magical or supernatural means.
+    </p>
+  <h2><a class="ruleslink" id="godhood">Godhood</a></h2>
+    <p class="info">
+      At Divine level 10, a character is recognized as a true god, and is given a place in a pantheon of their peers, if such a thing exists in their reality. They may hear prayers, and answer them, if they are capable. However, they gain no ability to answer prayers beyond the ones already provided to them. Anything they accomplish now must happen under their own power.
+    </p>
+    <hr>
+<p><a href="#top">Back to Top</a></p> 
+  </details>
+  <details class="rules"><summary><h1><a class="ruleslink" id="divine-path"><div class="tooltip">Divine Paths<span class="tooltiptext">Click to Expand/Collapse</span></div></a></h1></summary>
+    <p class="flavor">
+      As a character gains Divine levels, they also gain a divine path, which dictates what sort of demigod they are. The current paths available are: The Marauder, a warlike path for an individual pursuing strength and glory through combat, The Fool, a path for the cunning trickster who always finds an edge over their opponents, and The Hand, a supernatural force of nature. Many more paths will be added, and the current paths will have their abilities expanded upon in the future, but for the time being, these three are simply present for testing in the beta.<br><br>
+      Each path grants a character access to different abilities, however there is a number of universal path abilities open to receive as well, in place of any from a character’s official path. A character gains divine path abilities at Divine levels 3, 6, and 9. Some path abilities have certain prerequisites the character must meet before they can choose them.
+    </p>
+    <h2><a class="ruleslink" id="marauder">The Marauder</a></h2>
+      <p class="info">
+        At Divine level 1, should a character choose to embrace the path of the Marauder, they become so filled with bloodlust that their each successive attack impels them further and further onward. After taking the attack action, a marauder can expend one mote to immediately make an additional attack as part of the same action.<br><br>
+        A marauder does not need to expend a mote to follow up an attack made as part of a <a href="combat.html#act-boldly"><u>Bold Move</u></a>.
+      </p>
+      <!--Marauder Path Abilities-->
+      <details class="sub-list"><summary><b>Marauder Path Abilities</b></summary>
+        <br>
+        <h3><b>Scholar of Violence</b></h3>
+          <p class="info2">
+            A character gains a <a href="classes.html#fight-style">fighting style</a>, proficiency with three different simple or martial weapons, and a weapon mastery with one weapon.
+          </p>
+        <h3><b>Flash of the Blade</b></h3>
+          <p class="info2">
+            As a reaction, a character can expend a mote to make a melee attack of opportunity against any creature taht has just made a melee attack against them.<br><br>
+            <b>A character must be Divine level 3 to select this ability.</b>
+          </p>
+        <h3><b>Fearsome Brute</b></h3>
+          <p class="info2">
+            A character with this ability may expend a mote to add their Strength bonus to the total of an Intimidation check.
+          </p>
+        <h3><b>Cruelty</b></h3>
+          <p class="info2">
+            As an action, you make an attack against any creature in range, dealing damage as normal on a hit and forcing the target to make a constitution or wisdom saving throw. On a failed Constitution save, you inflict the bleed or fracture condition (your choice). On a failed Wisdom save, you inflict the <a href="combat.html#unsettled"><u>Unsettled</u></a> condition.<br><br>
+            If you score a critical hit, you may instead inflict the <a href="combat.html#break"><u>break</u></a>, <a href="combat.html#frightened"><u>frightened</u></a>, <a href="combat.html#hemorrhage"><u>hemorrhage</u></a> condition.<br><br>
+            You must announce you are using this ability before making the attack roll. The DC for this ability is the same as your DC for universal maneuvers.
+          </p>
+        <h3><b>Gruesome Wrath</b></h3>
+          <p class="info2">
+            You may expend one mote to roll a <a href="#divine-will"><u>Divine Will</u></a> die, adding the total roll to the damage of each of your attacks for the next round. You may expend an additional mote to add your proficiency bonus to the total of the roll.
+          </p>
+        <h3><b>Flexible Warrior</b></h3>
+          <p class="info2">
+            You may expend a mote to use a maneuver as a bonus action, or as part of an attack action on your turn, so long as that maneuver doesn’t involve movement.
+          </p>
+        <h3><b>Gritted Teeth</b></h3>
+          <p class="info2">
+            As a bonus action you may expend a number of motes up to your proficiency bonus. You gain resistance to all nonmagical damage for a number of rounds equal to the number of motes expended.
+          </p>
+        <h3><b>Million Swords</b></h3>
+          <p class="info2">
+            As a bonus action after taking the attack action, you may expend a number of motes up to your proficiency bonus. For each mote expended, you may teleport to a target within 30 feet, and make a melee attack against them, dealing an additional 3d10 damage on each attack.<br><br>
+            <b>You must be at least Divine level 6 to select this ability.</b>
+          </p>
+        <h3><b>Destroyer’s Might</b></h3>
+          <p class="info2">
+            As an action, you may expend a number of motes equal to your proficiency bonus to gain a bonus to your Strength or Dexterity score equal to your proficiency bonus. This bonus lasts for one minute. You must complete a long rest before regaining the use of this feature.<br><br>
+          </p>
+        <h3><b>Nigh Invulnerability</b></h3>
+          <p class="info2">
+            You gain immunity to all nonmagical damage.<br><br>
+            Somewhere on your body, however, you have a weak point. Your heel, the small of your back, or some other relatively negligible spot. Regardless of your immunities, you take any damage from an attack that finds this spot. Your enemies may also use an action to search for this weakness, making an investigation check against your deception check. Upon a successful investigation check, your weakness is pinpointed.<br><br>
+            Any attacks specifically targeting your weak spot are made with disadvantage. <b>You must be at least Divine level 9 to select this ability.</b>
+          </p>
+
+      </details>
+    <h2><a class="ruleslink" id="fool">The Fool</a></h2>
+      <p class="info">
+        At Divine level 1, should a character choose to embrace the path of the fool, they may spend a mote as a reaction any time they are hit by an attack in combat to make a deception check, a stealth check, or an acrobatics check (the character makes this choice upon using the ability). If the total of their check exceeds the attack roll that triggered it, the attack deals half damage to the fool. If the check exceeds the roll’s total by 5, the other half of the attack’s damage is dealt back to the attacker, as the fool causes them to bumble their way through the conflict.
+      </p>
+      <!--Fool Path Abilities-->
+      <details class="sub-list"><summary><b>Fool Path Abilities</b></summary>
+        <br>
+        <h3><b>Unbounded</b></h3>
+          <p class="info2">
+            A character may use a bonus action to spend a mote to gain the effects of a freedom of movement spell for one round. A character has a number of uses of this ability equal to their divine level, and recovers all uses of this ability on a short or long rest.<br><br>
+            <b>A character must be at least Divine level 3 to take this ability.</b>
+          </p>
+        <h3><b>Boundless Optimism</b></h3>
+          <p class="info2">
+            As a reaction, you may expend a mote to cheer on a comrade, imbuing your words with a small measure of power to push them on. Adding a roll of your <a href="#divine-will"><u>Divine Will</u></a> die to the total of your ally’s attack roll, saving throw, or ability check.
+          </p>
+        <h3><b>Idiot's Confidence</b></h3>
+          <p class="info2">
+            You are immune to the <a href="combat.html#frightened"><u>frightened</u></a> condition.<br><br>
+            You must be at least Divine level 3 to select this ability.
+          </p>
+        <h3><b>Savant</b></h3>
+          <p class="info2">
+            Choose one skill. As a bonus action, you may expend a mote to double your proficiency bonus with checks made with that skill for one round. If your proficiency bonus would already be doubled, triple it instead.
+          </p>
+        <h3><b>Renaissance Man</b></h3>
+          <p class="info2">
+            You gain proficiency with two skills and two tools of your choice. One of these proficiencies of your choice is doubled (as expertise). 
+          </p>
+        <h3><b>Lucky Break</b></h3>
+          <p class="info2">
+            When you would be reduced to 0 hit points, you may expend a mote to instead only be reduced to 1. Additionally, when you would be killed outright, you may expend a mote to instead drop to 0 hit points (however, you must make death saving throws as normal).<br><br>
+            You regain the use of this ability after a long rest.
+          </p>
+        <h3><b>Get Outta There</b></h3>
+          <p class="info2">
+            You may expend a number of motes equal to your proficiency bonus to gain a 30 foot bonus to your speed for a number of turns equal to your proficiency bonus.<br><br>
+            Additionally, if you use this ability during a chase, you have advantage on all constitution rolls for the chase’s duration, regardless of your opponent’s speed.<br><br>
+            <b>You must be at least Divine level 3 to select this ability.</b>
+          </p>
+        <h3><b>Spit in the Face of God</b></h3>
+          <p class="info2">
+            As a reaction, you may expend a number of motes equal to your proficiency bonus to turn a successful roll into a fail.<br><br>
+            <b>You must be Divine level 9 to select this ability.</b>
+          </p>
+        <h3><b>Wine like Water</b></h3>
+          <p class="info2">
+            You are immune to poison damage, and the <a href="combat.html#poisoned"><u>poisoned</u></a> condition.<br><br>
+            <b>You must at least be Divine level 3 to select this ability.</b>
+          </p>
+        <h3><b>Flash Mob</b></h3>
+          <p class="info2">
+            If you are in a town, city, or other relatively well populated settlement, you may use an action to spend a number of motes equal to your proficiency bonus to call out for a crowd.<br><br>
+            At the start of your next turn, a crowd begins to gather around you, this crowd remains in place for ten minutes, unless you give them a reason to stay longer.<br><br>
+            The crowd is difficult terrain, with a radius of about 30 feet, centered on the point you originally called out. They also potentially serve as witnesses to any events unfolding around you.
+          </p>
+      </details>
+    <h2><a class="ruleslink" id="hand">The Hand</a></h2>
+      <p class="info">
+        At Divine level 1, when you choose The Hand as your path, you gain the ability to use motes as opposed to slots when casting a spell. To do this, you must expend a number of motes equal to the circle of the spell you are attempting to cast.<br><br>
+        Additionally, you gain the ability to cast one spell of ascending circles for each Divine level you possess. Meaning at Divine level 1, you learn a 1st circle spell, at Divine level 2 you learn a 2nd circle spell, and so on. For example, a character of divine level 3 may know Find Familiar, Coerce, and Explosion. If you do not have the ability to cast spells from your class, or you do not have the slots to cast these spells, you cast these spells using motes. You choose between Intelligence, Wisdom, and Charisma to be your casting modifier for these spells.<br><br>
+        Regardless of your class, you cannot upcast spells using these motes.
+      </p>
+      <!--Hand Path Abilities-->
+      <details class="sub-list"><summary><b>Hand Path Abilities</b></summary>
+        <br>
+        <h3><b>Flicker</b></h3>
+          <p class="info2">
+            At any point during your movement on your turn to teleport a distance up to half your speed. You treat this teleportation as movement, subtracting the distance traveled from your speed for the turn, and factoring in how far you’ve moved to the distance you can teleport.
+          </p>
+        <h3><b>Overcharge</b></h3>
+          <p class="info2">
+            As a bonus action on your turn, you may expend a mote to roll a Divine Will die, adding the total rolled to the DC of the next spell you cast that calls for a saving throw.<br><br>
+            <b>You must be at least Divine level 3 to select this ability</b>
+          </p>
+        <h3><b>Sanctum</b></h3>
+          <p class="info2">
+            You may spend 24 hours and all of your motes to designate a space as your sanctum. The rules for this space are as follows:
+          </p>
+          <ul>
+            <li>A sanctum must be some manner of secluded area. A room, a grove, or a small building no larger than a 30 foot by 30 foot space.</li>
+            <li>Only creatures you designate can be made aware of your sanctum. All others will not be aware of its existence, location, or how to enter it. That being said, if a creature is searching for you (or someone similar to you) and is specifically looking for a sanctum, it can be found with a DC 30 Investigation check.</li>
+            <li>The inside of your sanctum is safe, and entirely created around your own design. Harsh elements do not have an effect on the sanctum’s interior, and its remains unscathed if any natural disasters should occur in its area. Good food and drink are always available to you, decor forms in a style you choose, and you may even form illusory creatures to keep yourself and your companions entertained.</li>
+          </ul>
+        <h3><b>Psion</b></h3>
+          <p class="info2">
+            You gain the ability to telepathically communicate with others, as opposed to speaking aloud. In addition, you gain the ability to cast the Coerce spell and the Kinetics cantrip, if you weren’t able to already. When you cast Kinetics, you can expend a number of motes up to your proficiency bonus, multiplying that number by 5, and adding that number to the total feet you can push or pull a target.
+          </p>
+        <h3><b>Beyond Strength</b></h3>
+          <p class="info2">
+            You gain the ability to cast Shape Reality.
+            <b>You must be diving level 9 to select this ability.</b>
+          </p>
+        <h3><b>Shapechanger</b></h3>
+          <p class="info2">
+            As an action, you may spend a number of motes equal to your proficiency bonus to transform into an animal. Choose a beast with a Challenge Factor equal to your divine level. You take on the form of the beast you choose. While in your animal form, your Strength, Dexterity, and Constitution scores - as well as your hit point count - are replaced by the beast’s stat block, you retain any class abilities (though you cannot cast spells), and you gain any abilities the creature might have. When you are reduced to 0HP in your animal form, you revert to your Sublunarian shape. Unlike similar abilities (ie: the Animal Shape Colún feature) you are not limited to one animal form with this feature, being able to transform into something different each time you use it.<br><br>
+            <b>You must be Divine level 3 to select this ability.</b>
+          </p>
+        <h3><b>Claim Soul</b></h3>
+          <p class="info2">
+            Any time you kill a creature, you can claim their soul as a reaction. When you do so, choose an ability the creature possessed, save for any abilities from divine levels, spellcasting, extra attack, and sneak attack abilities. You gain this creature’s ability, and may use it as stipulated by the rules around the ability you claim. If an ability requires a resource you don’t possess to be used, you may use it once, and regain the use of it on a short or long rest.<br><br>
+            When you claim a creature’s soul in this way, it is bound to you, unable to pass on into any afterlife. You may have a number of claimed souls equal to half your divine level.<br><br>
+            You cannot claim the soul of a creature with a level or Challenge Factor higher than your character level.<br><br>
+            <b>You must be at least Divine level 3 to select this ability.</b>
+          </p>
+      </details>
+      <hr>
+      <p><a href="#top">Back to Top</a></p> 
+  </details>
+  <hr>
+  <p><a href="#top">Back to Top</a></p> 
+
+</div>
+</div>
+</body>
+</html>
